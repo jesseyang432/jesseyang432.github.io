@@ -55,7 +55,12 @@
           transform: translate(-50%, -50%);
 }
 
+#logo line {
+  stroke-linecap: round;
+}
+
 polygon {
+  stroke-linecap: round;
   stroke-dasharray: 913.3px;
   stroke-dashoffset: 913.3px;
 }
