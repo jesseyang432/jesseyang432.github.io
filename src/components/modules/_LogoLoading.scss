@@ -1,7 +1,7 @@
 .st0 {
 	fill: none;
 	stroke: #00ffff;
-	stroke-width: 24;
+	stroke-width: 12;
 	stroke-miterlimit: 10;
 }
 
@@ -30,7 +30,7 @@
 .st5 {
 	fill: none;
 	stroke: #c7b299;
-	stroke-width: 12;
+	stroke-width: 9;
 	stroke-miterlimit: 10;
 }
 
@@ -39,4 +39,56 @@
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+}
+
+polygon {
+	stroke-dasharray: 913.3px;
+	stroke-dashoffset: 913.3px;
+}
+
+#Layer_2 {
+	path:nth-child(1) {
+		stroke-dasharray: 147.17px;
+		stroke-dashoffset: 147.17px;
+	}
+
+	path:nth-child(2) {
+		stroke-dasharray: 240.49px;
+		stroke-dashoffset: 240.49px;
+	}
+
+	path:nth-child(3) {
+		stroke-dasharray: 229.96px;
+		stroke-dashoffset: 229.96px;
+	}
+
+	path:nth-child(4) {
+		stroke-dasharray: 229.96px;
+		stroke-dashoffset: 229.96px;
+	}
+
+	path:nth-child(5) {
+		stroke-dasharray: 240.49px;
+		stroke-dashoffset: 240.49px;
+	}
+
+	path:nth-child(6) {
+		stroke-dasharray: 197.21px;
+		stroke-dashoffset: 197.21px;
+	}
+
+	path:nth-child(7) {
+		stroke-dasharray: 249.96px;
+		stroke-dashoffset: 249.96px;
+	}
+
+	path:nth-child(8) {
+		stroke-dasharray: 312.47px;
+		stroke-dashoffset: 312.47px;
+	}
+
+	path:nth-child(9) {
+		stroke-dasharray: 300.8px;
+		stroke-dashoffset: 300.8px;
+	}
 }

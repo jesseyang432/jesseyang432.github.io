@@ -13,13 +13,6 @@ class LogoLoading extends Component {
         <div>
            <svg id="logo" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="383.42px" height="416.47px"
 	 viewBox="0 0 383.42 416.47" style={{enableBackground:"new 0 0 383.42 416.47"}} xmlSpace="preserve">
-                <g id="Layer_1">
-                    <rect x="996.9" y="39.73" style={{fill:"none"}} width="2.15" height="0"/>
-                </g>
-                <g id="Layer_4">
-                </g>
-                <g id="Layer_3">
-                </g>
                 <g id="Layer_2">
                     <g>
                         <polygon className="st0" points="191.93,20.68 60.1,96.79 60.1,249.01 191.92,325.11 323.75,249 323.75,96.79 		"/>
