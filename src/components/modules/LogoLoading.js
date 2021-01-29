@@ -11,7 +11,7 @@ class LogoLoading extends Component {
   render() {
     return (
         <div>
-           <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="383.42px" height="416.47px"
+           <svg id="logo" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="383.42px" height="416.47px"
 	 viewBox="0 0 383.42 416.47" style={{enableBackground:"new 0 0 383.42 416.47"}} xmlSpace="preserve">
                 <g id="Layer_1">
                     <rect x="996.9" y="39.73" style={{fill:"none"}} width="2.15" height="0"/>
