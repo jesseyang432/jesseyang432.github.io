@@ -27,8 +27,55 @@
   fill: transparent;
 }
 
+.LogoLoading-firstname path:nth-child(1) {
+  -webkit-animation: LogoLoading-firstname-anim 2s ease forwards 2.5s;
+          animation: LogoLoading-firstname-anim 2s ease forwards 2.5s;
+}
+
+.LogoLoading-firstname path:nth-child(2) {
+  -webkit-animation: LogoLoading-firstname-anim 2s ease forwards 2.5s;
+          animation: LogoLoading-firstname-anim 2s ease forwards 2.5s;
+}
+
+.LogoLoading-firstname path:nth-child(3) {
+  -webkit-animation: LogoLoading-firstname-anim 2s ease forwards 2.5s;
+          animation: LogoLoading-firstname-anim 2s ease forwards 2.5s;
+}
+
+.LogoLoading-firstname path:nth-child(4) {
+  -webkit-animation: LogoLoading-firstname-anim 2s ease forwards 2.5s;
+          animation: LogoLoading-firstname-anim 2s ease forwards 2.5s;
+}
+
+.LogoLoading-firstname path:nth-child(5) {
+  -webkit-animation: LogoLoading-firstname-anim 2s ease forwards 2.5s;
+          animation: LogoLoading-firstname-anim 2s ease forwards 2.5s;
+}
+
 .LogoLoading-st2 {
   fill: transparent;
+  -webkit-animation: LogoLoading-lastname-anim 2s ease forwards 2.5s;
+          animation: LogoLoading-lastname-anim 2s ease forwards 2.5s;
+}
+
+.LogoLoading-lastname path:nth-child(1) {
+  -webkit-animation: LogoLoading-lastname-anim 2s ease forwards 2.5s;
+          animation: LogoLoading-lastname-anim 2s ease forwards 2.5s;
+}
+
+.LogoLoading-lastname path:nth-child(2) {
+  -webkit-animation: LogoLoading-lastname-anim 2s ease forwards 2.5s;
+          animation: LogoLoading-lastname-anim 2s ease forwards 2.5s;
+}
+
+.LogoLoading-lastname path:nth-child(3) {
+  -webkit-animation: LogoLoading-lastname-anim 2s ease forwards 2.5s;
+          animation: LogoLoading-lastname-anim 2s ease forwards 2.5s;
+}
+
+.LogoLoading-lastname path:nth-child(4) {
+  -webkit-animation: LogoLoading-lastname-anim 2s ease forwards 2.5s;
+          animation: LogoLoading-lastname-anim 2s ease forwards 2.5s;
 }
 
 .LogoLoading-st3 {
@@ -104,6 +151,42 @@
   }
   to {
     fill-opacity: 1;
+  }
+}
+
+@-webkit-keyframes LogoLoading-firstname-anim {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #c7b299;
+  }
+}
+
+@keyframes LogoLoading-firstname-anim {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #c7b299;
+  }
+}
+
+@-webkit-keyframes LogoLoading-lastname-anim {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #00ffff;
+  }
+}
+
+@keyframes LogoLoading-lastname-anim {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #00ffff;
   }
 }
 

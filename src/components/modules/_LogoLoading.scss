@@ -14,9 +14,43 @@
 	// fill: #c7b299;
 }
 
+.LogoLoading-firstname {
+	path:nth-child(1) {
+		animation: LogoLoading-firstname-anim 2s ease forwards 2.5s;
+	}
+	path:nth-child(2) {
+		animation: LogoLoading-firstname-anim 2s ease forwards 2.5s;
+	}
+	path:nth-child(3) {
+		animation: LogoLoading-firstname-anim 2s ease forwards 2.5s;
+	}
+	path:nth-child(4) {
+		animation: LogoLoading-firstname-anim 2s ease forwards 2.5s;
+	}
+	path:nth-child(5) {
+		animation: LogoLoading-firstname-anim 2s ease forwards 2.5s;
+	}
+}
+
 .LogoLoading-st2 {
 	fill: transparent;
 	// fill: #00ffff;
+	animation: LogoLoading-lastname-anim 2s ease forwards 2.5s;
+}
+
+.LogoLoading-lastname {
+	path:nth-child(1) {
+		animation: LogoLoading-lastname-anim 2s ease forwards 2.5s;
+	}
+	path:nth-child(2) {
+		animation: LogoLoading-lastname-anim 2s ease forwards 2.5s;
+	}
+	path:nth-child(3) {
+		animation: LogoLoading-lastname-anim 2s ease forwards 2.5s;
+	}
+	path:nth-child(4) {
+		animation: LogoLoading-lastname-anim 2s ease forwards 2.5s;
+	}
 }
 
 .LogoLoading-st3 {
@@ -75,5 +109,23 @@
 	}
 	to {
 		fill-opacity: 1;
+	}
+}
+
+@keyframes LogoLoading-firstname-anim {
+	from {
+		fill: transparent;
+	}
+	to {
+		fill: #c7b299;
+	}
+}
+
+@keyframes LogoLoading-lastname-anim {
+	from {
+		fill: transparent;
+	}
+	to {
+		fill: #00ffff;
 	}
 }
