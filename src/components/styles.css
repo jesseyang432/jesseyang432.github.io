@@ -27,55 +27,53 @@
   fill: transparent;
 }
 
-.LogoLoading-firstname path:nth-child(1) {
-  -webkit-animation: LogoLoading-firstname-anim 2s ease forwards 2.5s;
-          animation: LogoLoading-firstname-anim 2s ease forwards 2.5s;
+#LogoLoading-J {
+  -webkit-animation: LogoLoading-firstname-anim 0.5s ease forwards 2.5s;
+          animation: LogoLoading-firstname-anim 0.5s ease forwards 2.5s;
 }
 
-.LogoLoading-firstname path:nth-child(2) {
-  -webkit-animation: LogoLoading-firstname-anim 2s ease forwards 2.5s;
-          animation: LogoLoading-firstname-anim 2s ease forwards 2.5s;
+#LogoLoading-E1 {
+  -webkit-animation: LogoLoading-firstname-anim 0.5s ease forwards 2.5s;
+          animation: LogoLoading-firstname-anim 0.5s ease forwards 2.5s;
 }
 
-.LogoLoading-firstname path:nth-child(3) {
-  -webkit-animation: LogoLoading-firstname-anim 2s ease forwards 2.5s;
-          animation: LogoLoading-firstname-anim 2s ease forwards 2.5s;
+#LogoLoading-S1 {
+  -webkit-animation: LogoLoading-firstname-anim 0.5s ease forwards 2.5s;
+          animation: LogoLoading-firstname-anim 0.5s ease forwards 2.5s;
 }
 
-.LogoLoading-firstname path:nth-child(4) {
-  -webkit-animation: LogoLoading-firstname-anim 2s ease forwards 2.5s;
-          animation: LogoLoading-firstname-anim 2s ease forwards 2.5s;
+#LogoLoading-S2 {
+  -webkit-animation: LogoLoading-firstname-anim 0.5s ease forwards 2.5s;
+          animation: LogoLoading-firstname-anim 0.5s ease forwards 2.5s;
 }
 
-.LogoLoading-firstname path:nth-child(5) {
-  -webkit-animation: LogoLoading-firstname-anim 2s ease forwards 2.5s;
-          animation: LogoLoading-firstname-anim 2s ease forwards 2.5s;
+#LogoLoading-E2 {
+  -webkit-animation: LogoLoading-firstname-anim 0.5s ease forwards 2.5s;
+          animation: LogoLoading-firstname-anim 0.5s ease forwards 2.5s;
 }
 
 .LogoLoading-st2 {
   fill: transparent;
-  -webkit-animation: LogoLoading-lastname-anim 2s ease forwards 2.5s;
-          animation: LogoLoading-lastname-anim 2s ease forwards 2.5s;
 }
 
-.LogoLoading-lastname path:nth-child(1) {
-  -webkit-animation: LogoLoading-lastname-anim 2s ease forwards 2.5s;
-          animation: LogoLoading-lastname-anim 2s ease forwards 2.5s;
+#LogoLoading-Y {
+  -webkit-animation: LogoLoading-lastname-anim 0.5s ease forwards 2.5s;
+          animation: LogoLoading-lastname-anim 0.5s ease forwards 2.5s;
 }
 
-.LogoLoading-lastname path:nth-child(2) {
-  -webkit-animation: LogoLoading-lastname-anim 2s ease forwards 2.5s;
-          animation: LogoLoading-lastname-anim 2s ease forwards 2.5s;
+#LogoLoading-A {
+  -webkit-animation: LogoLoading-lastname-anim 0.5s ease forwards 2.5s;
+          animation: LogoLoading-lastname-anim 0.5s ease forwards 2.5s;
 }
 
-.LogoLoading-lastname path:nth-child(3) {
-  -webkit-animation: LogoLoading-lastname-anim 2s ease forwards 2.5s;
-          animation: LogoLoading-lastname-anim 2s ease forwards 2.5s;
+#LogoLoading-N {
+  -webkit-animation: LogoLoading-lastname-anim 0.5s ease forwards 2.5s;
+          animation: LogoLoading-lastname-anim 0.5s ease forwards 2.5s;
 }
 
-.LogoLoading-lastname path:nth-child(4) {
-  -webkit-animation: LogoLoading-lastname-anim 2s ease forwards 2.5s;
-          animation: LogoLoading-lastname-anim 2s ease forwards 2.5s;
+#LogoLoading-G {
+  -webkit-animation: LogoLoading-lastname-anim 0.5s ease forwards 2.5s;
+          animation: LogoLoading-lastname-anim 0.5s ease forwards 2.5s;
 }
 
 .LogoLoading-st3 {
