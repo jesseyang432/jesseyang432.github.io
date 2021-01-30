@@ -13,7 +13,9 @@ class Nav extends Component {
   render() {
     return (
       <nav>
-          <Logo></Logo>
+          <Link to="/">
+            <Logo></Logo>
+          </Link>
       </nav>
     );
   }
