@@ -33,23 +33,23 @@
 }
 
 #LogoLoading-E1 {
-  -webkit-animation: LogoLoading-firstname-anim 0.5s ease forwards 2.5s;
-          animation: LogoLoading-firstname-anim 0.5s ease forwards 2.5s;
+  -webkit-animation: LogoLoading-firstname-anim 0.5s ease forwards 2.7s;
+          animation: LogoLoading-firstname-anim 0.5s ease forwards 2.7s;
 }
 
 #LogoLoading-S1 {
-  -webkit-animation: LogoLoading-firstname-anim 0.5s ease forwards 2.5s;
-          animation: LogoLoading-firstname-anim 0.5s ease forwards 2.5s;
+  -webkit-animation: LogoLoading-firstname-anim 0.5s ease forwards 2.9s;
+          animation: LogoLoading-firstname-anim 0.5s ease forwards 2.9s;
 }
 
 #LogoLoading-S2 {
-  -webkit-animation: LogoLoading-firstname-anim 0.5s ease forwards 2.5s;
-          animation: LogoLoading-firstname-anim 0.5s ease forwards 2.5s;
+  -webkit-animation: LogoLoading-firstname-anim 0.5s ease forwards 3.1s;
+          animation: LogoLoading-firstname-anim 0.5s ease forwards 3.1s;
 }
 
 #LogoLoading-E2 {
-  -webkit-animation: LogoLoading-firstname-anim 0.5s ease forwards 2.5s;
-          animation: LogoLoading-firstname-anim 0.5s ease forwards 2.5s;
+  -webkit-animation: LogoLoading-firstname-anim 0.5s ease forwards 3.3s;
+          animation: LogoLoading-firstname-anim 0.5s ease forwards 3.3s;
 }
 
 .LogoLoading-st2 {
@@ -57,23 +57,23 @@
 }
 
 #LogoLoading-Y {
-  -webkit-animation: LogoLoading-lastname-anim 0.5s ease forwards 2.5s;
-          animation: LogoLoading-lastname-anim 0.5s ease forwards 2.5s;
+  -webkit-animation: LogoLoading-lastname-anim 0.5s ease forwards 3.5s;
+          animation: LogoLoading-lastname-anim 0.5s ease forwards 3.5s;
 }
 
 #LogoLoading-A {
-  -webkit-animation: LogoLoading-lastname-anim 0.5s ease forwards 2.5s;
-          animation: LogoLoading-lastname-anim 0.5s ease forwards 2.5s;
+  -webkit-animation: LogoLoading-lastname-anim 0.5s ease forwards 3.7s;
+          animation: LogoLoading-lastname-anim 0.5s ease forwards 3.7s;
 }
 
 #LogoLoading-N {
-  -webkit-animation: LogoLoading-lastname-anim 0.5s ease forwards 2.5s;
-          animation: LogoLoading-lastname-anim 0.5s ease forwards 2.5s;
+  -webkit-animation: LogoLoading-lastname-anim 0.5s ease forwards 3.9s;
+          animation: LogoLoading-lastname-anim 0.5s ease forwards 3.9s;
 }
 
 #LogoLoading-G {
-  -webkit-animation: LogoLoading-lastname-anim 0.5s ease forwards 2.5s;
-          animation: LogoLoading-lastname-anim 0.5s ease forwards 2.5s;
+  -webkit-animation: LogoLoading-lastname-anim 0.5s ease forwards 4.1s;
+          animation: LogoLoading-lastname-anim 0.5s ease forwards 4.1s;
 }
 
 .LogoLoading-st3 {
@@ -120,6 +120,8 @@
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  -webkit-animation: LogoLoading-scaleout-anim 0.5s ease 4.7s;
+          animation: LogoLoading-scaleout-anim 0.5s ease 4.7s;
 }
 
 @-webkit-keyframes LogoLoading-drawin-anim {
@@ -185,6 +187,24 @@
   }
   to {
     fill: #00ffff;
+  }
+}
+
+@-webkit-keyframes LogoLoading-scaleout-anim {
+  from {
+    opacity: 100%;
+  }
+  to {
+    opacity: 0%;
+  }
+}
+
+@keyframes LogoLoading-scaleout-anim {
+  from {
+    opacity: 100%;
+  }
+  to {
+    opacity: 0%;
   }
 }
 

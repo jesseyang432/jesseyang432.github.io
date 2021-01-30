@@ -19,19 +19,19 @@
 }
 
 #LogoLoading-E1 {
-	animation: LogoLoading-firstname-anim 0.5s ease forwards 2.5s;
+	animation: LogoLoading-firstname-anim 0.5s ease forwards 2.7s;
 }
 
 #LogoLoading-S1 {
-	animation: LogoLoading-firstname-anim 0.5s ease forwards 2.5s;
+	animation: LogoLoading-firstname-anim 0.5s ease forwards 2.9s;
 }
 
 #LogoLoading-S2 {
-	animation: LogoLoading-firstname-anim 0.5s ease forwards 2.5s;
+	animation: LogoLoading-firstname-anim 0.5s ease forwards 3.1s;
 }
 
 #LogoLoading-E2 {
-	animation: LogoLoading-firstname-anim 0.5s ease forwards 2.5s;
+	animation: LogoLoading-firstname-anim 0.5s ease forwards 3.3s;
 }
 
 .LogoLoading-st2 {
@@ -40,19 +40,19 @@
 }
 
 #LogoLoading-Y {
-	animation: LogoLoading-lastname-anim 0.5s ease forwards 2.5s;
+	animation: LogoLoading-lastname-anim 0.5s ease forwards 3.5s;
 }
 
 #LogoLoading-A {
-	animation: LogoLoading-lastname-anim 0.5s ease forwards 2.5s;
+	animation: LogoLoading-lastname-anim 0.5s ease forwards 3.7s;
 }
 
 #LogoLoading-N {
-	animation: LogoLoading-lastname-anim 0.5s ease forwards 2.5s;
+	animation: LogoLoading-lastname-anim 0.5s ease forwards 3.9s;
 }
 
 #LogoLoading-G {
-	animation: LogoLoading-lastname-anim 0.5s ease forwards 2.5s;
+	animation: LogoLoading-lastname-anim 0.5s ease forwards 4.1s;
 }
 
 .LogoLoading-st3 {
@@ -97,6 +97,7 @@
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	animation: LogoLoading-scaleout-anim 0.5s ease 4.7s;
 }
 
 @keyframes LogoLoading-drawin-anim {
@@ -129,5 +130,14 @@
 	}
 	to {
 		fill: #00ffff;
+	}
+}
+
+@keyframes LogoLoading-scaleout-anim {
+	from {
+		opacity: 100%;
+	}
+	to {
+		opacity: 0%;
 	}
 }
