@@ -19,19 +19,19 @@
 }
 
 #LogoLoading-E1 {
-	animation: LogoLoading-firstname-anim 0.5s ease forwards 2.7s;
+	animation: LogoLoading-firstname-anim 0.5s ease forwards 2.65s;
 }
 
 #LogoLoading-S1 {
-	animation: LogoLoading-firstname-anim 0.5s ease forwards 2.9s;
+	animation: LogoLoading-firstname-anim 0.5s ease forwards 2.8s;
 }
 
 #LogoLoading-S2 {
-	animation: LogoLoading-firstname-anim 0.5s ease forwards 3.1s;
+	animation: LogoLoading-firstname-anim 0.5s ease forwards 2.95s;
 }
 
 #LogoLoading-E2 {
-	animation: LogoLoading-firstname-anim 0.5s ease forwards 3.3s;
+	animation: LogoLoading-firstname-anim 0.5s ease forwards 3.1s;
 }
 
 .LogoLoading-st2 {
@@ -40,19 +40,19 @@
 }
 
 #LogoLoading-Y {
-	animation: LogoLoading-lastname-anim 0.5s ease forwards 3.5s;
+	animation: LogoLoading-lastname-anim 0.5s ease forwards 3.25s;
 }
 
 #LogoLoading-A {
-	animation: LogoLoading-lastname-anim 0.5s ease forwards 3.7s;
+	animation: LogoLoading-lastname-anim 0.5s ease forwards 3.4s;
 }
 
 #LogoLoading-N {
-	animation: LogoLoading-lastname-anim 0.5s ease forwards 3.9s;
+	animation: LogoLoading-lastname-anim 0.5s ease forwards 3.55s;
 }
 
 #LogoLoading-G {
-	animation: LogoLoading-lastname-anim 0.5s ease forwards 4.1s;
+	animation: LogoLoading-lastname-anim 0.5s ease forwards 3.7s;
 }
 
 .LogoLoading-st3 {
@@ -97,7 +97,9 @@
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	animation: LogoLoading-scaleout-anim 0.5s ease 4.7s;
+	transform-origin: 50% 50%;
+	animation: LogoLoading-scaleout-anim 1s ease 4.5s;
+	animation-fill-mode: forwards;
 }
 
 @keyframes LogoLoading-drawin-anim {
@@ -135,9 +137,13 @@
 
 @keyframes LogoLoading-scaleout-anim {
 	from {
+		height: 416.47;
+		width: 383.42;
 		opacity: 100%;
 	}
 	to {
+		height: 0;
+		width: 0;
 		opacity: 0%;
 	}
 }

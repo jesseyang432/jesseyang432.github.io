@@ -33,23 +33,23 @@
 }
 
 #LogoLoading-E1 {
-  -webkit-animation: LogoLoading-firstname-anim 0.5s ease forwards 2.7s;
-          animation: LogoLoading-firstname-anim 0.5s ease forwards 2.7s;
+  -webkit-animation: LogoLoading-firstname-anim 0.5s ease forwards 2.65s;
+          animation: LogoLoading-firstname-anim 0.5s ease forwards 2.65s;
 }
 
 #LogoLoading-S1 {
-  -webkit-animation: LogoLoading-firstname-anim 0.5s ease forwards 2.9s;
-          animation: LogoLoading-firstname-anim 0.5s ease forwards 2.9s;
+  -webkit-animation: LogoLoading-firstname-anim 0.5s ease forwards 2.8s;
+          animation: LogoLoading-firstname-anim 0.5s ease forwards 2.8s;
 }
 
 #LogoLoading-S2 {
-  -webkit-animation: LogoLoading-firstname-anim 0.5s ease forwards 3.1s;
-          animation: LogoLoading-firstname-anim 0.5s ease forwards 3.1s;
+  -webkit-animation: LogoLoading-firstname-anim 0.5s ease forwards 2.95s;
+          animation: LogoLoading-firstname-anim 0.5s ease forwards 2.95s;
 }
 
 #LogoLoading-E2 {
-  -webkit-animation: LogoLoading-firstname-anim 0.5s ease forwards 3.3s;
-          animation: LogoLoading-firstname-anim 0.5s ease forwards 3.3s;
+  -webkit-animation: LogoLoading-firstname-anim 0.5s ease forwards 3.1s;
+          animation: LogoLoading-firstname-anim 0.5s ease forwards 3.1s;
 }
 
 .LogoLoading-st2 {
@@ -57,23 +57,23 @@
 }
 
 #LogoLoading-Y {
-  -webkit-animation: LogoLoading-lastname-anim 0.5s ease forwards 3.5s;
-          animation: LogoLoading-lastname-anim 0.5s ease forwards 3.5s;
+  -webkit-animation: LogoLoading-lastname-anim 0.5s ease forwards 3.25s;
+          animation: LogoLoading-lastname-anim 0.5s ease forwards 3.25s;
 }
 
 #LogoLoading-A {
-  -webkit-animation: LogoLoading-lastname-anim 0.5s ease forwards 3.7s;
-          animation: LogoLoading-lastname-anim 0.5s ease forwards 3.7s;
+  -webkit-animation: LogoLoading-lastname-anim 0.5s ease forwards 3.4s;
+          animation: LogoLoading-lastname-anim 0.5s ease forwards 3.4s;
 }
 
 #LogoLoading-N {
-  -webkit-animation: LogoLoading-lastname-anim 0.5s ease forwards 3.9s;
-          animation: LogoLoading-lastname-anim 0.5s ease forwards 3.9s;
+  -webkit-animation: LogoLoading-lastname-anim 0.5s ease forwards 3.55s;
+          animation: LogoLoading-lastname-anim 0.5s ease forwards 3.55s;
 }
 
 #LogoLoading-G {
-  -webkit-animation: LogoLoading-lastname-anim 0.5s ease forwards 4.1s;
-          animation: LogoLoading-lastname-anim 0.5s ease forwards 4.1s;
+  -webkit-animation: LogoLoading-lastname-anim 0.5s ease forwards 3.7s;
+          animation: LogoLoading-lastname-anim 0.5s ease forwards 3.7s;
 }
 
 .LogoLoading-st3 {
@@ -120,8 +120,12 @@
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  -webkit-animation: LogoLoading-scaleout-anim 0.5s ease 4.7s;
-          animation: LogoLoading-scaleout-anim 0.5s ease 4.7s;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-animation: LogoLoading-scaleout-anim 1s ease 4.5s;
+          animation: LogoLoading-scaleout-anim 1s ease 4.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 @-webkit-keyframes LogoLoading-drawin-anim {
@@ -192,20 +196,63 @@
 
 @-webkit-keyframes LogoLoading-scaleout-anim {
   from {
+    height: 416.47;
+    width: 383.42;
     opacity: 100%;
   }
   to {
+    height: 0;
+    width: 0;
     opacity: 0%;
   }
 }
 
 @keyframes LogoLoading-scaleout-anim {
   from {
+    height: 416.47;
+    width: 383.42;
     opacity: 100%;
   }
   to {
+    height: 0;
+    width: 0;
     opacity: 0%;
   }
+}
+
+.st0 {
+  fill: none;
+  stroke: #00ffff;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+}
+
+.st1 {
+  fill: url(#SVGID_1_);
+  stroke: #00ffff;
+  stroke-width: 1.5;
+  stroke-miterlimit: 10;
+}
+
+.st2 {
+  fill: url(#SVGID_2_);
+  stroke: #00ffff;
+  stroke-width: 1.5;
+  stroke-miterlimit: 10;
+}
+
+.st3 {
+  fill: none;
+  stroke: #c7b299;
+  stroke-width: 1.5;
+  stroke-miterlimit: 10;
+}
+
+.st4 {
+  fill: url(#SVGID_3_);
+  stroke: #00ffff;
+  stroke-width: 1.5;
+  stroke-miterlimit: 10;
 }
 
 body {
