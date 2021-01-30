@@ -32,27 +32,29 @@
 }
 
 .LogoLoading-st3 {
-  fill: transparent;
+  fill: url(#LogoLoading-SVGID_1_);
+  fill-opacity: 0;
   stroke: #00ffff;
   stroke-width: 2;
   stroke-miterlimit: 10;
   stroke-linecap: round;
   stroke-dasharray: 283.11px;
   stroke-dashoffset: 283.11px;
-  -webkit-animation: LogoLoading-drawin-anim 0.5s ease forwards 1.7s;
-          animation: LogoLoading-drawin-anim 0.5s ease forwards 1.7s;
+  -webkit-animation: LogoLoading-drawin-anim 0.5s ease forwards 1.7s, LogoLoading-fillin-anim 0.5s ease forwards 1.7s;
+          animation: LogoLoading-drawin-anim 0.5s ease forwards 1.7s, LogoLoading-fillin-anim 0.5s ease forwards 1.7s;
 }
 
 .LogoLoading-st4 {
-  fill: transparent;
+  fill: url(#LogoLoading-SVGID_2_);
+  fill-opacity: 0;
   stroke: #00ffff;
   stroke-width: 2;
   stroke-miterlimit: 10;
   stroke-linecap: round;
   stroke-dasharray: 431.34px;
   stroke-dashoffset: 431.34px;
-  -webkit-animation: LogoLoading-drawin-anim 0.5s ease forwards 1.7s;
-          animation: LogoLoading-drawin-anim 0.5s ease forwards 1.7s;
+  -webkit-animation: LogoLoading-drawin-anim 0.5s ease forwards 1.7s, LogoLoading-fillin-anim 0.5s ease forwards 1.7s;
+          animation: LogoLoading-drawin-anim 0.5s ease forwards 1.7s, LogoLoading-fillin-anim 0.5s ease forwards 1.7s;
 }
 
 .LogoLoading-st5 {
@@ -87,27 +89,21 @@
   }
 }
 
-@-webkit-keyframes LogoLoading-fillin-anim-left {
+@-webkit-keyframes LogoLoading-fillin-anim {
+  from {
+    fill-opacity: 0;
+  }
   to {
-    fill: url(#LogoLoading-SVGID_1_);
+    fill-opacity: 1;
   }
 }
 
-@keyframes LogoLoading-fillin-anim-left {
-  to {
-    fill: url(#LogoLoading-SVGID_1_);
+@keyframes LogoLoading-fillin-anim {
+  from {
+    fill-opacity: 0;
   }
-}
-
-@-webkit-keyframes LogoLoading-fillin-anim-right {
   to {
-    fill: url(#LogoLoading-SVGID_2_);
-  }
-}
-
-@keyframes LogoLoading-fillin-anim-right {
-  to {
-    fill: url(#LogoLoading-SVGID_2_);
+    fill-opacity: 1;
   }
 }
 
