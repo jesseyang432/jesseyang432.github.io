@@ -11,7 +11,7 @@
           align-items: center;
 }
 
-.st0 {
+.LogoLoading-st0 {
   fill: none;
   stroke: #00ffff;
   stroke-width: 12;
@@ -19,19 +19,19 @@
   stroke-linecap: round;
   stroke-dasharray: 913.3px;
   stroke-dashoffset: 913.3px;
-  -webkit-animation: drawin-anim 1s ease forwards;
-          animation: drawin-anim 1s ease forwards;
+  -webkit-animation: LogoLoading-drawin-anim 1s ease forwards;
+          animation: LogoLoading-drawin-anim 1s ease forwards;
 }
 
-.st1 {
+.LogoLoading-st1 {
   fill: transparent;
 }
 
-.st2 {
+.LogoLoading-st2 {
   fill: transparent;
 }
 
-.st3 {
+.LogoLoading-st3 {
   fill: transparent;
   stroke: #00ffff;
   stroke-width: 2;
@@ -39,11 +39,11 @@
   stroke-linecap: round;
   stroke-dasharray: 283.11px;
   stroke-dashoffset: 283.11px;
-  -webkit-animation: drawin-anim 0.5s ease forwards 1.7s;
-          animation: drawin-anim 0.5s ease forwards 1.7s;
+  -webkit-animation: LogoLoading-drawin-anim 0.5s ease forwards 1.7s;
+          animation: LogoLoading-drawin-anim 0.5s ease forwards 1.7s;
 }
 
-.st4 {
+.LogoLoading-st4 {
   fill: transparent;
   stroke: #00ffff;
   stroke-width: 2;
@@ -51,11 +51,11 @@
   stroke-linecap: round;
   stroke-dasharray: 431.34px;
   stroke-dashoffset: 431.34px;
-  -webkit-animation: drawin-anim 0.5s ease forwards 1.7s;
-          animation: drawin-anim 0.5s ease forwards 1.7s;
+  -webkit-animation: LogoLoading-drawin-anim 0.5s ease forwards 1.7s;
+          animation: LogoLoading-drawin-anim 0.5s ease forwards 1.7s;
 }
 
-.st5 {
+.LogoLoading-st5 {
   fill: none;
   stroke: #c7b299;
   stroke-width: 9;
@@ -63,11 +63,11 @@
   stroke-linecap: round;
   stroke-dasharray: 137px;
   stroke-dashoffset: 137px;
-  -webkit-animation: drawin-anim 0.3s ease forwards 1.2s;
-          animation: drawin-anim 0.3s ease forwards 1.2s;
+  -webkit-animation: LogoLoading-drawin-anim 0.3s ease forwards 1.2s;
+          animation: LogoLoading-drawin-anim 0.3s ease forwards 1.2s;
 }
 
-#logo {
+#LogoLoading-logo {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -75,39 +75,39 @@
           transform: translate(-50%, -50%);
 }
 
-@-webkit-keyframes drawin-anim {
+@-webkit-keyframes LogoLoading-drawin-anim {
   to {
     stroke-dashoffset: 0;
   }
 }
 
-@keyframes drawin-anim {
+@keyframes LogoLoading-drawin-anim {
   to {
     stroke-dashoffset: 0;
   }
 }
 
-@-webkit-keyframes fillin-anim-left {
+@-webkit-keyframes LogoLoading-fillin-anim-left {
   to {
-    fill: url(#SVGID_1_);
+    fill: url(#LogoLoading-SVGID_1_);
   }
 }
 
-@keyframes fillin-anim-left {
+@keyframes LogoLoading-fillin-anim-left {
   to {
-    fill: url(#SVGID_1_);
+    fill: url(#LogoLoading-SVGID_1_);
   }
 }
 
-@-webkit-keyframes fillin-anim-right {
+@-webkit-keyframes LogoLoading-fillin-anim-right {
   to {
-    fill: url(#SVGID_2_);
+    fill: url(#LogoLoading-SVGID_2_);
   }
 }
 
-@keyframes fillin-anim-right {
+@keyframes LogoLoading-fillin-anim-right {
   to {
-    fill: url(#SVGID_2_);
+    fill: url(#LogoLoading-SVGID_2_);
   }
 }
 
