@@ -6,7 +6,7 @@
 	stroke-linecap: round;
 	stroke-dasharray: 913.3px;
 	stroke-dashoffset: 913.3px;
-	animation: polygon-anim 2s ease forwards;
+	animation: drawin-anim 1s ease forwards;
 }
 
 .st1 {
@@ -28,6 +28,7 @@
 	stroke-linecap: round;
 	stroke-dasharray: 283.11px;
 	stroke-dashoffset: 283.11px;
+	animation: drawin-anim 0.5s ease forwards 1.7s;
 }
 
 .st4 {
@@ -39,6 +40,7 @@
 	stroke-linecap: round;
 	stroke-dasharray: 431.34px;
 	stroke-dashoffset: 431.34px;
+	animation: drawin-anim 0.5s ease forwards 1.7s;
 }
 
 .st5 {
@@ -49,6 +51,7 @@
 	stroke-linecap: round;
 	stroke-dasharray: 137px;
 	stroke-dashoffset: 137px;
+	animation: drawin-anim 0.3s ease forwards 1.2s;
 }
 
 #logo {
@@ -58,8 +61,20 @@
 	transform: translate(-50%, -50%);
 }
 
-@keyframes polygon-anim {
+@keyframes drawin-anim {
 	to {
 		stroke-dashoffset: 0;
+	}
+}
+
+@keyframes fillin-anim-left {
+	to {
+		fill: url(#SVGID_1_);
+	}
+}
+
+@keyframes fillin-anim-right {
+	to {
+		fill: url(#SVGID_2_);
 	}
 }
