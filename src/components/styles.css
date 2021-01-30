@@ -255,6 +255,17 @@
   stroke-miterlimit: 10;
 }
 
+#Logo-logo {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#Logo-logo:hover {
+  cursor: pointer;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
 body {
   background-color: #000535;
 }

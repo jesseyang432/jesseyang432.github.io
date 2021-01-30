@@ -28,3 +28,11 @@
 	stroke-width: 1.5;
 	stroke-miterlimit: 10;
 }
+
+#Logo-logo {
+	transition: 0.5s;
+	&:hover {
+		cursor: pointer;
+		filter: grayscale(100%);
+	}
+}
