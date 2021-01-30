@@ -19,6 +19,8 @@
   stroke-linecap: round;
   stroke-dasharray: 913.3px;
   stroke-dashoffset: 913.3px;
+  -webkit-animation: polygon-anim 2s ease forwards;
+          animation: polygon-anim 2s ease forwards;
 }
 
 .st1 {
@@ -30,7 +32,7 @@
 }
 
 .st3 {
-  fill: url(#SVGID_1_);
+  fill: transparent;
   stroke: #00ffff;
   stroke-width: 2;
   stroke-miterlimit: 10;
@@ -40,7 +42,7 @@
 }
 
 .st4 {
-  fill: url(#SVGID_2_);
+  fill: transparent;
   stroke: #00ffff;
   stroke-width: 2;
   stroke-miterlimit: 10;
@@ -67,8 +69,16 @@
           transform: translate(-50%, -50%);
 }
 
-#logo line {
-  stroke-linecap: round;
+@-webkit-keyframes polygon-anim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes polygon-anim {
+  to {
+    stroke-dashoffset: 0;
+  }
 }
 
 body {
