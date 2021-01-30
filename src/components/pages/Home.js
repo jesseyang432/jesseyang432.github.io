@@ -13,7 +13,7 @@ class Home extends Component {
   render() {
     return (
         <>
-            {/* <Nav/> */}
+            <Nav/>
             {/* <div className="Home-title">
                 <h1><em>Jesse Yang</em></h1>
             </div> */}

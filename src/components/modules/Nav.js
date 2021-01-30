@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
+import Logo from './Logo';
 
 class Nav extends Component {
   constructor(props) {
@@ -12,13 +13,7 @@ class Nav extends Component {
   render() {
     return (
       <nav>
-          <h1>hello from the navbar</h1>
-          <h3>Logo</h3>
-          <ul className="nav-links">
-              <Link to='/'>
-                <li>About</li>
-              </Link>
-          </ul>
+          <Logo></Logo>
       </nav>
     );
   }
