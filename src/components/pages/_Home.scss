@@ -48,22 +48,3 @@
 		right: 0;
 	}
 }
-
-.Home-intro-links {
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	// color: transparent;
-
-	a {
-		text-decoration: none;
-		color: inherit;
-		margin: 12px;
-		transition: 0.5s ease;
-
-		&:hover {
-			transform: translateY(-8px);
-		}
-	}
-}

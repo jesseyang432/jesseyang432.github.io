@@ -1,8 +1,7 @@
 import React, {Component} from 'react';
 import LogoLoading from '../modules/LogoLoading';
 import Nav from '../modules/Nav';
-import {Link} from 'react-router-dom';
-import {RiGithubLine, RiInstagramLine, RiFacebookFill, RiLinkedinFill} from 'react-icons/ri';
+import SocialLinks from '../modules/SocialLinks';
 
 class Home extends Component {
   constructor(props) {
@@ -31,20 +30,7 @@ class Home extends Component {
                         <div className="Home-intro-info">
                             <h1>Jesse Yang</h1>
                         </div>
-                        <div className="Home-intro-links">
-                            <Link to="/">
-                                <RiGithubLine size={30}/>
-                            </Link>
-                            <Link to="/">
-                                <RiFacebookFill size={30}/>
-                            </Link>
-                            <Link to="/">
-                                <RiLinkedinFill size={30}/>
-                            </Link>
-                            <Link to="/">
-                                <RiInstagramLine size={30}/>
-                            </Link>
-                        </div>
+                        <SocialLinks/>
                     </div>
                 </div>
             }
