@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import LogoLoading from '../modules/LogoLoading';
 import Nav from '../modules/Nav';
 import {Link} from 'react-router-dom';
-import {RiGithubLine, RiInstagramLine, RiFacebookFill, RiFacebookLine, RiLinkedinFill, RiLinkedinLine} from 'react-icons/ri';
+import {RiGithubLine, RiInstagramLine, RiFacebookFill, RiLinkedinFill} from 'react-icons/ri';
 
 class Home extends Component {
   constructor(props) {
