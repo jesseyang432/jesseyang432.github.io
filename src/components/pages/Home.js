@@ -31,6 +31,9 @@ class Home extends Component {
                             <h1>Jesse Yang</h1>
                         </div>
                         <SocialLinks/>
+                        <div className="Home-intro-image">
+                            <img src="/images/jesseyang.jpg" alt="Jesse Yang"/>
+                        </div>
                     </div>
                 </div>
             }
