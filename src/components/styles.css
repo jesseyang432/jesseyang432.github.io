@@ -20,7 +20,7 @@
 }
 
 .Nav-logo {
-  width: 50%;
+  width: 40%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -34,7 +34,7 @@
 }
 
 .Nav-links {
-  width: 50%;
+  width: 60%;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;

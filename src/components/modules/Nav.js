@@ -24,6 +24,26 @@ class Nav extends Component {
                         About
                     </Link>
                 </li>
+                <li>
+                    <Link to="/">
+                        Projects
+                    </Link>
+                </li>
+                <li>
+                    <Link to="/">
+                        Notes
+                    </Link>
+                </li>
+                <li>
+                    <Link to="/">
+                        Blog
+                    </Link>
+                </li>
+                <li>
+                    <Link to="/">
+                        Resume
+                    </Link>
+                </li>
             </ul>
         </nav>
     );
