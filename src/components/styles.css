@@ -76,7 +76,9 @@
           align-items: center;
 }
 
-.Home-intro-links svg {
+.Home-intro-links a {
+  text-decoration: none;
+  color: inherit;
   margin: 8px;
 }
 

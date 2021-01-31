@@ -56,7 +56,9 @@
 	align-items: center;
 	// color: transparent;
 
-	svg {
+	a {
+		text-decoration: none;
+		color: inherit;
 		margin: 8px;
 	}
 }
