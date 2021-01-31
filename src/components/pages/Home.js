@@ -31,7 +31,10 @@ class Home extends Component {
                             <h1>Jesse Yang</h1>
                         </div>
                         <div className="Home-intro-links">
-
+                            <FaGithub size={30}/>
+                            <FaInstagram size={30}/>
+                            <FaFacebook size={30}/>
+                            <FaLinkedin size={30}/>
                         </div>
                     </div>
                 </div>
