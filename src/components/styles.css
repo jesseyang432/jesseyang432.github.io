@@ -76,6 +76,10 @@
           align-items: center;
 }
 
+.Home-intro-links svg {
+  margin: 8px;
+}
+
 .Nav-bar {
   height: 64px;
   border-bottom: solid white;
