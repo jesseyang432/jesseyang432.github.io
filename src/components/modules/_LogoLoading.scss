@@ -6,7 +6,7 @@
 	top: 0;
 	left: 0;
 	position: absolute;
-	background-color: #000535;
+	background-color: $bg-color;
 	animation: LogoLoading-bg-disappear-anim 1s ease 4.5s;
 	animation-fill-mode: forwards;
 }
@@ -163,7 +163,7 @@
 
 @keyframes LogoLoading-bg-disappear-anim {
 	from {
-		background-color: #000535;
+		background-color: $bg-color;
 	}
 	to {
 		background-color: transparent;
