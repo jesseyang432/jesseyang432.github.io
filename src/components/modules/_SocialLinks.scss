@@ -7,12 +7,13 @@
 
 	a {
 		text-decoration: none;
-		color: inherit;
+		color: #fff;
 		margin: 12px;
 		transition: 0.5s ease;
 
 		&:hover {
 			transform: translateY(-8px);
+			color: #00ffff;
 		}
 	}
 }
