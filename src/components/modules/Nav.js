@@ -15,7 +15,7 @@ class Nav extends Component {
         <nav className="Nav-bar">
             <div className="Nav-logo">
                 <Link to="/">
-                <Logo></Logo>
+                    <Logo></Logo>
                 </Link>
             </div>
             <ul className="Nav-links">
