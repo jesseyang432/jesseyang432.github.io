@@ -1,7 +1,9 @@
 import React, {Component} from 'react';
 import LogoLoading from '../modules/LogoLoading';
 import Nav from '../modules/Nav';
-import {FaGithub, FaInstagram, FaFacebook, FaLinkedin} from "react-icons/fa";
+import {FaGithubSquare, FaInstagramSquare, FaFacebookSquare, FaLinkedin} from "react-icons/fa";
+import {FiGithub, FiInstagram, FiFacebook, FiLinkedin} from "react-icons/fa";
+import {RiGithubLine, RiInstagramLine, RiFacebookFill, RiFacebookLine, RiLinkedinFill, RiLinkedinLine} from "react-icons/ri";
 
 class Home extends Component {
   constructor(props) {
@@ -31,10 +33,10 @@ class Home extends Component {
                             <h1>Jesse Yang</h1>
                         </div>
                         <div className="Home-intro-links">
-                            <FaGithub size={30}/>
-                            <FaInstagram size={30}/>
-                            <FaFacebook size={30}/>
-                            <FaLinkedin size={30}/>
+                            <RiGithubLine size={30}/>
+                            <RiFacebookFill size={30}/>
+                            <RiLinkedinFill size={30}/>
+                            <RiInstagramLine size={30}/>
                         </div>
                     </div>
                 </div>
