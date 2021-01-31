@@ -1,12 +1,24 @@
 .Nav-bar {
 	height: 64px;
 	border-bottom: solid white;
+	display: flex;
+}
+
+.Nav-logo {
+	width: 50%;
+	display: flex;
+	align-items: center;
+
+	a {
+		margin-left: 36px;
+	}
 }
 
 .Nav-links {
+	width: 50%;
+	height: 100%;
 	display: flex;
 	list-style: none;
-	height: 100%;
 	justify-content: space-around;
 	align-items: center;
 

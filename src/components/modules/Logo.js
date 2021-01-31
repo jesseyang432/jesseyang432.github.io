@@ -11,7 +11,7 @@ class Logo extends Component {
   render() {
     return (
         <>
-            <svg version="1.1" id="Logo-logo" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="47.36px" height="54.7px"
+            <svg version="1.1" id="Logo-logo" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="38.96px" height="45px"
                 viewBox="0 0 47.36 54.7" style={{enableBackground: "new 0 0 47.36 54.7"}} xmlSpace="preserve">
                 <polygon className="Logo-st0" points="23.6,2.38 1.94,14.88 1.94,39.89 23.6,52.38 45.25,39.88 45.25,14.88 "/>
                 <g>
