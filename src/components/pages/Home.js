@@ -20,36 +20,12 @@ class Home extends Component {
       console.log(this.state.loading);
     return (
         <>
-            ({this.state.loading ? 
+            {this.state.loading ? 
                 <LogoLoading></LogoLoading> :
                 <div className="Home-LogoLoading">
                 <Nav/>
-                <h1>lots of content</h1>
-                <h1>lots of content</h1>
-                <h1>lots of content</h1>
-                <h1>lots of content</h1>
-                <h1>lots of content</h1>
-                <h1>lots of content</h1>
-                <h1>lots of content</h1>
-                <h1>lots of content</h1>
-                <h1>lots of content</h1>
-                <h1>lots of content</h1>
-                <h1>lots of content</h1>
-                <h1>lots of content</h1>
-                <h1>lots of content</h1>
-                <h1>lots of content</h1>
-                <h1>lots of content</h1>
-                <h1>lots of content</h1>
-                <h1>lots of content</h1>
-                <h1>lots of content</h1>
-                <h1>lots of content</h1>
-                <h1>lots of content</h1>
-                <h1>lots of content</h1>
-                <h1>lots of content</h1>
-                <h1>lots of content</h1>
-                <h1>lots of content</h1>
                 </div>
-            })
+            }
         </>
     );
   }

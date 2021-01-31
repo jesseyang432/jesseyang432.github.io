@@ -1,0 +1,18 @@
+.Nav-bar {
+	height: 10vh;
+	border-bottom: solid white;
+}
+
+.Nav-links {
+	display: flex;
+	list-style: none;
+	height: 100%;
+	justify-content: space-around;
+	align-items: center;
+
+	li a {
+		color: white;
+		text-decoration: none;
+		font-size: 16px;
+	}
+}

@@ -12,11 +12,20 @@ class Nav extends Component {
 
   render() {
     return (
-      <nav>
-          <Link to="/">
-            <Logo></Logo>
-          </Link>
-      </nav>
+        <nav className="Nav-bar">
+            <div className="Nav-logo">
+                <Link to="/">
+                <Logo></Logo>
+                </Link>
+            </div>
+            <ul className="Nav-links">
+                <li>
+                    <Link to="/">
+                        About
+                    </Link>
+                </li>
+            </ul>
+        </nav>
     );
   }
 }
