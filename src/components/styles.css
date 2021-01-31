@@ -12,11 +12,18 @@
 }
 
 .LogoLoading-container {
+  padding: 0;
+  margin: 0;
   width: 100%;
   height: 100%;
   top: 0;
+  left: 0;
   position: absolute;
   background-color: #000535;
+  -webkit-animation: LogoLoading-bg-disappear-anim 1s ease 4.5s;
+          animation: LogoLoading-bg-disappear-anim 1s ease 4.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .LogoLoading-st0 {
@@ -225,6 +232,24 @@
     height: 0;
     width: 0;
     opacity: 0%;
+  }
+}
+
+@-webkit-keyframes LogoLoading-bg-disappear-anim {
+  from {
+    background-color: #000535;
+  }
+  to {
+    background-color: transparent;
+  }
+}
+
+@keyframes LogoLoading-bg-disappear-anim {
+  from {
+    background-color: #000535;
+  }
+  to {
+    background-color: transparent;
   }
 }
 
