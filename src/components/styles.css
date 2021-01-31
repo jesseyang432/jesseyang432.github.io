@@ -34,17 +34,17 @@
   text-align: center;
 }
 
-.Home-intro .Home-intro-info {
+.Home-intro-info {
   width: 100%;
   position: relative;
 }
 
-.Home-intro .Home-intro-info h1 {
+.Home-intro-info h1 {
   font-size: 72px;
   text-align: center;
 }
 
-.Home-intro .Home-intro-info::before, .Home-intro .Home-intro-info::after {
+.Home-intro-info::before, .Home-intro-info::after {
   content: "";
   position: absolute;
   width: 20%;
@@ -55,12 +55,16 @@
           transform: translateY(-50%);
 }
 
-.Home-intro .Home-intro-info::before {
+.Home-intro-info::before {
   left: 0;
 }
 
-.Home-intro .Home-intro-info::after {
+.Home-intro-info::after {
   right: 0;
+}
+
+.Home-intro-links {
+  width: 100%;
 }
 
 .Nav-bar {
