@@ -23,7 +23,13 @@ class Home extends Component {
             {this.state.loading ? 
                 <LogoLoading></LogoLoading> :
                 <div className="Home-LogoLoading">
-                <Nav/>
+                    <Nav/>
+                    <div className="Home-intro">
+                        <p>Hey! I'm</p>
+                        <div className="Home-intro-info">
+                            <h1>Jesse Yang</h1>
+                        </div>
+                    </div>
                 </div>
             }
         </>
