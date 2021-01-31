@@ -10,7 +10,7 @@ class LogoLoading extends Component {
 
   render() {
     return (
-        <div>
+        <div className="LogoLoading-container">
            <svg id="LogoLoading-logo" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="383.42px" height="416.47px"
 	 viewBox="0 0 383.42 416.47" style={{enableBackground:"new 0 0 383.42 416.47"}} xmlSpace="preserve">
                 <g id="Layer_2">
