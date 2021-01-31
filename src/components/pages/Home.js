@@ -18,7 +18,7 @@ class Home extends Component {
   }
 
   render() {
-      console.log(this.state.loading);
+
     return (
         <>
             {this.state.loading ? 
@@ -29,6 +29,9 @@ class Home extends Component {
                         <p>Hey! I'm</p>
                         <div className="Home-intro-info">
                             <h1>Jesse Yang</h1>
+                        </div>
+                        <div className="Home-intro-descriptor">
+                            <em>Aspiring Mathematics and Computer Science Major</em>
                         </div>
                         <SocialLinks/>
                         <div className="Home-intro-image">
