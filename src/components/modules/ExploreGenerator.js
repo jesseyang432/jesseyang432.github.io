@@ -9,7 +9,8 @@ class ExploreGenerator extends Component {
     height = 600;
   
     simulation = d3.forceSimulation()
-        .force("x", d3.forceX(this.width / 2).strength(0.005));
+        .force("x", d3.forceX(this.width / 2).strength(0.05))
+        .force("y", d3.forceY(this.height / 2).strength(0.05));
 
     constructor(props) {
         super(props);
