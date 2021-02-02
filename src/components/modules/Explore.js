@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import * as d3 from "d3";
 
+import whatido from '../../data/whatido';
+
 class Explore extends Component {
     el = React.createRef();
   constructor(props) {
@@ -18,10 +20,34 @@ class Explore extends Component {
   }
 
   drawChart(svg) {
-    svg.append("circle").attr("r", 100);
-    let hierarchalData = this.makeHierarchy();
+    let hierarchalData = this.makeHierarchy(whatido);
     let packLayout = this.pack([400 - 5, 400 -5]);
-    packLayout(hierarchalData);
+    const root = packLayout(hierarchalData);
+
+    const leaf = svg.selectAll("g")
+        .data(root.leaves())
+        .join("g")
+        .attr("transform", d => `translate(${d.x + 1},${d.y + 1})`);
+
+    leaf.append("circle")
+        .attr("r", d => d.r)
+        .attr("fill-opacity", 0.7)
+        .attr("fill", "white");
+
+    // leaf.append("clipPath")
+    //     .append("use")
+    //     .attr("xlink:href", d => d.leafUid.href);
+
+    // leaf.append("text")
+    //     .attr("clip-path", d => d.clipUid)
+    //     .selectAll("tspan")
+    //     .data(d => d.data.name.split(/(?=[A-Z][a-z])|\s+/g))
+    //     .join("tspan")
+    //     .attr("x", 0)
+    //     .attr("y", (d, i, nodes) => `${i - nodes.length / 2 + 0.8}em`)
+    //     .text(d => d);
+
+    // leaf.append("title").text(d => `${d.data.title === undefined ? "" : `${d.data.title}`}${format(d.value)}`);
 
   }
 
