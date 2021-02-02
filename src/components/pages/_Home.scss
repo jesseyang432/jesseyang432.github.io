@@ -60,7 +60,7 @@
 .Home-intro-bio-container {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
+	justify-content: space-evenly;
 }
 
 .Home-intro-bio-image {
@@ -80,7 +80,9 @@
 
 .Home-intro-bio-description {
 	display: flex;
+	flex-flow: column wrap;
 	min-width: 50%;
-	align-items: center;
-	margin: 24px;
+	max-width: 65%;
+	justify-content: center;
+	margin: 24px 0 24px 24px;
 }
