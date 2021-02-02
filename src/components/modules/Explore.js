@@ -5,23 +5,28 @@ import whatido from '../../data/whatido';
 
 class Explore extends Component {
     el = React.createRef();
-  constructor(props) {
-    super(props);
-    this.state = {
-    };
-  }
+    width = 800;
+    height = 600;
+  
+    constructor(props) {
+        super(props);
+        this.state = {
+        };
+
+        this.data = whatido;
+    }
 
   createSVG() {
     return d3.select(this.el)
         .append("svg")
-        .attr("width", "400")
-        .attr("height", 400)
+        .attr("width", this.width)
+        .attr("height", this.height)
         .attr("style", "border: thin red solid");
   }
 
   drawChart(svg) {
-    let hierarchalData = this.makeHierarchy(whatido);
-    let packLayout = this.pack([400 - 5, 400 -5]);
+    let hierarchalData = this.makeHierarchy(this.data);
+    let packLayout = this.pack([this.width - 5, this.height -5]);
     const root = packLayout(hierarchalData);
 
     const leaf = svg.selectAll("g")
