@@ -75,8 +75,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -98,7 +100,6 @@
 }
 
 .Home-intro-bio-description {
-  background-color: #9b489b;
   border-radius: 16px;
   padding: 16px;
   display: -webkit-box;
@@ -108,8 +109,6 @@
   -webkit-box-direction: normal;
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
-  min-width: 50%;
-  max-width: 65%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -117,8 +116,12 @@
   font-size: 20px;
 }
 
+.Home-intro-bio-description p {
+  font-size: 20px;
+}
+
 .Home-intro-bio-description ul {
-  margin: 24px 0 0 24px;
+  margin: 12px 0 0 24px;
 }
 
 .Home-intro-bio-description ul li .first-word {
