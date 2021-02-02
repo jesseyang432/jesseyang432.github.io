@@ -8,6 +8,9 @@ class ExploreGenerator extends Component {
     width = 800;
     height = 600;
   
+    simulation = d3.forceSimulation()
+        .force("x", d3.forceX(this.width / 2).strength(0.005));
+
     constructor(props) {
         super(props);
         this.state = {
@@ -69,9 +72,6 @@ class ExploreGenerator extends Component {
     // let packLayout = this.pack([this.width - 5, this.height -5]);
     // const root = packLayout(hierarchalData);
 
-    // let simulation = d3.forceSimulation()
-    //     .force("x", d3.forceX(this.width / 2).strength(0.005));
-
     let circles = svg.selectAll("g")
         .data(this.data)
         .enter().append("circle")
@@ -79,6 +79,19 @@ class ExploreGenerator extends Component {
         .attr("fill", "white")
         .attr("cx", 100)
         .attr("cy", 300)
+
+    let ticked = () => {
+        circles
+            .attr("cx", (d) => {
+                return d.x
+            })
+            .attr("cy", (d) => {
+                return d.y
+            });
+    }
+
+    this.simulation.nodes(this.data)
+        .on('tick', ticked);
 
     // this.ready(svg, root);
 

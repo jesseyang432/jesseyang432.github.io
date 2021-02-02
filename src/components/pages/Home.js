@@ -27,6 +27,7 @@ class Home extends Component {
                 <LogoLoading></LogoLoading> :
                 <div className="Home-LogoLoading">
                     <Nav/>
+                    <ExploreGenerator/>
                     <div className="Home-intro">
                         <p>Hey! I'm</p>
                         <div className="Home-intro-info">
@@ -52,7 +53,6 @@ class Home extends Component {
                     </div>
 
                     <Explore/>
-                    <ExploreGenerator/>
                 </div>
             }
         </>
