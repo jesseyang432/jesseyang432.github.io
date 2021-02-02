@@ -48,6 +48,8 @@ class Home extends Component {
                             </div>
                         </div>
                     </div>
+
+                    hi
                 </div>
             }
         </>
