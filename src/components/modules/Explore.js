@@ -32,6 +32,11 @@ class Explore extends Component {
     .padding(3)
   }
 
+  makeHierarchy(data) {
+      d3.hierarchy({children: data})
+      .sum(d => d.value)
+  }
+
   render() {
     return (
         <>
