@@ -34,8 +34,13 @@ class Home extends Component {
                             <em>Aspiring Mathematics and Computer Science Major</em>
                         </div>
                         <SocialLinks/>
-                        <div className="Home-intro-image">
-                            <img src="/images/jesseyang.jpg" alt="Jesse Yang"/>
+                        <div className="Home-intro-bio-container">
+                            <div className="Home-intro-bio-image">
+                                <img src="/images/jesseyang.jpg" alt="Jesse Yang"/>
+                            </div>
+                            <div className="Home-intro-bio-description">
+                                I'm a freshman studying at the Massachusetts Institute of Technology!
+                            </div>
                         </div>
                     </div>
                 </div>
