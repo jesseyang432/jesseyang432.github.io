@@ -4,6 +4,15 @@ import * as d3 from "d3";
 import whatido from '../../data/whatido';
 
 class ExploreGenerator extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            status: "combined",
+        };
+
+        this.data = whatido;
+    }
+
     el = React.createRef();
     width = 800;
     height = 600;
@@ -11,7 +20,15 @@ class ExploreGenerator extends Component {
     radiusScale = d3.scaleSqrt().domain([1, 10]).range([10, 80]);
 
     forceX = d3.forceX((d) => {
-        return this.width/2
+        if (this.state.status === "combined") {
+            return this.width/2;
+        } else if (this.state.status === "separate") {
+            if (d.type === "software") {
+                return 200
+            } else {
+                return 600
+            }
+        }
     }).strength(0.05);
 
     forceCollide = d3.forceCollide((d) => {
@@ -22,14 +39,6 @@ class ExploreGenerator extends Component {
         .force("x", this.forceX)
         .force("y", d3.forceY(this.height / 2).strength(0.05))
         .force("collide", this.forceCollide);
-
-    constructor(props) {
-        super(props);
-        this.state = {
-        };
-
-        this.data = whatido;
-    }
 
   createSVG() {
     return d3.select(this.el)
@@ -87,6 +96,11 @@ class ExploreGenerator extends Component {
 
   }
 
+  toggleStatus = (event) => {
+      this.setState({status: event.target.value});
+  }
+
+
   componentDidMount = () => {
     let svg = this.createSVG();
     this.drawChart(svg);
@@ -96,8 +110,8 @@ class ExploreGenerator extends Component {
     return (
         <>
             <h1>Explore What I Do</h1>
-            <button id="type" onClick={() => {console.log("You clicked me")}}>Type split</button>
-            <button id="combine">Combine</button>
+            <button value="separate" id="type" onClick={this.toggleStatus}>Type split</button>
+            <button value="combined" id="combine" onClick={this.toggleStatus}>Combine</button>
             <div id="explore" ref={el => (this.el = el)}></div>
         </>
     );
