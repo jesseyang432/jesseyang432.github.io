@@ -98,6 +98,9 @@
 }
 
 .Home-intro-bio-description {
+  background-color: #9b489b;
+  border-radius: 16px;
+  padding: 16px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -111,6 +114,15 @@
       -ms-flex-pack: center;
           justify-content: center;
   margin: 24px 0 24px 24px;
+  font-size: 20px;
+}
+
+.Home-intro-bio-description ul {
+  margin: 24px 0 0 24px;
+}
+
+.Home-intro-bio-description ul li .first-word {
+  color: #00ffff;
 }
 
 .Nav-bar {

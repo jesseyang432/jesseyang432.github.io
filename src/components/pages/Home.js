@@ -41,11 +41,10 @@ class Home extends Component {
                             <div className="Home-intro-bio-description">
                                 <p>I'm a freshman from the Chicagoland area currently studying at MIT! I hope to</p>
                                 <ul>
-                                    <li>build something people can enjoy</li>
-                                    <li>learn something to help make the world a better place</li>
-                                    <li>write something people can relate to</li>
+                                    <li><span className="first-word">Build</span> something people can enjoy</li>
+                                    <li><span className="first-word">Learn</span> something to help make the world a better place</li>
+                                    <li><span className="first-word">Write</span> something people can relate to</li>
                                 </ul>
-                                <p> learn something to help make the world a better place, write something </p>
                             </div>
                         </div>
                     </div>

@@ -79,10 +79,22 @@
 }
 
 .Home-intro-bio-description {
+	background-color: #9b489b;
+	border-radius: 16px;
+	padding: 16px;
 	display: flex;
 	flex-flow: column wrap;
 	min-width: 50%;
 	max-width: 65%;
 	justify-content: center;
 	margin: 24px 0 24px 24px;
+	font-size: 20px;
+
+	ul {
+		margin: 24px 0 0 24px;
+
+		li .first-word {
+			color: #00ffff;
+		}
+	}
 }
