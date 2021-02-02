@@ -43,14 +43,16 @@ class Explore extends Component {
     //     .append("use")
     //     .attr("xlink:href", d => d.leafUid.href);
 
-    // leaf.append("text")
-    //     .attr("clip-path", d => d.clipUid)
-    //     .selectAll("tspan")
-    //     .data(d => d.data.name.split(/(?=[A-Z][a-z])|\s+/g))
-    //     .join("tspan")
-    //     .attr("x", 0)
-    //     .attr("y", (d, i, nodes) => `${i - nodes.length / 2 + 0.8}em`)
-    //     .text(d => d);
+    leaf.append("text")
+        .attr("clip-path", d => d.clipUid)
+        .selectAll("tspan")
+        .data(d => d.data.title.split(/(?=[A-Z][a-z])|\s+/g))
+        .join("tspan")
+        .attr("x", 0)
+        .attr("y", (d, i, nodes) => `${i - nodes.length / 2 + 0.8}em`)
+        .attr("text-anchor", "middle")
+        // .attr("alignment-baseline", "central")
+        .text(d => d);
 
     // leaf.append("title").text(d => `${d.data.title === undefined ? "" : `${d.data.title}`}${format(d.value)}`);
 
