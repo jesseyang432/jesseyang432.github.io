@@ -27,7 +27,7 @@
 	h1 {
 		font-size: 72px;
 		text-align: center;
-		color: $light-blue;
+		color: $aqua;
 	}
 
 	&::before,
@@ -73,7 +73,7 @@
 		transition: 0.5s;
 
 		&:hover {
-			border: solid $light-blue;
+			border: solid $aqua;
 		}
 	}
 }
@@ -94,7 +94,7 @@
 		margin: 24px 0 0 24px;
 
 		li .first-word {
-			color: $light-blue;
+			color: $aqua;
 		}
 	}
 }

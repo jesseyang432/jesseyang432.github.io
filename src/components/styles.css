@@ -42,7 +42,7 @@
 .Home-intro-info h1 {
   font-size: 72px;
   text-align: center;
-  color: #92b4f4;
+  color: #00ffff;
 }
 
 .Home-intro-info::before, .Home-intro-info::after {
@@ -94,7 +94,7 @@
 }
 
 .Home-intro-bio-image img:hover {
-  border: solid #92b4f4;
+  border: solid #00ffff;
 }
 
 .Home-intro-bio-description {
@@ -122,7 +122,7 @@
 }
 
 .Home-intro-bio-description ul li .first-word {
-  color: #92b4f4;
+  color: #00ffff;
 }
 
 .Nav-bar {
@@ -170,7 +170,7 @@
 }
 
 .Nav-links li a:hover {
-  color: #92b4f4;
+  color: #00ffff;
 }
 
 .LogoLoading-container {
@@ -486,7 +486,7 @@
 .SocialLinks-links a:hover {
   -webkit-transform: translateY(-8px);
           transform: translateY(-8px);
-  color: #92b4f4;
+  color: #00ffff;
 }
 
 * {
