@@ -75,8 +75,15 @@
   width: 240px;
   height: 240px;
   border-radius: 30%;
+  border: solid white;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.Home-intro-image img:hover {
+  border: solid #00ffff;
 }
 
 .Nav-bar {
