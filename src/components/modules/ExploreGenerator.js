@@ -7,10 +7,15 @@ class ExploreGenerator extends Component {
     el = React.createRef();
     width = 800;
     height = 600;
+
+    radiusScale = d3.scaleSqrt().domain([1, 10]).range([10, 80]);
   
     simulation = d3.forceSimulation()
         .force("x", d3.forceX(this.width / 2).strength(0.05))
-        .force("y", d3.forceY(this.height / 2).strength(0.05));
+        .force("y", d3.forceY(this.height / 2).strength(0.05))
+        .force("collide", d3.forceCollide((d) => {
+            return this.radiusScale(d.value) + 1;
+        }));
 
     constructor(props) {
         super(props);
@@ -73,13 +78,28 @@ class ExploreGenerator extends Component {
     // let packLayout = this.pack([this.width - 5, this.height -5]);
     // const root = packLayout(hierarchalData);
 
-    let circles = svg.selectAll("g")
+    let circles = svg.selectAll(".hi")
         .data(this.data)
         .enter().append("circle")
-        .attr("r", 10)
+        .attr("class", "hi")
+        .attr("r", (d) => {
+            return this.radiusScale(d.value);
+        })
         .attr("fill", "white")
         .attr("cx", 100)
         .attr("cy", 300)
+
+    let labels = svg.selectAll(".labels")
+        .data(this.data)
+        .enter().append("text")
+        .attr("class", "label")
+        .attr("text-anchor", "middle")
+        .attr("alignment-baseline", "central")
+        .attr("fill", "black")
+        .attr("font-size", "12px")
+        .text((d) => {
+            return d.title;
+        });
 
     let ticked = () => {
         circles
@@ -87,6 +107,14 @@ class ExploreGenerator extends Component {
                 return d.x
             })
             .attr("cy", (d) => {
+                return d.y
+            });
+
+        labels
+            .attr("x", (d) => {
+                return d.x
+            })
+            .attr("y", (d) => {
                 return d.y
             });
     }
