@@ -19,22 +19,26 @@ class Explore extends Component {
 
   drawChart(svg) {
     svg.append("circle").attr("r", 100);
+    let hierarchalData = this.makeHierarchy();
+    let packLayout = this.pack([400 - 5, 400 -5]);
+    packLayout(hierarchalData);
+
+  }
+
+  pack(size) {
+    return d3.pack()
+    .size(size)
+    .padding(3);
+  }
+
+  makeHierarchy(data) {
+      return d3.hierarchy({children: data})
+      .sum(d => d.value);
   }
 
   componentDidMount = () => {
     let svg = this.createSVG();
     this.drawChart(svg);
-  }
-
-  pack(data, size) {
-    return d3.pack()
-    .size(size)
-    .padding(3)
-  }
-
-  makeHierarchy(data) {
-      d3.hierarchy({children: data})
-      .sum(d => d.value)
   }
 
   render() {
