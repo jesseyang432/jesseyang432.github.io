@@ -24,11 +24,7 @@ class ExploreGenerator extends Component {
         .attr("style", "border: thin red solid");
   }
 
-  drawChart(svg) {
-    let hierarchalData = this.makeHierarchy(this.data);
-    let packLayout = this.pack([this.width - 5, this.height -5]);
-    const root = packLayout(hierarchalData);
-
+  ready(svg, root) {
     const leaf = svg.selectAll("g")
         .data(root.leaves())
         .join("g")
@@ -53,6 +49,40 @@ class ExploreGenerator extends Component {
         .attr("text-anchor", "middle")
         // .attr("alignment-baseline", "central")
         .text(d => d);
+
+    let ticked = () => {
+        leaf
+            .attr("x", (d) => {
+                return d.x
+            })
+            .attr("y", (d) => {
+                return d.y
+            });
+    }
+
+    this.simulation.nodes(root.leaves())
+        .on('tick', ticked);
+  }
+
+  drawChart(svg) {
+    // let hierarchalData = this.makeHierarchy(this.data);
+    // let packLayout = this.pack([this.width - 5, this.height -5]);
+    // const root = packLayout(hierarchalData);
+
+    // let simulation = d3.forceSimulation()
+    //     .force("x", d3.forceX(this.width / 2).strength(0.005));
+
+    let circles = svg.selectAll("g")
+        .data(this.data)
+        .enter().append("circle")
+        .attr("r", 10)
+        .attr("fill", "white")
+        .attr("cx", 100)
+        .attr("cy", 300)
+
+    // this.ready(svg, root);
+
+    
 
     // leaf.append("title").text(d => `${d.data.title === undefined ? "" : `${d.data.title}`}${format(d.value)}`);
 
