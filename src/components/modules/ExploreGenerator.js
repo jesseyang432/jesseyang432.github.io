@@ -9,13 +9,19 @@ class ExploreGenerator extends Component {
     height = 600;
 
     radiusScale = d3.scaleSqrt().domain([1, 10]).range([10, 80]);
+
+    forceX = d3.forceX((d) => {
+        return this.width/2
+    }).strength(0.05);
+
+    forceCollide = d3.forceCollide((d) => {
+        return this.radiusScale(d.value) + 1
+    });
   
     simulation = d3.forceSimulation()
-        .force("x", d3.forceX(this.width / 2).strength(0.05))
+        .force("x", this.forceX)
         .force("y", d3.forceY(this.height / 2).strength(0.05))
-        .force("collide", d3.forceCollide((d) => {
-            return this.radiusScale(d.value) + 1;
-        }));
+        .force("collide", this.forceCollide);
 
     constructor(props) {
         super(props);
@@ -90,6 +96,8 @@ class ExploreGenerator extends Component {
     return (
         <>
             <h1>Explore What I Do</h1>
+            <button id="type" onClick={() => {console.log("You clicked me")}}>Type split</button>
+            <button id="combine">Combine</button>
             <div id="explore" ref={el => (this.el = el)}></div>
         </>
     );
