@@ -16,8 +16,6 @@ class ExploreGenerator extends Component {
     width = 800;
     height = 600;
 
-    status = "combined";
-
     radiusScale = d3.scaleSqrt().domain([1, 10]).range([10, 80]);
 
     forceXCombine = d3.forceX((d) => {
@@ -133,8 +131,8 @@ class ExploreGenerator extends Component {
     return (
         <>
             <h1>Explore What I Do</h1>
-            <button value="separate" id="type" onClick={() => this.toggleStatus("separate")}>Type split</button>
-            <button value="combined" id="combine" onClick={() => this.toggleStatus("combined")}>Combine</button>
+            <button id="type" onClick={() => this.toggleStatus("separate")}>Type split</button>
+            <button id="combine" onClick={() => this.toggleStatus("combined")}>Combine</button>
             <div id="explore" ref={el => (this.el = el)}></div>
         </>
     );
