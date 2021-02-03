@@ -7,7 +7,6 @@ class ExploreGenerator extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            status: "combined",
         };
 
         this.data = whatido;
@@ -17,26 +16,40 @@ class ExploreGenerator extends Component {
     width = 800;
     height = 600;
 
+    status = "combined";
+
     radiusScale = d3.scaleSqrt().domain([1, 10]).range([10, 80]);
 
-    forceX = d3.forceX((d) => {
-        if (this.state.status === "combined") {
-            return this.width/2;
-        } else if (this.state.status === "separate") {
-            if (d.type === "software") {
-                return 200
-            } else {
-                return 600
-            }
+    forceXCombine = d3.forceX((d) => {
+        return this.width/2;
+    }).strength(0.05);
+
+    forceXSeparate = d3.forceX((d) => {
+        if (d.type === "software") {
+            return 150
+        } else {
+            return 650
         }
     }).strength(0.05);
+
+    // forceX = d3.forceX((d) => {
+    //     if (this.status === "combined") {
+    //         return this.width/2;
+    //     } else if (this.status === "separate") {
+    //         if (d.type === "software") {
+    //             return 150
+    //         } else {
+    //             return 650
+    //         }
+    //     }
+    // }).strength(0.05);
 
     forceCollide = d3.forceCollide((d) => {
         return this.radiusScale(d.value) + 1
     });
   
     simulation = d3.forceSimulation()
-        .force("x", this.forceX)
+        .force("x", this.forceXCombine)
         .force("y", d3.forceY(this.height / 2).strength(0.05))
         .force("collide", this.forceCollide);
 
@@ -96,8 +109,18 @@ class ExploreGenerator extends Component {
 
   }
 
-  toggleStatus = (event) => {
-      this.setState({status: event.target.value});
+  toggleStatus = (value) => {
+      if (value === "separate") {
+        this.simulation
+        .force("x", this.forceXSeparate)
+        .alphaTarget(0.5)
+        .restart();
+      } else if (value === "combined") {
+        this.simulation
+        .force("x", this.forceXCombine)
+        .alphaTarget(0.5)
+        .restart();
+      }
   }
 
 
@@ -110,8 +133,8 @@ class ExploreGenerator extends Component {
     return (
         <>
             <h1>Explore What I Do</h1>
-            <button value="separate" id="type" onClick={this.toggleStatus}>Type split</button>
-            <button value="combined" id="combine" onClick={this.toggleStatus}>Combine</button>
+            <button value="separate" id="type" onClick={() => this.toggleStatus("separate")}>Type split</button>
+            <button value="combined" id="combine" onClick={() => this.toggleStatus("combined")}>Combine</button>
             <div id="explore" ref={el => (this.el = el)}></div>
         </>
     );
