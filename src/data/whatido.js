@@ -13,7 +13,12 @@ const whatido = [
         title: "Quick Maths",
         value: "7",
         type: "math",
-    }
+    },
+    {
+        title: "Python",
+        value: "6",
+        type: "software",
+    },
 ];
 
 export default whatido;
