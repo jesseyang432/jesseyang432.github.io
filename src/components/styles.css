@@ -41,45 +41,6 @@
   text-align: center;
 }
 
-.Home-intro-info {
-  width: 80%;
-  position: relative;
-}
-
-.Home-intro-info h1 {
-  font-size: 96px;
-  text-align: center;
-  color: #00ffff;
-  font-weight: 700;
-  font-family: "Arizonia", cursive;
-}
-
-.Home-intro-info::before, .Home-intro-info::after {
-  content: "";
-  position: absolute;
-  width: 20%;
-  height: 3px;
-  background: white;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-
-.Home-intro-info::before {
-  left: 0;
-}
-
-.Home-intro-info::after {
-  right: 0;
-}
-
-.Home-intro-descriptor {
-  width: 100%;
-  font-size: 20px;
-  text-align: center;
-  margin-top: 24px;
-}
-
 .Home-bio-container {
   width: 70%;
   margin: auto;
@@ -557,6 +518,45 @@
 
 .Home-bio-description ul li .first-word {
   color: #00ffff;
+}
+
+.Home-intro-info {
+  width: 80%;
+  position: relative;
+}
+
+.Home-intro-info h1 {
+  font-size: 96px;
+  text-align: center;
+  color: #00ffff;
+  font-weight: 700;
+  font-family: "Arizonia", cursive;
+}
+
+.Home-intro-info::before, .Home-intro-info::after {
+  content: "";
+  position: absolute;
+  width: 20%;
+  height: 3px;
+  background: white;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.Home-intro-info::before {
+  left: 0;
+}
+
+.Home-intro-info::after {
+  right: 0;
+}
+
+.Home-intro-descriptor {
+  width: 100%;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 24px;
 }
 
 * {

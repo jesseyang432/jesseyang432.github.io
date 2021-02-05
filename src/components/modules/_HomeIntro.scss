@@ -1,0 +1,38 @@
+.Home-intro-info {
+	width: 80%;
+	position: relative;
+
+	h1 {
+		font-size: 96px;
+		text-align: center;
+		color: $aqua;
+		font-weight: 700;
+		font-family: "Arizonia", cursive;
+	}
+
+	&::before,
+	&::after {
+		content: "";
+		position: absolute;
+		width: 20%;
+		height: 3px;
+		background: white;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	&::before {
+		left: 0;
+	}
+
+	&::after {
+		right: 0;
+	}
+}
+
+.Home-intro-descriptor {
+	width: 100%;
+	font-size: 20px;
+	text-align: center;
+	margin-top: 24px;
+}

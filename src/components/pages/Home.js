@@ -4,6 +4,7 @@ import Nav from '../modules/Nav';
 import SocialLinks from '../modules/SocialLinks';
 import Explore from '../modules/Explore';
 import HomeBio from '../modules/HomeBio';
+import HomeIntro from '../modules/HomeIntro';
 
 class Home extends Component {
   constructor(props) {
@@ -28,14 +29,7 @@ class Home extends Component {
                 <div className="Home-LogoLoading">
                     <Nav/>
                     <div className="Home-intro">
-                        <p>Hey! I'm</p>
-                        <div className="Home-intro-info">
-                            <h1><em>Jesse Yang</em></h1>
-                        </div>
-                        <div className="Home-intro-descriptor">
-                            <em>Aspiring Mathematics and Computer Science Major</em>
-                        </div>
-                        <SocialLinks/>
+                        <HomeIntro/>
                     </div>
                     <div className="Home-bio-container">
                         <HomeBio/>
