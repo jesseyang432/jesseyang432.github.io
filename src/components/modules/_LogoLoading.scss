@@ -6,7 +6,8 @@
 	top: 0;
 	left: 0;
 	position: absolute;
-	background-color: $dark-blue;
+	background: linear-gradient($purpureus, $dark-blue);
+	// background-color: $dark-blue;
 	animation: LogoLoading-bg-disappear-anim 1s ease 4.5s;
 	animation-fill-mode: forwards;
 }
