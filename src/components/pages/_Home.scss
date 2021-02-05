@@ -1,6 +1,12 @@
 .Home-PageContainer {
-	height: 100vh;
-	animation: Home-page-load ease 5s;
+	animation: Home-page-load ease 5s, Home-height-load ease 20s;
+	animation-fill-mode: forwards;
+	background: repeating-linear-gradient(
+		$purpureus,
+		$dark-blue 100vh,
+		$dark-blue 100vh,
+		$purpureus 200vh
+	);
 }
 
 .Home-title {
@@ -10,7 +16,7 @@
 }
 
 .Home-intro-container {
-	background-image: linear-gradient($purpureus, $dark-blue);
+	// background-image: linear-gradient($purpureus, $dark-blue);
 	transform: translateY(-80px);
 	height: 90vh;
 }
@@ -23,11 +29,11 @@
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-evenly;
-	background-image: linear-gradient($dark-blue, $purpureus);
+	// background-image: linear-gradient($dark-blue, $purpureus);
 }
 
 .Home-explore-container {
-	background-image: linear-gradient($purpureus, $dark-blue);
+	// background-image: linear-gradient($purpureus, $dark-blue);
 }
 
 @keyframes Home-page-load {
@@ -36,5 +42,14 @@
 	}
 	to {
 		overflow-y: auto;
+	}
+}
+
+@keyframes Home-height-load {
+	from {
+		height: 100vh;
+	}
+	to {
+		height: auto;
 	}
 }

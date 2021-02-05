@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&family=Arizonia&family=Great+Vibes&family=Yellowtail&display=swap");
 .Home-PageContainer {
-  height: 100vh;
-  -webkit-animation: Home-page-load ease 5s;
-          animation: Home-page-load ease 5s;
+  -webkit-animation: Home-page-load ease 5s, Home-height-load ease 20s;
+          animation: Home-page-load ease 5s, Home-height-load ease 20s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  background: repeating-linear-gradient(#9b489b, #000350 100vh, #000350 100vh, #9b489b 200vh);
 }
 
 .Home-title {
@@ -19,8 +21,6 @@
 }
 
 .Home-intro-container {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#9b489b), to(#000350));
-  background-image: linear-gradient(#9b489b, #000350);
   -webkit-transform: translateY(-80px);
           transform: translateY(-80px);
   height: 90vh;
@@ -41,13 +41,6 @@
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#000350), to(#9b489b));
-  background-image: linear-gradient(#000350, #9b489b);
-}
-
-.Home-explore-container {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#9b489b), to(#000350));
-  background-image: linear-gradient(#9b489b, #000350);
 }
 
 @-webkit-keyframes Home-page-load {
@@ -65,6 +58,24 @@
   }
   to {
     overflow-y: auto;
+  }
+}
+
+@-webkit-keyframes Home-height-load {
+  from {
+    height: 100vh;
+  }
+  to {
+    height: auto;
+  }
+}
+
+@keyframes Home-height-load {
+  from {
+    height: 100vh;
+  }
+  to {
+    height: auto;
   }
 }
 
@@ -454,8 +465,7 @@
 
 .Explore-button-aisle {
   max-width: 80%;
-  margin: auto;
-  margin-bottom: 20px;
+  margin: 20px auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
