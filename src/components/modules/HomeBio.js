@@ -1,17 +1,47 @@
-import React, {Component} from 'react';
+import React, {useRef, useState, useEffect} from 'react';
+import {useIntersection} from 'react-use';
 
-class HomeBio extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
+import gsap from 'gsap';
 
-    }
-  }
+function HomeBio() {
 
-  render() {
+    const sectionRef = useRef(null);
+    const intersection = useIntersection(sectionRef, {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.5
+    });
+
+    const fadeIn = (element) => {
+        gsap.to(element, {
+            duration: 1,
+            opacity: 1,
+            y: -40,
+            ease: 'power4.out',
+            stagger: {
+                amount: .3
+            }
+        });
+    };
+
+    const fadeOut = (element) => {
+        gsap.to(element, {
+            duration: 1,
+            opacity: 0,
+            y: -20,
+            ease: 'power4.out',
+            stagger: {
+                amount: .3
+            }
+        });
+    };
+
+    intersection && intersection.intersectionRatio < 0.5 ?
+    fadeOut(".fadeIn") :
+    fadeIn(".fadeIn");
+
     return (
-        <>
-            <div className="Home-bio-info">
+        <div className="Home-bio-info">
                 <div className="Home-bio-image">
                     <div id="Home-bio-image-hover" className="Home-bio-image-text">
                         <p><strong>From: Chicago, IL</strong></p>
@@ -28,10 +58,7 @@ class HomeBio extends Component {
                     </ul>
                 </div>
             </div>
-        </>
-
     );
-  }
 }
 
 export default HomeBio;
