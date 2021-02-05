@@ -452,6 +452,30 @@
   font-family: "Arizonia", cursive;
 }
 
+.Explore-button-aisle {
+  max-width: 80%;
+  margin: auto;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.Explore-button-aisle button {
+  cursor: pointer;
+  font-size: 20px;
+  font-family: "Alegreya", "serif";
+  padding: 5px 10px;
+  outline: none;
+  background-color: #000350;
+  color: white;
+  border-radius: 10px;
+  border: none;
+}
+
 #explore {
   display: -webkit-box;
   display: -ms-flexbox;
