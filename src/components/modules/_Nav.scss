@@ -1,15 +1,19 @@
 .Nav-bar {
-	height: 64px;
-	border-bottom: solid white;
-	display: flex;
+	height: 80px;
+	// border-bottom: solid white;
+	top: 0;
+	position: sticky;
 	background-color: $purpureus;
+	// background-color: rgba(155, 72, 155, 0.95);
+	z-index: 3;
 }
 
 .Nav-logo {
 	width: 40%;
+	height: 100%;
 	display: flex;
+	float: left;
 	align-items: center;
-
 	a {
 		margin-left: 36px;
 	}
@@ -19,6 +23,7 @@
 	width: 60%;
 	height: 100%;
 	display: flex;
+	float: right;
 	list-style: none;
 	justify-content: space-around;
 	align-items: center;
