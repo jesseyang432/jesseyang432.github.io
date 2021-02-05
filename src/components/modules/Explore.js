@@ -56,15 +56,16 @@ class Explore extends Component {
         .append("svg")
         .attr("width", this.width)
         .attr("height", this.height)
-        .attr("style", "border: thin red solid");
+        .attr("style", "border: thin red solid")
+        .attr("border-radius", "50%");
   }
 
   drawChart(svg) {
 
-    let circles = svg.selectAll(".hi")
+    let circles = svg.selectAll(".circles")
         .data(this.data)
         .enter().append("circle")
-        .attr("class", "hi")
+        .attr("class", "circles")
         .attr("r", (d) => {
             return this.radiusScale(d.value);
         })

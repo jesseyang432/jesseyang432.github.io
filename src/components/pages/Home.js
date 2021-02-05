@@ -35,18 +35,18 @@ class Home extends Component {
                             <em>Aspiring Mathematics and Computer Science Major</em>
                         </div>
                         <SocialLinks/>
-                        <div className="Home-intro-bio-container">
-                            <div className="Home-intro-bio-image">
-                                <img src="/images/jesseyang.jpg" alt="Jesse Yang"/>
-                            </div>
-                            <div className="Home-intro-bio-description">
-                                <p>I'm a freshman from the Chicagoland area currently studying at MIT! I hope to</p>
-                                <ul>
-                                    <li><span className="first-word">Build</span> something people can enjoy</li>
-                                    <li><span className="first-word">Learn</span> something to help make the world a better place</li>
-                                    <li><span className="first-word">Write</span> something people can relate to</li>
-                                </ul>
-                            </div>
+                    </div>
+                    <div className="Home-bio-container">
+                        <div className="Home-bio-image">
+                            <img src="/images/jesseyang.jpg" alt="Jesse Yang"/>
+                        </div>
+                        <div className="Home-bio-description">
+                            <p>I'm a freshman from the Chicagoland area currently studying at MIT! I hope to</p>
+                            <ul>
+                                <li><span className="first-word">Build</span> something people can enjoy</li>
+                                <li><span className="first-word">Learn</span> something to help make the world a better place</li>
+                                <li><span className="first-word">Write</span> something people can relate to</li>
+                            </ul>
                         </div>
                     </div>
                     <div className="Home-explore">

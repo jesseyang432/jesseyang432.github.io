@@ -71,7 +71,10 @@
   margin-top: 12px;
 }
 
-.Home-intro-bio-container {
+.Home-bio-container {
+  width: 80%;
+  margin: auto;
+  color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -84,7 +87,7 @@
           justify-content: space-evenly;
 }
 
-.Home-intro-bio-image img {
+.Home-bio-image img {
   width: 240px;
   height: 240px;
   border-radius: 30%;
@@ -95,12 +98,11 @@
   transition: 0.5s;
 }
 
-.Home-intro-bio-image img:hover {
+.Home-bio-image img:hover {
   border: solid #00ffff;
 }
 
-.Home-intro-bio-description {
-  border-radius: 16px;
+.Home-bio-description {
   padding: 16px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -114,17 +116,18 @@
           justify-content: center;
   margin: 24px 0 24px 24px;
   font-size: 20px;
+  max-width: 60%;
 }
 
-.Home-intro-bio-description p {
+.Home-bio-description p {
   font-size: 20px;
 }
 
-.Home-intro-bio-description ul {
+.Home-bio-description ul {
   margin: 12px 0 0 24px;
 }
 
-.Home-intro-bio-description ul li .first-word {
+.Home-bio-description ul li .first-word {
   color: #00ffff;
 }
 

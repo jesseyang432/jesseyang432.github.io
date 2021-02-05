@@ -57,13 +57,16 @@
 	margin-top: 12px;
 }
 
-.Home-intro-bio-container {
+.Home-bio-container {
+	width: 80%;
+	margin: auto;
+	color: white;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-evenly;
 }
 
-.Home-intro-bio-image {
+.Home-bio-image {
 	img {
 		width: 240px;
 		height: 240px;
@@ -78,14 +81,15 @@
 	}
 }
 
-.Home-intro-bio-description {
-	border-radius: 16px;
+.Home-bio-description {
+	// border-radius: 16px;
 	padding: 16px;
 	display: flex;
 	flex-flow: column wrap;
 	justify-content: center;
 	margin: 24px 0 24px 24px;
 	font-size: 20px;
+	max-width: 60%;
 
 	p {
 		font-size: 20px;
