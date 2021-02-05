@@ -74,12 +74,17 @@
 	position: relative;
 
 	.Home-bio-image-text {
+		text-align: center;
+		width: 100%;
 		font-size: 20px;
 		position: absolute;
-		top: 50%;
+		top: 80%;
 		left: 50%;
 		transform: translate(-50%, -50%);
 		z-index: 2;
+		visibility: hidden;
+		opacity: 0;
+		transition: 0.5s;
 	}
 
 	img {
@@ -89,10 +94,17 @@
 		border: solid white;
 		object-fit: cover;
 		transition: 0.5s;
+	}
 
-		&:hover {
+	&:hover {
+		img {
 			border: solid $aqua;
-			filter: grayscale(80%);
+			filter: grayscale(100%);
+		}
+
+		.Home-bio-image-text {
+			opacity: 1;
+			visibility: visible;
 		}
 	}
 }

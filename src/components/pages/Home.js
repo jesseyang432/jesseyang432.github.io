@@ -38,13 +38,14 @@ class Home extends Component {
                     </div>
                     <div className="Home-bio-container">
                         <div className="Home-bio-image">
-                            <div className="Home-bio-image-text">
-                                Hi
+                            <div id="Home-bio-image-hover" className="Home-bio-image-text">
+                                <p><strong>From: Chicago, IL</strong></p>
+                                <p><strong>Age: 18</strong></p>
                             </div>
                             <img src="/images/jesseyang.jpg" alt="Jesse Yang"/>
                         </div>
                         <div className="Home-bio-description">
-                            <p>I'm a freshman from the Chicagoland area currently studying at MIT! I hope to</p>
+                            <p>I'm an MIT freshman hoping to</p>
                             <ul>
                                 <li><span className="first-word">Build</span> something people can enjoy</li>
                                 <li><span className="first-word">Learn</span> something to help make the world a better place</li>
