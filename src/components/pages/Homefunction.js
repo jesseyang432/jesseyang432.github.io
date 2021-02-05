@@ -54,7 +54,7 @@ function Homefunction() {
                     <div className="Home-intro-container">
                         <HomeIntro/>
                     </div>
-                    <div ref={sectionRef} className="Home-bio-container fadeIn">
+                    <div ref={sectionRef} className="Home-bio-container">
                         <HomeBio/>
                     </div>
                     <div className="Home-explore-container">
