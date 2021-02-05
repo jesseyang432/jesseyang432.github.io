@@ -1,8 +1,9 @@
 .Nav-bar {
 	height: 80px;
 	// border-bottom: solid white;
+	width: 100%;
 	top: 0;
-	position: sticky;
+	position: fixed;
 	// background-color: $purpureus;
 	// background-color: rgba(155, 72, 155, 0.95);
 	z-index: 3;

@@ -21,8 +21,6 @@
 }
 
 .Home-intro-container {
-  -webkit-transform: translateY(-80px);
-          transform: translateY(-80px);
   height: 90vh;
 }
 
@@ -41,6 +39,10 @@
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+}
+
+.Home-explore-container {
+  padding-bottom: 15vh;
 }
 
 @-webkit-keyframes Home-page-load {
@@ -81,9 +83,9 @@
 
 .Nav-bar {
   height: 80px;
+  width: 100%;
   top: 0;
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   z-index: 3;
 }
 
@@ -451,48 +453,72 @@
   color: #f6bdd1;
 }
 
-.Explore-container {
-  max-width: 80%;
+.Home-intro {
+  padding-top: 24px;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translateY(5vh);
+          transform: translateY(5vh);
   margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: white;
 }
 
-.Explore-container h1 {
-  font-size: 72px;
+.Home-intro p {
+  width: 100%;
+  font-size: 20px;
+  text-align: center;
+}
+
+.Home-intro-info {
+  width: 80%;
+  position: relative;
+}
+
+.Home-intro-info h1 {
+  font-size: 96px;
+  text-align: center;
+  color: #00ffff;
   font-weight: 700;
   font-family: "Arizonia", cursive;
 }
 
-.Explore-button-aisle {
-  max-width: 80%;
-  margin: 20px auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.Home-intro-info::before, .Home-intro-info::after {
+  content: "";
+  position: absolute;
+  width: 20%;
+  height: 3px;
+  background: #00ffff;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
-.Explore-button-aisle button {
-  cursor: pointer;
+.Home-intro-info::before {
+  left: 0;
+}
+
+.Home-intro-info::after {
+  right: 0;
+}
+
+.Home-intro-descriptor {
+  width: 100%;
   font-size: 20px;
-  font-family: "Alegreya", "serif";
-  padding: 5px 10px;
-  outline: none;
-  background-color: #000350;
-  color: white;
-  border-radius: 10px;
-  border: none;
-}
-
-#explore {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  text-align: center;
+  margin-top: 24px;
 }
 
 .Home-bio-info {
@@ -584,72 +610,67 @@
   color: #00ffff;
 }
 
-.Home-intro {
-  padding-top: 24px;
-  width: 100%;
-  height: 100%;
-  -webkit-transform: translateY(5vh);
-          transform: translateY(5vh);
+.Explore-container {
+  max-width: 80%;
   margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   color: white;
 }
 
-.Home-intro p {
-  width: 100%;
-  font-size: 20px;
-  text-align: center;
-}
-
-.Home-intro-info {
-  width: 80%;
-  position: relative;
-}
-
-.Home-intro-info h1 {
-  font-size: 96px;
-  text-align: center;
-  color: #00ffff;
+.Explore-container h1 {
+  font-size: 72px;
   font-weight: 700;
   font-family: "Arizonia", cursive;
 }
 
-.Home-intro-info::before, .Home-intro-info::after {
-  content: "";
-  position: absolute;
-  width: 20%;
-  height: 3px;
-  background: #00ffff;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+.Explore-button-aisle {
+  max-width: 80%;
+  margin: 20px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.Home-intro-info::before {
-  left: 0;
-}
-
-.Home-intro-info::after {
-  right: 0;
-}
-
-.Home-intro-descriptor {
-  width: 100%;
+.Explore-button-aisle button {
+  cursor: pointer;
   font-size: 20px;
-  text-align: center;
-  margin-top: 24px;
+  font-family: "Alegreya", "serif";
+  padding: 5px 10px;
+  outline: none;
+  background-color: #000350;
+  color: white;
+  border-radius: 10px;
+  border: none;
+}
+
+#explore {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.HomeProjects-container {
+  max-width: 80%;
+  margin: auto;
+  color: white;
+}
+
+.HomeProjects-container h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-size: 72px;
+  font-weight: 700;
+  font-family: "Arizonia", cursive;
 }
 
 * {
