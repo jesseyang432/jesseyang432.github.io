@@ -23,6 +23,7 @@
   background-image: linear-gradient(#9b489b, #000350);
   -webkit-transform: translateY(-80px);
           transform: translateY(-80px);
+  height: 90vh;
 }
 
 .Home-bio-container {
@@ -530,7 +531,9 @@
 .Home-intro {
   padding-top: 24px;
   width: 100%;
-  height: 100vh;
+  height: 100%;
+  -webkit-transform: translateY(5vh);
+          transform: translateY(5vh);
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
