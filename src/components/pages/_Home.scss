@@ -25,9 +25,11 @@
 	position: relative;
 
 	h1 {
-		font-size: 72px;
+		font-size: 96px;
 		text-align: center;
 		color: $aqua;
+		font-weight: 700;
+		font-family: "Yellowtail", cursive;
 	}
 
 	&::before,
@@ -52,7 +54,7 @@
 
 .Home-intro-descriptor {
 	width: 100%;
-	font-size: 16px;
+	font-size: 24px;
 	text-align: center;
 	margin-top: 12px;
 }

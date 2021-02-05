@@ -29,7 +29,7 @@ class Home extends Component {
                     <div className="Home-intro">
                         <p>Hey! I'm</p>
                         <div className="Home-intro-info">
-                            <h1>Jesse Yang</h1>
+                            <h1><em>Jesse Yang</em></h1>
                         </div>
                         <div className="Home-intro-descriptor">
                             <em>Aspiring Mathematics and Computer Science Major</em>

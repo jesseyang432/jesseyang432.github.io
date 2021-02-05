@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&family=Kaushan+Script&family=Yellowtail&display=swap");
 .Home-title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -41,9 +42,11 @@
 }
 
 .Home-intro-info h1 {
-  font-size: 72px;
+  font-size: 96px;
   text-align: center;
   color: #00ffff;
+  font-weight: 700;
+  font-family: "Yellowtail", cursive;
 }
 
 .Home-intro-info::before, .Home-intro-info::after {
@@ -67,7 +70,7 @@
 
 .Home-intro-descriptor {
   width: 100%;
-  font-size: 16px;
+  font-size: 24px;
   text-align: center;
   margin-top: 12px;
 }
@@ -188,7 +191,7 @@
   top: 0;
   left: 0;
   position: absolute;
-  background-color: #000540;
+  background-color: #000350;
   -webkit-animation: LogoLoading-bg-disappear-anim 1s ease 4.5s;
           animation: LogoLoading-bg-disappear-anim 1s ease 4.5s;
   -webkit-animation-fill-mode: forwards;
@@ -406,7 +409,7 @@
 
 @-webkit-keyframes LogoLoading-bg-disappear-anim {
   from {
-    background-color: #000540;
+    background-color: #000350;
   }
   to {
     background-color: transparent;
@@ -415,7 +418,7 @@
 
 @keyframes LogoLoading-bg-disappear-anim {
   from {
-    background-color: #000540;
+    background-color: #000350;
   }
   to {
     background-color: transparent;
@@ -511,7 +514,7 @@
 }
 
 body {
-  background-color: #000540;
+  background-color: #000350;
   font-family: "Alegreya", "serif";
 }
 /*# sourceMappingURL=styles.css.map */
