@@ -1,7 +1,7 @@
 .Home-intro {
 	padding-top: 24px;
 	width: 100%;
-	height: calc(100vh - 80px);
+	height: 100vh;
 	margin: auto;
 	display: flex;
 	flex-flow: column wrap;
@@ -9,7 +9,6 @@
 	align-items: center;
 	color: white;
 	// background-image: linear-gradient($purpureus, $dark-blue);
-	transform: translateY(-40px);
 
 	p {
 		width: 100%;

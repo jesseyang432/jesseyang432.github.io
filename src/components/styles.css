@@ -15,6 +15,8 @@
 .Home-intro-container {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#9b489b), to(#000350));
   background-image: linear-gradient(#9b489b, #000350);
+  -webkit-transform: translateY(-80px);
+          transform: translateY(-80px);
 }
 
 .Home-bio-container {
@@ -38,7 +40,6 @@
   top: 0;
   position: -webkit-sticky;
   position: sticky;
-  background-color: #9b489b;
   z-index: 3;
 }
 
@@ -504,7 +505,7 @@
 .Home-intro {
   padding-top: 24px;
   width: 100%;
-  height: calc(100vh - 80px);
+  height: 100vh;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -520,8 +521,6 @@
       -ms-flex-align: center;
           align-items: center;
   color: white;
-  -webkit-transform: translateY(-40px);
-          transform: translateY(-40px);
 }
 
 .Home-intro p {

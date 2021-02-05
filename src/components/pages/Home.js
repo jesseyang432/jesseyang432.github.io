@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import LogoLoading from '../modules/LogoLoading';
 import Nav from '../modules/Nav';
-import SocialLinks from '../modules/SocialLinks';
 import Explore from '../modules/Explore';
 import HomeBio from '../modules/HomeBio';
 import HomeIntro from '../modules/HomeIntro';
