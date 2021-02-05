@@ -60,12 +60,19 @@
 }
 
 .Home-bio-container {
-	width: 80%;
+	width: 70%;
 	margin: auto;
 	color: white;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-evenly;
+}
+
+.Home-bio-info {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-flow: row wrap;
 }
 
 .Home-bio-image {

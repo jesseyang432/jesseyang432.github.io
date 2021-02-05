@@ -75,7 +75,7 @@
 }
 
 .Home-bio-container {
-  width: 80%;
+  width: 70%;
   margin: auto;
   color: white;
   display: -webkit-box;
@@ -88,6 +88,20 @@
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+}
+
+.Home-bio-info {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
 }
 
 .Home-bio-image {
