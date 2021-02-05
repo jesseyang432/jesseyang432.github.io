@@ -11,7 +11,7 @@ class HomeBio extends Component {
   render() {
     return (
         <>
-            <div className="Home-bio-info">
+            <div className="Home-bio-info fadeIn">
                 <div className="Home-bio-image">
                     <div id="Home-bio-image-hover" className="Home-bio-image-text">
                         <p><strong>From: Chicago, IL</strong></p>

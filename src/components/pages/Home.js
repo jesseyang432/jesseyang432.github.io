@@ -1,9 +1,12 @@
-import React, {Component} from 'react';
+import React, {Component, useRef} from 'react';
+import {useIntersection} from 'react-use';
 import LogoLoading from '../modules/LogoLoading';
 import Nav from '../modules/Nav';
 import Explore from '../modules/Explore';
 import HomeBio from '../modules/HomeBio';
 import HomeIntro from '../modules/HomeIntro';
+
+import gsap from 'gsap';
 
 class Home extends Component {
   constructor(props) {
@@ -13,10 +16,20 @@ class Home extends Component {
     };
   }
 
+
+
   componentDidMount = () => {
     setTimeout(() => {
         this.setState({loading: false});
     }, 5000);
+
+    // sectionRef = useRef(null);
+
+    // intersection = useIntersection(this.sectionRef, {
+    //     root: null,
+    //     rootMargin: '0px',
+    //     threshold: 1
+    // });
   }
 
   render() {
@@ -30,7 +43,7 @@ class Home extends Component {
                     <div className="Home-intro-container">
                         <HomeIntro/>
                     </div>
-                    <div className="Home-bio-container">
+                    <div ref={this.sectionRef} className="Home-bio-container">
                         <HomeBio/>
                     </div>
                     <div className="Home-explore">
