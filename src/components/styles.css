@@ -32,7 +32,7 @@
 
 .Home-intro p {
   width: 100%;
-  font-size: 16px;
+  font-size: 20px;
   text-align: center;
 }
 
@@ -70,9 +70,9 @@
 
 .Home-intro-descriptor {
   width: 100%;
-  font-size: 24px;
+  font-size: 20px;
   text-align: center;
-  margin-top: 12px;
+  margin-top: 24px;
 }
 
 .Home-bio-container {
