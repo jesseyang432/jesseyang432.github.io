@@ -654,6 +654,14 @@
           justify-content: center;
 }
 
+#explore .circle {
+  cursor: pointer;
+}
+
+#explore .label {
+  cursor: pointer;
+}
+
 .HomeProjects-container {
   max-width: 80%;
   margin: auto;

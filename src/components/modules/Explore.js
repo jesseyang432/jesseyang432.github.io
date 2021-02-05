@@ -62,10 +62,10 @@ class Explore extends Component {
 
   drawChart(svg) {
 
-    let circles = svg.selectAll(".circles")
+    let circles = svg.selectAll(".circle")
         .data(this.data)
         .enter().append("circle")
-        .attr("class", "circles")
+        .attr("class", "circle")
         .attr("r", (d) => {
             return this.radiusScale(d.value);
         })
@@ -73,7 +73,7 @@ class Explore extends Component {
         .attr("cx", 100)
         .attr("cy", 300)
 
-    let labels = svg.selectAll(".labels")
+    let labels = svg.selectAll(".label")
         .data(this.data)
         .enter().append("text")
         .attr("class", "label")

@@ -32,4 +32,12 @@
 #explore {
 	display: flex;
 	justify-content: center;
+
+	.circle {
+		cursor: pointer;
+	}
+
+	.label {
+		cursor: pointer;
+	}
 }
