@@ -4,10 +4,6 @@ import * as d3 from "d3";
 import whatido from '../../data/whatido';
 
 class Explore extends Component {
-    el = React.createRef();
-    width = 800;
-    height = 600;
-  
     constructor(props) {
         super(props);
         this.state = {
@@ -15,6 +11,45 @@ class Explore extends Component {
 
         this.data = whatido;
     }
+
+    el = React.createRef();
+    width = 800;
+    height = 600;
+
+    radiusScale = d3.scaleSqrt().domain([1, 10]).range([10, 80]);
+
+    forceXCombine = d3.forceX((d) => {
+        return this.width/2;
+    }).strength(0.05);
+
+    forceXSeparate = d3.forceX((d) => {
+        if (d.type === "software") {
+            return 150
+        } else {
+            return 650
+        }
+    }).strength(0.05);
+
+    // forceX = d3.forceX((d) => {
+    //     if (this.status === "combined") {
+    //         return this.width/2;
+    //     } else if (this.status === "separate") {
+    //         if (d.type === "software") {
+    //             return 150
+    //         } else {
+    //             return 650
+    //         }
+    //     }
+    // }).strength(0.05);
+
+    forceCollide = d3.forceCollide((d) => {
+        return this.radiusScale(d.value) + 1
+    });
+  
+    simulation = d3.forceSimulation()
+        .force("x", this.forceXCombine)
+        .force("y", d3.forceY(this.height / 2).strength(0.05))
+        .force("collide", this.forceCollide);
 
   createSVG() {
     return d3.select(this.el)
@@ -25,49 +60,67 @@ class Explore extends Component {
   }
 
   drawChart(svg) {
-    let hierarchalData = this.makeHierarchy(this.data);
-    let packLayout = this.pack([this.width - 5, this.height -5]);
-    const root = packLayout(hierarchalData);
 
-    const leaf = svg.selectAll("g")
-        .data(root.leaves())
-        .join("g")
-        .attr("transform", d => `translate(${d.x + 1},${d.y + 1})`);
+    let circles = svg.selectAll(".hi")
+        .data(this.data)
+        .enter().append("circle")
+        .attr("class", "hi")
+        .attr("r", (d) => {
+            return this.radiusScale(d.value);
+        })
+        .attr("fill", "white")
+        .attr("cx", 100)
+        .attr("cy", 300)
 
-    leaf.append("circle")
-        .attr("r", d => d.r)
-        .attr("fill-opacity", 0.7)
-        .attr("fill", "white");
-
-    // leaf.append("clipPath")
-    //     .append("use")
-    //     .attr("xlink:href", d => d.leafUid.href);
-
-    leaf.append("text")
-        .attr("clip-path", d => d.clipUid)
-        .selectAll("tspan")
-        .data(d => d.data.title.split(/(?=[A-Z][a-z])|\s+/g))
-        .join("tspan")
-        .attr("x", 0)
-        .attr("y", (d, i, nodes) => `${i - nodes.length / 2 + 0.8}em`)
+    let labels = svg.selectAll(".labels")
+        .data(this.data)
+        .enter().append("text")
+        .attr("class", "label")
         .attr("text-anchor", "middle")
-        // .attr("alignment-baseline", "central")
-        .text(d => d);
+        .attr("alignment-baseline", "central")
+        .attr("fill", "black")
+        .attr("font-size", "12px")
+        .text((d) => {
+            return d.title;
+        });
 
-    // leaf.append("title").text(d => `${d.data.title === undefined ? "" : `${d.data.title}`}${format(d.value)}`);
+    let ticked = () => {
+        circles
+            .attr("cx", (d) => {
+                return d.x
+            })
+            .attr("cy", (d) => {
+                return d.y
+            });
+
+        labels
+            .attr("x", (d) => {
+                return d.x
+            })
+            .attr("y", (d) => {
+                return d.y
+            });
+    }
+
+    this.simulation.nodes(this.data)
+        .on('tick', ticked);
 
   }
 
-  pack(size) {
-    return d3.pack()
-    .size(size)
-    .padding(3);
+  toggleStatus = (value) => {
+      if (value === "separate") {
+        this.simulation
+        .force("x", this.forceXSeparate)
+        .alphaTarget(0.5)
+        .restart();
+      } else if (value === "combined") {
+        this.simulation
+        .force("x", this.forceXCombine)
+        .alphaTarget(0.5)
+        .restart();
+      }
   }
 
-  makeHierarchy(data) {
-      return d3.hierarchy({children: data})
-      .sum(d => d.value);
-  }
 
   componentDidMount = () => {
     let svg = this.createSVG();
@@ -77,8 +130,12 @@ class Explore extends Component {
   render() {
     return (
         <>
-            <h1>Explore What I Do</h1>
-            <div id="explore" ref={el => (this.el = el)}></div>
+            <div className="Explore-container">
+                <h1>Explore What I Do</h1>
+                <button id="type" onClick={() => this.toggleStatus("separate")}>Type split</button>
+                <button id="combine" onClick={() => this.toggleStatus("combined")}>Combine</button>
+                <div id="explore" ref={el => (this.el = el)}></div>
+            </div>
         </>
     );
   }

@@ -3,7 +3,6 @@ import LogoLoading from '../modules/LogoLoading';
 import Nav from '../modules/Nav';
 import SocialLinks from '../modules/SocialLinks';
 import Explore from '../modules/Explore';
-import ExploreGenerator from '../modules/ExploreGenerator';
 
 class Home extends Component {
   constructor(props) {
@@ -51,10 +50,8 @@ class Home extends Component {
                         </div>
                     </div>
                     <div className="Home-explore">
-                        <ExploreGenerator/>
+                        <Explore/>
                     </div>
-
-                    {/* <Explore/> */}
                 </div>
             }
         </>
