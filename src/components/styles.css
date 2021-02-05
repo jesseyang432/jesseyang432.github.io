@@ -27,8 +27,9 @@
 }
 
 .Home-bio-container {
-  width: 70%;
+  width: 100%;
   margin: auto;
+  padding-bottom: 15vh;
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -40,6 +41,13 @@
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#000350), to(#9b489b));
+  background-image: linear-gradient(#000350, #9b489b);
+}
+
+.Home-explore-container {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#9b489b), to(#000350));
+  background-image: linear-gradient(#9b489b, #000350);
 }
 
 @-webkit-keyframes Home-page-load {
@@ -430,6 +438,18 @@
   -webkit-transform: translateY(-8px);
           transform: translateY(-8px);
   color: #f6bdd1;
+}
+
+.Explore-container {
+  max-width: 80%;
+  margin: auto;
+  color: white;
+}
+
+.Explore-container h1 {
+  font-size: 72px;
+  font-weight: 700;
+  font-family: "Arizonia", cursive;
 }
 
 #explore {

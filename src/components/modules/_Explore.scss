@@ -1,3 +1,15 @@
+.Explore-container {
+	max-width: 80%;
+	margin: auto;
+	color: white;
+
+	h1 {
+		font-size: 72px;
+		font-weight: 700;
+		font-family: "Arizonia", cursive;
+	}
+}
+
 #explore {
 	display: flex;
 	justify-content: center;

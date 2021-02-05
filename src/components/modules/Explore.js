@@ -24,9 +24,9 @@ class Explore extends Component {
 
     forceXSeparate = d3.forceX((d) => {
         if (d.type === "software") {
-            return 150
+            return 150;
         } else {
-            return 650
+            return 650;
         }
     }).strength(0.05);
 
@@ -133,8 +133,10 @@ class Explore extends Component {
         <>
             <div className="Explore-container">
                 <h1>Explore What I Do</h1>
-                <button id="type" onClick={() => this.toggleStatus("separate")}>Type split</button>
-                <button id="combine" onClick={() => this.toggleStatus("combined")}>Combine</button>
+                <div className="Explore-button-aisle">
+                    <button id="type" onClick={() => this.toggleStatus("separate")}>Type split</button>
+                    <button id="combine" onClick={() => this.toggleStatus("combined")}>Combine</button>
+                </div>
                 <div id="explore" ref={el => (this.el = el)}></div>
             </div>
         </>

@@ -16,12 +16,18 @@
 }
 
 .Home-bio-container {
-	width: 70%;
+	width: 100%;
 	margin: auto;
+	padding-bottom: 15vh;
 	color: white;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-evenly;
+	background-image: linear-gradient($dark-blue, $purpureus);
+}
+
+.Home-explore-container {
+	background-image: linear-gradient($purpureus, $dark-blue);
 }
 
 @keyframes Home-page-load {
