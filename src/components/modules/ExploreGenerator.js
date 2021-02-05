@@ -130,10 +130,12 @@ class ExploreGenerator extends Component {
   render() {
     return (
         <>
-            <h1>Explore What I Do</h1>
-            <button id="type" onClick={() => this.toggleStatus("separate")}>Type split</button>
-            <button id="combine" onClick={() => this.toggleStatus("combined")}>Combine</button>
-            <div id="explore" ref={el => (this.el = el)}></div>
+            <div className="ExploreGenerator-container">
+                <h1>Explore What I Do</h1>
+                <button id="type" onClick={() => this.toggleStatus("separate")}>Type split</button>
+                <button id="combine" onClick={() => this.toggleStatus("combined")}>Combine</button>
+                <div id="explore" ref={el => (this.el = el)}></div>
+            </div>
         </>
     );
   }
