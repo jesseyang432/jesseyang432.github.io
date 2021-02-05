@@ -79,6 +79,7 @@
 
 		&:hover {
 			border: solid $aqua;
+			filter: grayscale(80%);
 		}
 	}
 }

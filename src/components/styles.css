@@ -103,6 +103,8 @@
 
 .Home-bio-image img:hover {
   border: solid #00ffff;
+  -webkit-filter: grayscale(80%);
+          filter: grayscale(80%);
 }
 
 .Home-bio-description {
