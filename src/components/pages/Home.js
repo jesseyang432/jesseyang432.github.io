@@ -38,6 +38,9 @@ class Home extends Component {
                     </div>
                     <div className="Home-bio-container">
                         <div className="Home-bio-image">
+                            <div className="Home-bio-image-text">
+                                Hi
+                            </div>
                             <img src="/images/jesseyang.jpg" alt="Jesse Yang"/>
                         </div>
                         <div className="Home-bio-description">

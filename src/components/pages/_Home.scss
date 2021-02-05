@@ -69,6 +69,19 @@
 }
 
 .Home-bio-image {
+	width: 240px;
+	height: 240px;
+	position: relative;
+
+	.Home-bio-image-text {
+		font-size: 20px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 2;
+	}
+
 	img {
 		width: 240px;
 		height: 240px;
