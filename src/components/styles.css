@@ -94,7 +94,7 @@
   height: 100%;
   top: 0;
   left: 0;
-  position: absolute;
+  position: fixed;
   z-index: 10;
   background: -webkit-gradient(linear, left top, left bottom, from(#9b489b), to(#000350));
   background: linear-gradient(#9b489b, #000350);
@@ -316,6 +316,7 @@
 @-webkit-keyframes LogoLoading-bg-disappear-anim {
   from {
     opacity: 1;
+    overflow-y: hidden;
   }
   to {
     opacity: 0;
@@ -325,6 +326,7 @@
 @keyframes LogoLoading-bg-disappear-anim {
   from {
     opacity: 1;
+    overflow-y: hidden;
   }
   to {
     opacity: 0;

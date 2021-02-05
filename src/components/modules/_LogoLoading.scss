@@ -5,7 +5,7 @@
 	height: 100%;
 	top: 0;
 	left: 0;
-	position: absolute;
+	position: fixed;
 	z-index: 10;
 	background: linear-gradient($purpureus, $dark-blue);
 	// background-color: $dark-blue;
@@ -167,6 +167,7 @@
 	from {
 		// background-color: $dark-blue;
 		opacity: 1;
+		overflow-y: hidden;
 	}
 	to {
 		// background-color: transparent;
