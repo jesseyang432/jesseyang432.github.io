@@ -28,7 +28,7 @@ class Home extends Component {
                 <LogoLoading></LogoLoading> :
                 <div className="Home-LogoLoading">
                     <Nav/>
-                    <div className="Home-intro">
+                    <div className="Home-intro-container">
                         <HomeIntro/>
                     </div>
                     <div className="Home-bio-container">
