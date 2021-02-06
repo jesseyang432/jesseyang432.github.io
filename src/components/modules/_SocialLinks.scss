@@ -29,7 +29,9 @@
 		}
 
 		&:hover {
-			transform: translateY(-8px);
+			transform: translateY(
+				-8px
+			); // not working right now because of forwards animation
 			color: $pink;
 		}
 	}
