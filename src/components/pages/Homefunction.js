@@ -9,13 +9,13 @@ import HomeProjects from '../modules/HomeProjects';
 
 import gsap from 'gsap';
 
-function Homefunction() {
+function Home() {
 
-    const sectionRef = useRef(null);
-    const intersection = useIntersection(sectionRef, {
+    const exploreRef = useRef(null);
+    const expIntersection = useIntersection(exploreRef, {
         root: null,
         rootMargin: '0px',
-        threshold: 0.5
+        threshold: 0.2
     });
 
     const fadeIn = (element) => {
@@ -42,7 +42,7 @@ function Homefunction() {
         });
     };
 
-    intersection && intersection.intersectionRatio < 0.5 ?
+    expIntersection && expIntersection.intersectionRatio < 0.2 ?
     fadeOut(".fadeIn") :
     fadeIn(".fadeIn");
 
@@ -54,10 +54,10 @@ function Homefunction() {
                     <div className="Home-intro-container">
                         <HomeIntro/>
                     </div>
-                    <div ref={sectionRef} className="Home-bio-container">
+                    <div className="Home-bio-container">
                         <HomeBio/>
                     </div>
-                    <div className="Home-explore-container">
+                    <div ref={exploreRef} className="Home-explore-container">
                         <Explore/>
                     </div>
                     <div className="Home-projects-container">
@@ -100,4 +100,4 @@ function Homefunction() {
 //     });
 //   }
 
-export default Homefunction;
+export default Home;

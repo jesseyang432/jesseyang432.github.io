@@ -15,7 +15,7 @@ class Explore extends Component {
 
     el = React.createRef();
     width = 1000;
-    height = 400;
+    height = 500;
 
     radiusScale = d3.scaleSqrt().domain([1, 10]).range([10, 80]);
 
@@ -57,7 +57,7 @@ class Explore extends Component {
         .append("svg")
         .attr("width", this.width)
         .attr("height", this.height)
-        .attr("viewBox", "0 0 1000 400")
+        .attr("viewBox", "0 0 1000 500")
         .attr("overflow", "visible")
         // .attr("preserveAspectRatio", "xMinYMin meet")
         // .attr("style", "border: thin red solid")
