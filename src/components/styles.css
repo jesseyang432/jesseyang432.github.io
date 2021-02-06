@@ -683,6 +683,10 @@
   padding: 10px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -webkit-animation: tooltip-appear-anim ease 0.5s;
+          animation: tooltip-appear-anim ease 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .Explore-tooltip-close {
@@ -728,6 +732,32 @@
 
 #explore .label {
   cursor: pointer;
+}
+
+@-webkit-keyframes tooltip-appear-anim {
+  from {
+    height: 0;
+    width: 0;
+    opacity: 0%;
+  }
+  to {
+    height: 200;
+    width: 300;
+    opacity: 100%;
+  }
+}
+
+@keyframes tooltip-appear-anim {
+  from {
+    height: 0;
+    width: 0;
+    opacity: 0%;
+  }
+  to {
+    height: 200;
+    width: 300;
+    opacity: 100%;
+  }
 }
 
 @media only screen and (max-width: 1000px) {
