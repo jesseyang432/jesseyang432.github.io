@@ -43,6 +43,11 @@
 	padding: 10px;
 	box-sizing: border-box;
 	opacity: 0;
+	overflow-y: auto;
+	overflow-x: hidden;
+	&::-webkit-scrollbar {
+		display: none;
+	}
 
 	animation: tooltip-appear-anim 0.5s ease;
 	animation-fill-mode: forwards;
@@ -59,7 +64,6 @@
 }
 
 .Explore-tooltip-content {
-	overflow-y: auto;
 	opacity: 0;
 	animation: tooltip-content-appear-anim 0.3s ease 0.3s forwards;
 }

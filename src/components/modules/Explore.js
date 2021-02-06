@@ -137,12 +137,13 @@ class Explore extends Component {
   getTooltip = () => {
       if (this.state.selected) {
           return (
-              <div className="Explore-tooltip">
+              <div className="Explore-tooltip exp-fadeIn">
                   <div onClick={() => this.setState({selected: null})}className="Explore-tooltip-close">+</div>
                   <div className="Explore-tooltip-content">
-                    <p>{this.state.selected.title}</p>
-                    <p>{this.state.selected.value}</p>
-                    <p>{this.state.selected.type}</p>
+                    <p><strong>{this.state.selected.title}</strong> -- <em>{this.state.selected.type.toUpperCase()}</em></p>
+                    <p><em>Familiarity: {this.state.selected.value}/10</em></p>
+                    <hr/>
+                    <p>{this.state.selected.description}</p>
                   </div>
                   {/* <div className="Explore-tooltip-tail"></div> */}
               </div>

@@ -912,10 +912,16 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   opacity: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
   -webkit-animation: tooltip-appear-anim 0.5s ease;
           animation: tooltip-appear-anim 0.5s ease;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+}
+
+.Explore-tooltip::-webkit-scrollbar {
+  display: none;
 }
 
 .Explore-tooltip-close {
@@ -930,7 +936,6 @@
 }
 
 .Explore-tooltip-content {
-  overflow-y: auto;
   opacity: 0;
   -webkit-animation: tooltip-content-appear-anim 0.3s ease 0.3s forwards;
           animation: tooltip-content-appear-anim 0.3s ease 0.3s forwards;
