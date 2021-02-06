@@ -14,7 +14,7 @@ class HomeIntro extends Component {
         <>
             <div className="Home-intro">
                 <p>Hey! I'm</p>
-                <div className="Home-intro-info">
+                <div className="Home-intro-name">
                     <h1><em>Jesse Yang</em></h1>
                 </div>
                 <div className="Home-intro-descriptor">
