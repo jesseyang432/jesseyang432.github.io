@@ -135,6 +135,7 @@ class Explore extends Component {
                   <p>{this.state.selected.title}</p>
                   <p>{this.state.selected.value}</p>
                   <p>{this.state.selected.type}</p>
+                  <div className="Explore-tooltip-tail"></div>
               </div>
           );
       }

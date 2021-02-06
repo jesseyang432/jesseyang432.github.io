@@ -657,6 +657,19 @@
   color: black;
 }
 
+.Explore-tooltip-tail {
+  border-top: 15px solid white;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  width: 1px;
+  position: absolute;
+  top: 200px;
+  left: 150px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
 #explore {
   display: -webkit-box;
   display: -ms-flexbox;

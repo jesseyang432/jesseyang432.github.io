@@ -38,6 +38,18 @@
 	color: black;
 }
 
+.Explore-tooltip-tail {
+	border-top: 15px solid white;
+	border-bottom: 15px solid transparent;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	width: 1px;
+	position: absolute;
+	top: 200px;
+	left: 150px;
+	transform: translateX(-50%);
+}
+
 #explore {
 	display: flex;
 	justify-content: center;
