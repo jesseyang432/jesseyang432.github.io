@@ -23,8 +23,6 @@
 .Home-intro-name {
 	width: 75%;
 	position: relative;
-	opacity: 0;
-	animation: HomeIntro-fadein-anim 1s ease 5.2s forwards;
 
 	h1 {
 		font-size: 96px;
@@ -32,6 +30,8 @@
 		color: $aqua;
 		font-weight: 700;
 		font-family: "Arizonia", cursive;
+		opacity: 0;
+		animation: HomeIntro-fadein-anim 1s ease 5.2s forwards;
 	}
 
 	&::before,
@@ -47,10 +47,14 @@
 
 	&::before {
 		left: 0;
+		opacity: 0;
+		animation: HomeIntro-slidein-left-anim 1.5s ease 5.2s forwards;
 	}
 
 	&::after {
 		right: 0;
+		opacity: 0;
+		animation: HomeIntro-slidein-right-anim 1.5s ease 5.2s forwards;
 	}
 }
 

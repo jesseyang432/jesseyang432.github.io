@@ -645,9 +645,6 @@
 .Home-intro-name {
   width: 75%;
   position: relative;
-  opacity: 0;
-  -webkit-animation: HomeIntro-fadein-anim 1s ease 5.2s forwards;
-          animation: HomeIntro-fadein-anim 1s ease 5.2s forwards;
 }
 
 .Home-intro-name h1 {
@@ -656,6 +653,9 @@
   color: #00ffff;
   font-weight: 700;
   font-family: "Arizonia", cursive;
+  opacity: 0;
+  -webkit-animation: HomeIntro-fadein-anim 1s ease 5.2s forwards;
+          animation: HomeIntro-fadein-anim 1s ease 5.2s forwards;
 }
 
 .Home-intro-name::before, .Home-intro-name::after {
@@ -671,10 +671,16 @@
 
 .Home-intro-name::before {
   left: 0;
+  opacity: 0;
+  -webkit-animation: HomeIntro-slidein-left-anim 1.5s ease 5.2s forwards;
+          animation: HomeIntro-slidein-left-anim 1.5s ease 5.2s forwards;
 }
 
 .Home-intro-name::after {
   right: 0;
+  opacity: 0;
+  -webkit-animation: HomeIntro-slidein-right-anim 1.5s ease 5.2s forwards;
+          animation: HomeIntro-slidein-right-anim 1.5s ease 5.2s forwards;
 }
 
 .Home-intro-descriptor {
