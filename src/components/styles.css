@@ -502,12 +502,40 @@
 #Logo-logo {
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  -webkit-animation: Logo-appear 1s ease 4.5s forwards;
+          animation: Logo-appear 1s ease 4.5s forwards;
 }
 
 #Logo-logo:hover {
   cursor: pointer;
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
+}
+
+@-webkit-keyframes Logo-appear {
+  from {
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  to {
+    width: 38.96px;
+    height: 45px;
+    opacity: 1;
+  }
+}
+
+@keyframes Logo-appear {
+  from {
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  to {
+    width: 38.96px;
+    height: 45px;
+    opacity: 1;
+  }
 }
 
 .SocialLinks-links {
