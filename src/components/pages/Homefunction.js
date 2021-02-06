@@ -11,11 +11,11 @@ import gsap from 'gsap';
 
 function Home() {
 
-    const sectionRef = useRef(null);
-    const intersection = useIntersection(sectionRef, {
+    const bioRef = useRef(null);
+    const bioIntersection = useIntersection(bioRef, {
         root: null,
         rootMargin: '0px',
-        threshold: 0.5
+        threshold: 0.2
     });
 
     const fadeIn = (element) => {
@@ -42,9 +42,9 @@ function Home() {
         });
     };
 
-    intersection && intersection.intersectionRatio < 0.5 ?
-    fadeOut(".fadeIn") :
-    fadeIn(".fadeIn");
+    bioIntersection && bioIntersection.intersectionRatio < 0.2 ?
+    fadeOut(".bio-fadeIn") :
+    fadeIn(".bio-fadeIn");
 
     return (
         <>
@@ -54,7 +54,7 @@ function Home() {
                     <div className="Home-intro-container">
                         <HomeIntro/>
                     </div>
-                    <div ref={sectionRef} className="Home-bio-container">
+                    <div ref={bioRef} className="Home-bio-container">
                         <HomeBio/>
                     </div>
                     <div className="Home-explore-container">
