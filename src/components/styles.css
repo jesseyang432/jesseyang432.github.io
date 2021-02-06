@@ -123,6 +123,11 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  opacity: 0;
+  -webkit-animation: Nav-slide-in-top 1s ease 4.5s;
+          animation: Nav-slide-in-top 1s ease 4.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .Nav-logo a {
@@ -144,6 +149,14 @@
           align-items: center;
 }
 
+.Nav-links li {
+  opacity: 0;
+  -webkit-animation: Nav-slide-in-top 1s ease 4.5s;
+          animation: Nav-slide-in-top 1s ease 4.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
 .Nav-links li a {
   color: white;
   text-decoration: none;
@@ -155,6 +168,32 @@
 
 .Nav-links li a:hover {
   color: #00ffff;
+}
+
+@-webkit-keyframes Nav-slide-in-top {
+  from {
+    -webkit-transform: translateY(-80px);
+            transform: translateY(-80px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes Nav-slide-in-top {
+  from {
+    -webkit-transform: translateY(-80px);
+            transform: translateY(-80px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .LogoLoading-container {

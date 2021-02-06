@@ -38,6 +38,9 @@
 	a {
 		margin-left: 36px;
 	}
+	opacity: 0;
+	animation: Nav-slide-in-top 1s ease 4.5s;
+	animation-fill-mode: forwards;
 }
 
 .Nav-links {
@@ -48,6 +51,12 @@
 	list-style: none;
 	justify-content: space-around;
 	align-items: center;
+
+	li {
+		opacity: 0;
+		animation: Nav-slide-in-top 1s ease 4.5s;
+		animation-fill-mode: forwards;
+	}
 
 	li a {
 		color: white;
@@ -60,5 +69,16 @@
 			color: $aqua;
 			// transform: translateY(-8px);
 		}
+	}
+}
+
+@keyframes Nav-slide-in-top {
+	from {
+		transform: translateY(-80px);
+		opacity: 0;
+	}
+	to {
+		transform: translateY(0);
+		opacity: 1;
 	}
 }
