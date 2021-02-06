@@ -73,7 +73,7 @@ class Explore extends Component {
         .attr("fill", "white")
         .attr("cx", 100)
         .attr("cy", 300)
-        .on("click", this.bubbleClicked.bind(this));
+        .on("click", (event, d) => this.bubbleClicked(d));
 
     let labels = svg.selectAll(".label")
         .data(this.data)
@@ -128,6 +128,14 @@ class Explore extends Component {
       this.setState({selected: bubble});
   }
 
+  getTooltip = () => {
+      if (this.state.selected) {
+          return <p>{this.state.selected.title}</p>
+      } else {
+          return <p>Nothing selected</p>
+      }
+  }
+
 
   componentDidMount = () => {
     let svg = this.createSVG();
@@ -143,6 +151,8 @@ class Explore extends Component {
                     <button id="type" onClick={() => this.toggleStatus("separate")}>Type split</button>
                     <button id="combine" onClick={() => this.toggleStatus("combined")}>Combine</button>
                 </div>
+
+                {this.getTooltip()}
                 <div id="explore" ref={el => (this.el = el)}></div>
             </div>
         </>
