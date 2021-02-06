@@ -32,6 +32,7 @@ function HomeBio() {
                 amount: .3
             }
         });
+
     };
 
     const fadeOut = (element) => {
@@ -46,11 +47,11 @@ function HomeBio() {
         // });
     };
 
-    imageIntersection && imageIntersection.intersectionRatio < 0.5 && !imageIntersected  ?
+    imageIntersection && imageIntersection.intersectionRatio < 0.5  ?
     fadeOut(".fadeIn") :
     fadeIn(".fadeIn");
 
-    descriptionIntersection && descriptionIntersection.intersectionRatio < 0.5 && !descriptionIntersected ?
+    descriptionIntersection && descriptionIntersection.intersectionRatio < 0.5 ?
     fadeOut(".fadeIn") :
     fadeIn(".fadeIn");
 

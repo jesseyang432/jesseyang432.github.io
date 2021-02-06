@@ -57,6 +57,7 @@ class Explore extends Component {
         .append("svg")
         .attr("width", this.width)
         .attr("height", this.height)
+        .attr("viewBox", "0 0 1000 600")
         .attr("style", "border: thin red solid")
         .attr("border-radius", "50%");
   }
