@@ -85,7 +85,8 @@ class Explore extends Component {
         .attr("font-size", "12px")
         .text((d) => {
             return d.title;
-        });
+        })
+        .on("click", (event, d) => this.bubbleClicked(d));
 
     let ticked = () => {
         circles
@@ -134,7 +135,7 @@ class Explore extends Component {
       if (this.state.selected) {
           return (
               <div className="Explore-tooltip">
-                  <div className="Explore-tooltip-close"><p>+</p></div>
+                  <div onClick={() => this.setState({selected: null})}className="Explore-tooltip-close">+</div>
                   <div className="Explore-tooltip-content">
                     <p>{this.state.selected.title}</p>
                     <p>{this.state.selected.value}</p>
