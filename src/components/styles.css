@@ -650,7 +650,7 @@
 .Explore-tooltip {
   width: 300px;
   height: 200px;
-  background: white;
+  background: rgba(255, 255, 255, 0.95);
   -webkit-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.45);
           box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.45);
   position: absolute;
@@ -663,6 +663,16 @@
   padding: 10px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.Explore-tooltip-close {
+  position: absolute;
+  top: -5px;
+  right: 10px;
+  font-size: 32px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  cursor: pointer;
 }
 
 .Explore-tooltip-content {

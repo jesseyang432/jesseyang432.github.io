@@ -32,7 +32,7 @@
 .Explore-tooltip {
 	width: 300px;
 	height: 200px;
-	background: white;
+	background: rgba(255, 255, 255, 0.95);
 	box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.45);
 	position: absolute;
 	top: 50%;
@@ -42,6 +42,15 @@
 	border-radius: 10px;
 	padding: 10px;
 	box-sizing: border-box;
+}
+
+.Explore-tooltip-close {
+	position: absolute;
+	top: -5px;
+	right: 10px;
+	font-size: 32px;
+	transform: rotate(45deg);
+	cursor: pointer;
 }
 
 .Explore-tooltip-content {

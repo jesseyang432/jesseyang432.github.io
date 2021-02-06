@@ -134,6 +134,7 @@ class Explore extends Component {
       if (this.state.selected) {
           return (
               <div className="Explore-tooltip">
+                  <div className="Explore-tooltip-close"><p>+</p></div>
                   <div className="Explore-tooltip-content">
                     <p>{this.state.selected.title}</p>
                     <p>{this.state.selected.value}</p>
