@@ -129,13 +129,17 @@ class Explore extends Component {
   }
 
   getTooltip = () => {
+      console.log(this.state.selected);
+
       if (this.state.selected) {
           return (
               <div className="Explore-tooltip">
-                  <p>{this.state.selected.title}</p>
-                  <p>{this.state.selected.value}</p>
-                  <p>{this.state.selected.type}</p>
-                  <div className="Explore-tooltip-tail"></div>
+                  <div className="Explore-tooltip-content">
+                    <p>{this.state.selected.title}</p>
+                    <p>{this.state.selected.value}</p>
+                    <p>{this.state.selected.type}</p>
+                  </div>
+                  {/* <div className="Explore-tooltip-tail"></div> */}
               </div>
           );
       }
@@ -156,9 +160,7 @@ class Explore extends Component {
                     <button id="type" onClick={() => this.toggleStatus("separate")}>Type split</button>
                     <button id="combine" onClick={() => this.toggleStatus("combined")}>Combine</button>
                 </div>
-
-                {this.getTooltip()}
-                <div id="explore" ref={el => (this.el = el)}></div>
+                <div id="explore" ref={el => (this.el = el)}>{this.getTooltip()}</div>
             </div>
         </>
     );
