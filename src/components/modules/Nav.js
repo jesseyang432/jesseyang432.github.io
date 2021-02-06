@@ -46,6 +46,14 @@ class Nav extends Component {
     // }
   }
 
+  toTop = () => {
+      window.scroll({
+          top: 0,
+          left: 0,
+          behavior: 'smooth'
+      });
+  }
+
   componentDidMount() {
       window.addEventListener('scroll', this.changeBackground);
   }
@@ -53,7 +61,7 @@ class Nav extends Component {
   render() {
     return (
         <>
-        <div className={this.state.showToTop ? 'Nav-totop' : 'Nav-totop-hidden'}><FaArrowCircleUp size={35} fill="white"/></div>
+        <div className={this.state.showToTop ? 'Nav-totop' : 'Nav-totop-hidden'}><FaArrowCircleUp size={35} fill="white" onClick={() => this.toTop()}/></div>
         <nav className={this.state.displayed ? 'Nav-bar' : 'Nav-hidden'}>
             <div className="Nav-logo">
                 <Link to="/">
