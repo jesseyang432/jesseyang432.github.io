@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
 import Logo from './Logo';
+import {FaArrowCircleUp} from 'react-icons/fa';
 
 class Nav extends Component {
   constructor(props) {
@@ -42,7 +43,7 @@ class Nav extends Component {
   render() {
     return (
         <>
-        <div className="Nav-totop">hi</div>
+        <div className="Nav-totop"><FaArrowCircleUp size={35} fill="blue" color="white"/></div>
         <nav className={this.state.displayed ? 'Nav-bar' : 'Nav-hidden'}>
             <div className="Nav-logo">
                 <Link to="/">

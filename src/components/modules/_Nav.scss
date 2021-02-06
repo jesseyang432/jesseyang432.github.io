@@ -9,6 +9,13 @@
 	z-index: 3;
 }
 
+.Nav-totop {
+	position: fixed;
+	top: 40px;
+	right: 32px;
+	transform: translateY(-50%);
+}
+
 .Nav-active {
 	background: linear-gradient(rgba(155, 72, 155, 0.975), rgba(0, 3, 80, 0.975));
 }
