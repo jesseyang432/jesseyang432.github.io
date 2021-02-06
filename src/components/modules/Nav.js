@@ -8,22 +8,32 @@ class Nav extends Component {
     super(props);
     this.state = {
         displayed: true,
-        active: false, 
+        // active: false, 
         lastScrollTop: 0,
+        showToTop: false,
     }
   }
 
   changeBackground = () => {
     let scrollTop = window.pageYOffset;
     if (scrollTop <= 80) {
-        this.setState({displayed: true});
+        this.setState({
+            displayed: true,
+            showToTop: false,
+        });
     }
     if (scrollTop > this.state.lastScrollTop && window.scrollY >= 80) {
         this.setState({
             displayed: false,
+            showToTop: false,
             lastScrollTop: scrollTop,
         });
     } else if (scrollTop <= this.state.lastScrollTop) {
+        if (window.scrollY >= 120) {
+            this.setState({showToTop: true});
+        } else {
+            this.setState({showToTop: false});
+        }
         this.setState({
             // displayed: true,
             lastScrollTop: scrollTop,
@@ -43,7 +53,7 @@ class Nav extends Component {
   render() {
     return (
         <>
-        <div className="Nav-totop"><FaArrowCircleUp size={35} fill="blue" color="white"/></div>
+        <div className={this.state.showToTop ? 'Nav-totop' : 'Nav-totop-hidden'}><FaArrowCircleUp size={35} fill="white"/></div>
         <nav className={this.state.displayed ? 'Nav-bar' : 'Nav-hidden'}>
             <div className="Nav-logo">
                 <Link to="/">

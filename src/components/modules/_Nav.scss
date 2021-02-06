@@ -11,9 +11,13 @@
 
 .Nav-totop {
 	position: fixed;
-	top: 40px;
+	top: 24px;
 	right: 32px;
-	transform: translateY(-50%);
+	cursor: pointer;
+}
+
+.Nav-totop-hidden {
+	display: none;
 }
 
 .Nav-active {
