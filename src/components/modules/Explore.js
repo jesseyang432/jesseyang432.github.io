@@ -130,9 +130,13 @@ class Explore extends Component {
 
   getTooltip = () => {
       if (this.state.selected) {
-          return <p>{this.state.selected.title}</p>
-      } else {
-          return <p>Nothing selected</p>
+          return (
+              <div className="Explore-tooltip">
+                  <p>{this.state.selected.title}</p>
+                  <p>{this.state.selected.value}</p>
+                  <p>{this.state.selected.type}</p>
+              </div>
+          );
       }
   }
 
