@@ -7,13 +7,14 @@ class Explore extends Component {
     constructor(props) {
         super(props);
         this.state = {
+            selected: null,
         };
 
         this.data = whatido;
     }
 
     el = React.createRef();
-    width = 800;
+    width = 1000;
     height = 600;
 
     radiusScale = d3.scaleSqrt().domain([1, 10]).range([10, 80]);
@@ -24,9 +25,9 @@ class Explore extends Component {
 
     forceXSeparate = d3.forceX((d) => {
         if (d.type === "software") {
-            return 150;
+            return 200;
         } else {
-            return 650;
+            return 800;
         }
     }).strength(0.05);
 
@@ -72,6 +73,7 @@ class Explore extends Component {
         .attr("fill", "white")
         .attr("cx", 100)
         .attr("cy", 300)
+        .on("click", this.bubbleClicked.bind(this));
 
     let labels = svg.selectAll(".label")
         .data(this.data)
@@ -120,6 +122,10 @@ class Explore extends Component {
         .alphaTarget(0.5)
         .restart();
       }
+  }
+
+  bubbleClicked = (bubble) => {
+      this.setState({selected: bubble});
   }
 
 

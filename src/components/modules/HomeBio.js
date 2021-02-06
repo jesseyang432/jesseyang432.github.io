@@ -7,6 +7,7 @@ function HomeBio() {
 
     const imageRef = useRef(null);
     const descriptionRef = useRef(null);
+
     const imageIntersection = useIntersection(imageRef, {
         root: null,
         rootMargin: '0px',
@@ -17,6 +18,9 @@ function HomeBio() {
         rootMargin: '0px',
         threshold: 0.5
     });
+
+    const imageIntersected = false;
+    const descriptionIntersected = false;
 
     const fadeIn = (element) => {
         gsap.to(element, {
@@ -31,15 +35,15 @@ function HomeBio() {
     };
 
     const fadeOut = (element) => {
-        gsap.to(element, {
-            duration: 1,
-            opacity: 0,
-            y: -20,
-            ease: 'power4.out',
-            stagger: {
-                amount: .3
-            }
-        });
+        // gsap.to(element, {
+        //     duration: 1,
+        //     opacity: 0,
+        //     y: -20,
+        //     ease: 'power4.out',
+        //     stagger: {
+        //         amount: .3
+        //     }
+        // });
     };
 
     imageIntersection && imageIntersection.intersectionRatio < 0.5 ?
