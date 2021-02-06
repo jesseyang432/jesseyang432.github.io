@@ -6,8 +6,21 @@ class Nav extends Component {
   constructor(props) {
     super(props);
     this.state = {
-
+        active: false, 
     }
+  }
+
+  changeBackground = () => {
+      console.log("working");
+    //   if (window.scrollY >= 80) {
+    //       this.setState({active: true});
+    //   } else {
+    //     this.setState({active: false});
+    //   }
+  }
+
+  componentDidMount() {
+      window.addEventListener('scroll', this.changeBackground);
   }
 
   render() {

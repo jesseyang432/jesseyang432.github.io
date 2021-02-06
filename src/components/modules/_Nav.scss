@@ -5,8 +5,12 @@
 	top: 0;
 	position: fixed;
 	// background-color: $purpureus;
-	// background-color: rgba(155, 72, 155, 0.95);
+	// background-color: rgba(155, 72, 155, 0.975);
 	z-index: 3;
+}
+
+.Nav-active {
+	background: linear-gradient(rgba(155, 72, 155, 0.975), rgba(0, 3, 80, 0.975));
 }
 
 .Nav-logo {

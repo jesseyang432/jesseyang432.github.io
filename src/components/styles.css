@@ -93,6 +93,11 @@
   z-index: 3;
 }
 
+.Nav-active {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(155, 72, 155, 0.975)), to(rgba(0, 3, 80, 0.975)));
+  background: linear-gradient(rgba(155, 72, 155, 0.975), rgba(0, 3, 80, 0.975));
+}
+
 .Nav-logo {
   width: 40%;
   height: 100%;

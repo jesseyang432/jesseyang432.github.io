@@ -130,8 +130,6 @@ class Explore extends Component {
   }
 
   getTooltip = () => {
-      console.log(this.state.selected);
-
       if (this.state.selected) {
           return (
               <div className="Explore-tooltip">
