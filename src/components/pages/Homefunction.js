@@ -18,6 +18,13 @@ function Home() {
         threshold: 0.2
     });
 
+    const expRef = useRef(null);
+    const expIntersection = useIntersection(expRef, {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.2
+    });
+
     const fadeIn = (element) => {
         gsap.to(element, {
             duration: 1,
@@ -46,6 +53,10 @@ function Home() {
     fadeOut(".bio-fadeIn") :
     fadeIn(".bio-fadeIn");
 
+    expIntersection && expIntersection.intersectionRatio < 0.2 ?
+    fadeOut(".exp-fadeIn") :
+    fadeIn(".exp-fadeIn");
+
     return (
         <>
             <LogoLoading></LogoLoading>
@@ -57,7 +68,7 @@ function Home() {
                     <div ref={bioRef} className="Home-bio-container">
                         <HomeBio/>
                     </div>
-                    <div className="Home-explore-container">
+                    <div ref={expRef} className="Home-explore-container">
                         <Explore/>
                     </div>
                     <div className="Home-projects-container">
