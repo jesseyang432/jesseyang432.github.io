@@ -42,7 +42,7 @@
 }
 
 .Home-explore-container {
-  padding-bottom: 15vh;
+  padding-bottom: 5vh;
 }
 
 @-webkit-keyframes Home-page-load {
@@ -646,7 +646,7 @@
 
 .Explore-button-aisle {
   max-width: 80%;
-  margin: 20px auto;
+  margin: 20px auto 5vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
