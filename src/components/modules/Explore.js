@@ -69,7 +69,7 @@ class Explore extends Component {
     let circles = svg.selectAll(".circle")
         .data(this.data)
         .enter().append("circle")
-        .attr("class", "circle")
+        .attr("class", "circle exp-fadeIn")
         .attr("r", (d) => {
             return this.radiusScale(d.value);
         })
@@ -83,7 +83,7 @@ class Explore extends Component {
     let labels = svg.selectAll(".label")
         .data(this.data)
         .enter().append("text")
-        .attr("class", "label")
+        .attr("class", "label exp-fadeIn")
         .attr("text-anchor", "middle")
         .attr("alignment-baseline", "central")
         .attr("fill", "white")
@@ -160,10 +160,10 @@ class Explore extends Component {
     return (
         <>
             <div className="Explore-container">
-                <h1>Explore What I Do</h1>
+                <h1 className="exp-fadeIn">Explore What I Do</h1>
                 <div className="Explore-button-aisle">
-                    <button id="type" onClick={() => this.toggleStatus("separate")}>Type split</button>
-                    <button id="combine" onClick={() => this.toggleStatus("combined")}>Combine</button>
+                    <button className="exp-fadeIn" id="type" onClick={() => this.toggleStatus("separate")}>Type split</button>
+                    <button className="exp-fadeIn" id="combine" onClick={() => this.toggleStatus("combined")}>Combine</button>
                 </div>
                 <div id="explore" ref={el => (this.el = el)}>{this.getTooltip()}</div>
             </div>

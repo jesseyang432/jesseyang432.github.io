@@ -22,7 +22,7 @@ function Home() {
     const expIntersection = useIntersection(expRef, {
         root: null,
         rootMargin: '0px',
-        threshold: 0.2
+        threshold: 0.3
     });
 
     const fadeIn = (element) => {
@@ -53,9 +53,9 @@ function Home() {
     fadeOut(".bio-fadeIn") :
     fadeIn(".bio-fadeIn");
 
-    expIntersection && expIntersection.intersectionRatio < 0.2 ?
-    fadeOut(".exp-fadeIn") :
-    fadeIn(".exp-fadeIn");
+    expIntersection && expIntersection.intersectionRatio < 0.3 ?
+    fadeOut(".exp-fadeIn-header") :
+    fadeIn(".exp-fadeIn-header");
 
     return (
         <>
