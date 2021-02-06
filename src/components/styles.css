@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&family=Arizonia&family=Great+Vibes&family=Yellowtail&display=swap");
 .Home-PageContainer {
-  -webkit-animation: Home-page-load ease 5.5s, Home-height-load ease 5.5s;
-          animation: Home-page-load ease 5.5s, Home-height-load ease 5.5s;
+  -webkit-animation: Home-height-load 16s ease;
+          animation: Home-height-load 16s ease;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   background: repeating-linear-gradient(#9b489b, #000350 800px, #000350 800px, #9b489b 1600px);
@@ -66,22 +66,22 @@
 @-webkit-keyframes Home-height-load {
   from {
     height: 100vh;
-    overflow: hidden;
+    overflow-y: hidden;
   }
   to {
     height: auto;
-    overflow: auto;
+    overflow-y: auto;
   }
 }
 
 @keyframes Home-height-load {
   from {
     height: 100vh;
-    overflow: hidden;
+    overflow-y: hidden;
   }
   to {
     height: auto;
-    overflow: auto;
+    overflow-y: auto;
   }
 }
 
