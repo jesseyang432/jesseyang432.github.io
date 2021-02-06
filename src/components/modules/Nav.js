@@ -14,6 +14,9 @@ class Nav extends Component {
 
   changeBackground = () => {
     let scrollTop = window.pageYOffset;
+    if (scrollTop <= 80) {
+        this.setState({displayed: true});
+    }
     if (scrollTop > this.state.lastScrollTop && window.scrollY >= 80) {
         this.setState({
             displayed: false,
@@ -21,7 +24,7 @@ class Nav extends Component {
         });
     } else if (scrollTop <= this.state.lastScrollTop) {
         this.setState({
-            displayed: true,
+            // displayed: true,
             lastScrollTop: scrollTop,
         });
     }
@@ -38,6 +41,8 @@ class Nav extends Component {
 
   render() {
     return (
+        <>
+        <div className="Nav-totop">hi</div>
         <nav className={this.state.displayed ? 'Nav-bar' : 'Nav-hidden'}>
             <div className="Nav-logo">
                 <Link to="/">
@@ -72,6 +77,7 @@ class Nav extends Component {
                 </li>
             </ul>
         </nav>
+        </>
     );
   }
 }
