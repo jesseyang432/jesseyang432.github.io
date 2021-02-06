@@ -15,7 +15,7 @@ class Explore extends Component {
 
     el = React.createRef();
     width = 1000;
-    height = 600;
+    height = 500;
 
     radiusScale = d3.scaleSqrt().domain([1, 10]).range([10, 80]);
 
@@ -25,9 +25,9 @@ class Explore extends Component {
 
     forceXSeparate = d3.forceX((d) => {
         if (d.type === "software") {
-            return 200;
+            return 100;
         } else {
-            return 800;
+            return 900;
         }
     }).strength(0.05);
 
@@ -57,9 +57,11 @@ class Explore extends Component {
         .append("svg")
         .attr("width", this.width)
         .attr("height", this.height)
-        .attr("viewBox", "0 0 1000 600")
-        .attr("style", "border: thin red solid")
-        .attr("border-radius", "50%");
+        .attr("viewBox", "0 0 1000 500")
+        .attr("overflow", "visible")
+        // .attr("preserveAspectRatio", "xMinYMin meet")
+        // .attr("style", "border: thin red solid")
+        // .attr("borderRadius", "50%");
   }
 
   drawChart(svg) {
@@ -71,7 +73,9 @@ class Explore extends Component {
         .attr("r", (d) => {
             return this.radiusScale(d.value);
         })
-        .attr("fill", "white")
+        .attr("fill", (d) => {
+            return (d.type === "software" ? "#92b4f4" : "#f6bdd1")
+        })
         .attr("cx", 100)
         .attr("cy", 300)
         .on("click", (event, d) => this.bubbleClicked(d));
@@ -82,8 +86,8 @@ class Explore extends Component {
         .attr("class", "label")
         .attr("text-anchor", "middle")
         .attr("alignment-baseline", "central")
-        .attr("fill", "black")
-        .attr("font-size", "12px")
+        .attr("fill", "white")
+        .attr("font-size", "18px")
         .text((d) => {
             return d.title;
         })
