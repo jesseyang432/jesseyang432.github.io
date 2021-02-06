@@ -13,6 +13,11 @@
 	background: linear-gradient(rgba(155, 72, 155, 0.975), rgba(0, 3, 80, 0.975));
 }
 
+.Nav-hidden {
+	display: none;
+	// transform: translateY(-80px);
+}
+
 .Nav-logo {
 	width: 40%;
 	height: 100%;

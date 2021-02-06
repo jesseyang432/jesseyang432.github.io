@@ -6,17 +6,30 @@ class Nav extends Component {
   constructor(props) {
     super(props);
     this.state = {
+        displayed: true,
         active: false, 
+        lastScrollTop: 0,
     }
   }
 
   changeBackground = () => {
-      console.log("working");
-    //   if (window.scrollY >= 80) {
-    //       this.setState({active: true});
-    //   } else {
-    //     this.setState({active: false});
-    //   }
+    let scrollTop = window.pageYOffset;
+    if (scrollTop > this.state.lastScrollTop && window.scrollY >= 80) {
+        this.setState({
+            displayed: false,
+            lastScrollTop: scrollTop,
+        });
+    } else if (scrollTop <= this.state.lastScrollTop) {
+        this.setState({
+            displayed: true,
+            lastScrollTop: scrollTop,
+        });
+    }
+    // if (window.scrollY >= 80) {
+    //     this.setState({active: true});
+    // } else {
+    // this.setState({active: false});
+    // }
   }
 
   componentDidMount() {
@@ -25,7 +38,7 @@ class Nav extends Component {
 
   render() {
     return (
-        <nav className="Nav-bar">
+        <nav className={this.state.displayed ? 'Nav-bar' : 'Nav-hidden'}>
             <div className="Nav-logo">
                 <Link to="/">
                     <Logo></Logo>

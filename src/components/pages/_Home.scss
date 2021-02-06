@@ -1,5 +1,5 @@
 .Home-PageContainer {
-	animation: Home-page-load ease 5.5s;
+	animation: Home-page-load ease 5.5s, Home-height-load ease 5.5s;
 	animation-fill-mode: forwards;
 	background: repeating-linear-gradient(
 		$purpureus,
