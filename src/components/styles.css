@@ -89,7 +89,7 @@
   height: 80px;
   width: 100%;
   top: 0;
-  position: fixed;
+  position: absolute;
   z-index: 3;
 }
 

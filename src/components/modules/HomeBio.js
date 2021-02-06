@@ -46,11 +46,11 @@ function HomeBio() {
         // });
     };
 
-    imageIntersection && imageIntersection.intersectionRatio < 0.5 ?
+    imageIntersection && imageIntersection.intersectionRatio < 0.5 && !imageIntersected  ?
     fadeOut(".fadeIn") :
     fadeIn(".fadeIn");
 
-    descriptionIntersection && descriptionIntersection.intersectionRatio < 0.5 ?
+    descriptionIntersection && descriptionIntersection.intersectionRatio < 0.5 && !descriptionIntersected ?
     fadeOut(".fadeIn") :
     fadeIn(".fadeIn");
 
