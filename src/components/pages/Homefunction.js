@@ -53,9 +53,13 @@ function Home() {
     fadeOut(".bio-fadeIn") :
     fadeIn(".bio-fadeIn");
 
+    // expIntersection && expIntersection.intersectionRatio < 0.25 ?
+    // fadeOut(".exp-fadeIn-header") :
+    // fadeIn(".exp-fadeIn-header");
+
     expIntersection && expIntersection.intersectionRatio < 0.3 ?
-    fadeOut(".exp-fadeIn-header") :
-    fadeIn(".exp-fadeIn-header");
+    fadeOut(".exp-fadeIn") :
+    fadeIn(".exp-fadeIn");
 
     return (
         <>
