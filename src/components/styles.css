@@ -730,6 +730,12 @@
   cursor: pointer;
 }
 
+@media only screen and (max-width: 1000px) {
+  .Explore-button-aisle {
+    visibility: hidden;
+  }
+}
+
 .HomeProjects-container {
   max-width: 80%;
   margin: auto;

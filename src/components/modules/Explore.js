@@ -15,7 +15,7 @@ class Explore extends Component {
 
     el = React.createRef();
     width = 1000;
-    height = 500;
+    height = 400;
 
     radiusScale = d3.scaleSqrt().domain([1, 10]).range([10, 80]);
 
@@ -25,9 +25,9 @@ class Explore extends Component {
 
     forceXSeparate = d3.forceX((d) => {
         if (d.type === "software") {
-            return 100;
+            return 200;
         } else {
-            return 900;
+            return 800;
         }
     }).strength(0.05);
 
@@ -87,7 +87,7 @@ class Explore extends Component {
         .attr("text-anchor", "middle")
         .attr("alignment-baseline", "central")
         .attr("fill", "white")
-        .attr("font-size", "18px")
+        .attr("font-size", "20px")
         .text((d) => {
             return d.title;
         })
