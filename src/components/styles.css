@@ -5,7 +5,7 @@
           animation: Home-height-load 16s ease;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  background: repeating-linear-gradient(#9b489b, #000350 800px, #000350 800px, #9b489b 1600px);
+  background: repeating-linear-gradient(#9b489b, #000350 100vh, #000350 100vh, #9b489b 200vh);
 }
 
 .Home-title {
