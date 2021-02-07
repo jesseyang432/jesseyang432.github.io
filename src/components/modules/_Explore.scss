@@ -21,12 +21,19 @@
 		cursor: pointer;
 		font-size: 20px;
 		font-family: "Alegreya", "serif";
-		padding: 5px 10px;
+		padding: 7.5px 12.5px;
 		outline: none;
 		background-color: $dark-blue;
 		color: white;
 		border-radius: 10px;
-		border: solid thin white;
+	}
+
+	.Explore-button-unselected {
+		animation: Explore-unselect-button 1s ease forwards;
+	}
+
+	.Explore-button-selected {
+		animation: Explore-select-button 1s ease forwards;
 	}
 
 	.Explore-checkboxes {
@@ -41,6 +48,7 @@
 			border-radius: 5px;
 			cursor: pointer;
 			background-color: rgba(255, 255, 255, 0.7);
+			box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.45);
 			display: inline-block;
 			margin: 10px;
 		}
@@ -256,6 +264,28 @@
 	}
 	to {
 		background-color: rgba(246, 189, 209, 1);
+	}
+}
+
+@keyframes Explore-select-button {
+	from {
+		border: none;
+		box-shadow: none;
+	}
+	to {
+		border: solid thin white;
+		box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.45);
+	}
+}
+
+@keyframes Explore-unselect-button {
+	from {
+		border: solid thin white;
+		box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.45);
+	}
+	to {
+		border: none;
+		box-shadow: none;
 	}
 }
 
