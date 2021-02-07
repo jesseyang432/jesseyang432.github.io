@@ -128,7 +128,7 @@
 #Explore-theoretical-cs,
 #Explore-math {
 	.Explore-checkmark {
-		animation: checkmark-check 0.5s ease forwards;
+		animation: checkmark-uncheck 0.5s ease forwards;
 	}
 }
 
@@ -136,7 +136,7 @@
 #Explore-theoretical-cs-clicked,
 #Explore-math-clicked {
 	.Explore-checkmark {
-		animation: checkmark-uncheck 0.5s ease forwards;
+		animation: checkmark-check 0.5s ease forwards;
 	}
 }
 

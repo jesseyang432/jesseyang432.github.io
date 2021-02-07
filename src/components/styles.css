@@ -1016,15 +1016,15 @@
 #Explore-software .Explore-checkmark,
 #Explore-theoretical-cs .Explore-checkmark,
 #Explore-math .Explore-checkmark {
-  -webkit-animation: checkmark-check 0.5s ease forwards;
-          animation: checkmark-check 0.5s ease forwards;
+  -webkit-animation: checkmark-uncheck 0.5s ease forwards;
+          animation: checkmark-uncheck 0.5s ease forwards;
 }
 
 #Explore-software-clicked .Explore-checkmark,
 #Explore-theoretical-cs-clicked .Explore-checkmark,
 #Explore-math-clicked .Explore-checkmark {
-  -webkit-animation: checkmark-uncheck 0.5s ease forwards;
-          animation: checkmark-uncheck 0.5s ease forwards;
+  -webkit-animation: checkmark-check 0.5s ease forwards;
+          animation: checkmark-check 0.5s ease forwards;
 }
 
 .Explore-slider-container {
