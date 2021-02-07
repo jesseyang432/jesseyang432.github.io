@@ -1038,6 +1038,11 @@
   width: 50%;
 }
 
+.Explore-slider-container .Explore-slider-header {
+  position: absolute;
+  top: -28px;
+}
+
 .Explore-slider-container .Explore-slider-slight {
   position: absolute;
   top: 12px;

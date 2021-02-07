@@ -269,6 +269,7 @@ class Explore extends Component {
                     <button id={this.state.distribution === "combined" ? "Explore-button-selected" : "Explore-button-unselected"} className="exp-fadeIn" onClick={this.toggleCombined}>Combine</button>
                 </div>
                 <div className="Explore-slider-container exp-fadeIn">
+                    <p className="Explore-slider-header"><em>Familiarity Level</em></p>
                     <input className="Explore-slider" type="range" min="0" max="10" step="0.1" value={this.state.minFamiliarity} onChange={this.changeMinFamiliarity}></input>
                     <p className="Explore-slider-slight">Slight</p>
                     <p className="Explore-slider-moderate">Moderate</p>
