@@ -1040,7 +1040,8 @@
 
 .Explore-slider-container .Explore-slider-header {
   position: absolute;
-  top: -32px;
+  top: -36px;
+  font-size: 20px;
 }
 
 .Explore-slider-container .Explore-slider-slight {
@@ -1065,6 +1066,15 @@
   left: 75%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
+}
+
+.Explore-slider-container .Explore-input-fill {
+  min-width: 0;
+  height: 8px;
+  border-radius: 0 4px 4px 0;
+  position: absolute;
+  right: 0;
+  background: #000350;
 }
 
 .Explore-slider-container input {
@@ -1444,6 +1454,11 @@
   }
   .Explore-slider-container {
     width: 100%;
+  }
+  .Explore-slider-container .Explore-slider-slight,
+  .Explore-slider-container .Explore-slider-moderate,
+  .Explore-slider-container .Explore-slider-comfortable {
+    font-size: 12px;
   }
 }
 

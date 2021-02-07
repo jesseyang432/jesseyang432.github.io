@@ -150,7 +150,8 @@
 
 	.Explore-slider-header {
 		position: absolute;
-		top: -32px;
+		top: -36px;
+		font-size: 20px;
 	}
 
 	.Explore-slider-slight {
@@ -172,6 +173,15 @@
 		top: 16px;
 		left: 75%;
 		transform: translate(-50%);
+	}
+
+	.Explore-input-fill {
+		min-width: 0;
+		height: 8px;
+		border-radius: 0 4px 4px 0;
+		position: absolute;
+		right: 0;
+		background: $dark-blue;
 	}
 
 	input {
@@ -415,8 +425,11 @@
 
 	.Explore-slider-container {
 		width: 100%;
-		// input {
-		// 	width: 100%;
-		// }
+
+		.Explore-slider-slight,
+		.Explore-slider-moderate,
+		.Explore-slider-comfortable {
+			font-size: 12px;
+		}
 	}
 }
