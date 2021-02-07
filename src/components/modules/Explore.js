@@ -165,13 +165,13 @@ class Explore extends Component {
   toggleSeparate = () => {
       this.setState({
           distribution: "separate",
-        }, this.runSimulation())
+        }, this.runSimulation)
   }
 
   toggleCombined = () => {
       this.setState({
           distribution: "combined",
-      }, this.runSimulation())
+      }, this.runSimulation)
   }
 
   bubbleClicked = (bubble) => {
@@ -198,19 +198,19 @@ class Explore extends Component {
   toggleSoftware = () => {
       this.setState({
           showSoftware: !this.state.showSoftware,
-      }, this.runSimulation());
+      }, this.runSimulation);
   }
 
   toggleTheoreticalCS = () => {
       this.setState({
           showTheoreticalCS: !this.state.showTheoreticalCS,
-      }, this.runSimulation());
+      }, this.runSimulation);
   }
 
   toggleMath = () => {
       this.setState({
           showMath: !this.state.showMath,
-      }, this.runSimulation());
+      }, this.runSimulation);
   }
 
   runSimulation = () => {
