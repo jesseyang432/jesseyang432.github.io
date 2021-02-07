@@ -39,13 +39,15 @@ function SingleProject(props) {
     };
 
     projIntersection && projIntersection.intersectionRatio < 0.5 ?
-    fadeOut(".proj-fadeIn") :
-    fadeIn(".proj-fadeIn");
+    fadeOut(`.proj-fadeIn-${props.project.id}`) :
+    fadeIn(`.proj-fadeIn-${props.project.id}`);
 
 
     return (
         <>
-            hey
+            <div ref={projRef} className="Project-container">
+                <h1 className={`proj-fadeIn-${props.project.id}`}>{props.project.title}</h1>
+            </div>
         </>
 
     );

@@ -14,7 +14,7 @@ function HomeProjects() {
     const projIntersection = useIntersection(projRef, {
         root: null,
         rootMargin: '0px',
-        threshold: 0.5
+        threshold: 0.3
     });
 
     const fadeIn = (element) => {
@@ -42,7 +42,7 @@ function HomeProjects() {
         });
     };
 
-    projIntersection && projIntersection.intersectionRatio < 0.5 ?
+    projIntersection && projIntersection.intersectionRatio < 0.3 ?
     fadeOut(".proj-fadeIn") :
     fadeIn(".proj-fadeIn");
 
