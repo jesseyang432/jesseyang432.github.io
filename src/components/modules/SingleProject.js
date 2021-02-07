@@ -42,6 +42,10 @@ function SingleProject(props) {
     fadeOut(`.proj-fadeIn-${props.project.id}`) :
     fadeIn(`.proj-fadeIn-${props.project.id}`);
 
+    const technologies = props.project.technologies.map((tech) => (
+        <p>{tech} </p>
+    ));
+
 
     return (
         <>
@@ -54,6 +58,9 @@ function SingleProject(props) {
                         <h2>{props.project.title}</h2>
                         <div className="Project-info-description">
                             <p>{props.project.description}</p>
+                        </div>
+                        <div className="Project-info-tech">
+                            {technologies}
                         </div>
                     </div>
                 </div>

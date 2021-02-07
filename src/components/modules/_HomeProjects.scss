@@ -49,12 +49,24 @@
 
 		h2 {
 			font-size: 24px;
+			padding: 10px;
 		}
 
 		.Project-info-description {
 			background-color: $light-blue;
 			padding: 10px;
 			border-radius: 10px;
+		}
+
+		.Project-info-tech {
+			padding: 10px;
+
+			p {
+				font-weight: 700;
+				color: $pink;
+				display: inline;
+				margin: 10px;
+			}
 		}
 	}
 }
