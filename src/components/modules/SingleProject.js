@@ -1,13 +1,9 @@
 import React, {useRef, useState, useEffect} from 'react';
 import {useIntersection} from 'react-use';
-import SingleProject from './SingleProject';
 
-import projects from '../../data/projects';
 import gsap from 'gsap';
 
-function HomeProjects() {
-
-    const projectList = projects;
+function SingleProject() {
 
     const projRef = useRef(null);
 
@@ -46,20 +42,13 @@ function HomeProjects() {
     fadeOut(".proj-fadeIn") :
     fadeIn(".proj-fadeIn");
 
-    const myProjects = projectList.map((project) => (
-      <SingleProject/>
-    ));
-
 
     return (
         <>
-            <div ref={projRef} className="HomeProjects-container">
-                <h1 className="proj-fadeIn">Projects</h1>
-                {myProjects}
-            </div>
+            hey
         </>
 
     );
 }
 
-export default HomeProjects;
+export default SingleProject;
