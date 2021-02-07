@@ -1068,7 +1068,6 @@
   width: 60%;
   position: absolute;
   top: 50%;
-  left: 0;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
@@ -1077,15 +1076,12 @@
   width: 45%;
   position: absolute;
   top: 50%;
-  right: 0;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  text-align: right;
 }
 
 .Project-container .Project-info-container h2 {
   font-size: 32px;
-  padding: 10px 10px 10px 12%;
 }
 
 .Project-container .Project-info-container .Project-info-description {
@@ -1096,8 +1092,6 @@
 }
 
 .Project-container .Project-info-container .Project-info-tech {
-  right: 0;
-  padding: 10px 10px 10px 12%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -1108,6 +1102,32 @@
   color: #f6bdd1;
   display: inline;
   margin: 0 10px;
+}
+
+.Project-right {
+  right: 0;
+  text-align: right;
+}
+
+.Project-right h2 {
+  padding: 10px 10px 10px 12%;
+}
+
+.Project-right .Project-info-tech {
+  padding: 10px 10px 10px 12%;
+}
+
+.Project-left {
+  left: 0;
+  text-align: left;
+}
+
+.Project-left h2 {
+  padding: 10px 12% 10px 10px;
+}
+
+.Project-left .Project-info-tech {
+  padding: 10px 12% 10px 10px;
 }
 
 @media only screen and (max-width: 1000px) {
