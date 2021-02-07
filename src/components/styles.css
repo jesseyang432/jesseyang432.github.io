@@ -1040,8 +1040,8 @@
 .Explore-slider-container input {
   -webkit-appearance: none;
   width: 50%;
-  height: 12px;
-  border-radius: 20px;
+  height: 8px;
+  border-radius: 4px;
   outline: none;
   opacity: 0.7;
 }
@@ -1053,11 +1053,37 @@
 .Explore-slider-container input::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
   border-radius: 50%;
   background: #000350;
   cursor: pointer;
+  outline: none;
+  -webkit-box-shadow: 0 0 0 0 rgba(0, 3, 80, 0.1);
+          box-shadow: 0 0 0 0 rgba(0, 3, 80, 0.1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.Explore-slider-container input::-webkit-slider-thumb:hover {
+  -webkit-box-shadow: 0 0 0 18px rgba(0, 3, 80, 0.1);
+          box-shadow: 0 0 0 18px rgba(0, 3, 80, 0.1);
+}
+
+.Explore-slider-container input:active::-webkit-slider-thumb {
+  -webkit-box-shadow: 0 0 0 18px rgba(0, 3, 80, 0.3);
+          box-shadow: 0 0 0 18px rgba(0, 3, 80, 0.3);
+}
+
+.Explore-slider-container input::-moz-range-thumb {
+  width: 24px;
+  height: 24px;
+  background: #000350;
+  cursor: pointer;
+}
+
+.Explore-slider-container input::-ms-fill-lower {
+  background: #000350;
 }
 
 .Explore-tooltip {
