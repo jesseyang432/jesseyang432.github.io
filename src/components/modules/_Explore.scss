@@ -45,9 +45,21 @@
 			margin: 10px;
 		}
 
+		#Explore-software,
+		#Explore-theoretical-cs,
+		#Explore-math,
+		#Explore-software-clicked,
+		#Explore-theoretical-cs-clicked,
+		#Explore-math-clicked {
+			position: relative;
+		}
+
 		#Explore-software::after,
 		#Explore-theoretical-cs::after,
-		#Explore-math::after {
+		#Explore-math::after,
+		#Explore-software-clicked::after,
+		#Explore-theoretical-cs-clicked::after,
+		#Explore-math-clicked::after {
 			text-align: center;
 			position: absolute;
 			top: 120%;
@@ -55,15 +67,18 @@
 			transform: translateX(-50%);
 		}
 
-		#Explore-software::after {
+		#Explore-software::after,
+		#Explore-software-clicked::after {
 			content: "Software";
 		}
 
-		#Explore-theoretical-cs::after {
+		#Explore-theoretical-cs::after,
+		#Explore-theoretical-cs-clicked::after {
 			content: "Theoretical CS";
 		}
 
-		#Explore-math::after {
+		#Explore-math::after,
+		#Explore-math-clicked::after {
 			content: "Math";
 		}
 	}
