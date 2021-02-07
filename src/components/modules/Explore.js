@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import * as d3 from "d3";
+import {GiCheckMark} from 'react-icons/gi';
 
 import whatido from '../../data/whatido';
 
@@ -240,9 +241,15 @@ class Explore extends Component {
                 <div className="Explore-button-aisle">
                     <button id={this.state.distribution === "separate" ? "Explore-button-selected" : "Explore-button-unselected"} className="exp-fadeIn" onClick={this.toggleSeparate}>Separate</button>
                     <div className="Explore-checkboxes">
-                        <div id={this.state.showSoftware ? "Explore-software-clicked" : "Explore-software"} className="Explore-checkbox exp-fadeIn" onClick={this.toggleSoftware}></div>
-                        <div id={this.state.showTheoreticalCS ? "Explore-theoretical-cs-clicked" : "Explore-theoretical-cs"} className="Explore-checkbox exp-fadeIn" onClick={this.toggleTheoreticalCS}></div>
-                        <div id={this.state.showMath ? "Explore-math-clicked" : "Explore-math"} className="Explore-checkbox exp-fadeIn" onClick={this.toggleMath}></div>
+                        <div id={this.state.showSoftware ? "Explore-software-clicked" : "Explore-software"} className="Explore-checkbox exp-fadeIn" onClick={this.toggleSoftware}>
+                            <div className="Explore-checkmark"><GiCheckMark/></div>
+                        </div>
+                        <div id={this.state.showTheoreticalCS ? "Explore-theoretical-cs-clicked" : "Explore-theoretical-cs"} className="Explore-checkbox exp-fadeIn" onClick={this.toggleTheoreticalCS}>
+                            <div className="Explore-checkmark"><GiCheckMark/></div>
+                        </div>
+                        <div id={this.state.showMath ? "Explore-math-clicked" : "Explore-math"} className="Explore-checkbox exp-fadeIn" onClick={this.toggleMath}>
+                            <div className="Explore-checkmark"><GiCheckMark/></div>
+                        </div>
                     </div>
                     <button id={this.state.distribution === "combined" ? "Explore-button-selected" : "Explore-button-unselected"} className="exp-fadeIn" onClick={this.toggleCombined}>Combine</button>
                 </div>

@@ -934,6 +934,15 @@
           box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.45);
   display: inline-block;
   margin: 10px;
+  position: relative;
+}
+
+.Explore-button-aisle .Explore-checkboxes .Explore-checkbox .Explore-checkmark {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .Explore-button-aisle .Explore-checkboxes #Explore-software,
