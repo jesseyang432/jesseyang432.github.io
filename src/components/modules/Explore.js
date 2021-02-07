@@ -238,13 +238,13 @@ class Explore extends Component {
             <div className="Explore-container">
                 <h1 className="exp-fadeIn">Explore What I Do</h1>
                 <div className="Explore-button-aisle">
-                    <button className="exp-fadeIn" id="type" onClick={this.toggleSeparate}>Separate</button>
+                    <button id={this.state.distribution === "separate" ? "Explore-button-selected" : "Explore-button-unselected"} className="exp-fadeIn" onClick={this.toggleSeparate}>Separate</button>
                     <div className="Explore-checkboxes">
                         <div id={this.state.showSoftware ? "Explore-software-clicked" : "Explore-software"} className="Explore-checkbox exp-fadeIn" onClick={this.toggleSoftware}></div>
                         <div id={this.state.showTheoreticalCS ? "Explore-theoretical-cs-clicked" : "Explore-theoretical-cs"} className="Explore-checkbox exp-fadeIn" onClick={this.toggleTheoreticalCS}></div>
                         <div id={this.state.showMath ? "Explore-math-clicked" : "Explore-math"} className="Explore-checkbox exp-fadeIn" onClick={this.toggleMath}></div>
                     </div>
-                    <button className="exp-fadeIn" id="combine" onClick={this.toggleCombined}>Combine</button>
+                    <button id={this.state.distribution === "combined" ? "Explore-button-selected" : "Explore-button-unselected"} className="exp-fadeIn" onClick={this.toggleCombined}>Combine</button>
                 </div>
                 <div className="Explore-slider-container exp-fadeIn">
                     <input type="range"></input>

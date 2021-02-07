@@ -901,14 +901,14 @@
   border-radius: 10px;
 }
 
-.Explore-button-aisle .Explore-button-unselected {
-  -webkit-animation: Explore-unselect-button 1s ease forwards;
-          animation: Explore-unselect-button 1s ease forwards;
+.Explore-button-aisle #Explore-button-unselected {
+  -webkit-animation: Explore-unselect-button 0.3s ease forwards;
+          animation: Explore-unselect-button 0.3s ease forwards;
 }
 
-.Explore-button-aisle .Explore-button-selected {
-  -webkit-animation: Explore-select-button 1s ease forwards;
-          animation: Explore-select-button 1s ease forwards;
+.Explore-button-aisle #Explore-button-selected {
+  -webkit-animation: Explore-select-button 0.3s ease forwards;
+          animation: Explore-select-button 0.3s ease forwards;
 }
 
 .Explore-button-aisle .Explore-checkboxes {
@@ -1249,7 +1249,7 @@
 
 @-webkit-keyframes Explore-select-button {
   from {
-    border: none;
+    border: solid thin #000350;
     -webkit-box-shadow: none;
             box-shadow: none;
   }
@@ -1262,7 +1262,7 @@
 
 @keyframes Explore-select-button {
   from {
-    border: none;
+    border: solid thin #000350;
     -webkit-box-shadow: none;
             box-shadow: none;
   }
@@ -1280,7 +1280,7 @@
             box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.45);
   }
   to {
-    border: none;
+    border: solid thin #000350;
     -webkit-box-shadow: none;
             box-shadow: none;
   }
@@ -1293,7 +1293,7 @@
             box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.45);
   }
   to {
-    border: none;
+    border: solid thin #000350;
     -webkit-box-shadow: none;
             box-shadow: none;
   }
