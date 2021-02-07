@@ -50,8 +50,11 @@ function SingleProject(props) {
                     <div className="Project-img-container">
                         <img src={`${props.project.src}`} alt=""/>
                     </div>
-                    <div className="Project-description-container">
+                    <div className="Project-info-container">
                         <h2>{props.project.title}</h2>
+                        <div className="Project-info-description">
+                            <p>{props.project.description}</p>
+                        </div>
                     </div>
                 </div>
             </div>
