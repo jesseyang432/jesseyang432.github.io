@@ -1038,7 +1038,26 @@
 }
 
 .Explore-slider-container input {
+  -webkit-appearance: none;
   width: 50%;
+  height: 12px;
+  border-radius: 20px;
+  outline: none;
+  opacity: 0.7;
+}
+
+.Explore-slider-container input:hover {
+  opacity: 1;
+}
+
+.Explore-slider-container input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #000350;
+  cursor: pointer;
 }
 
 .Explore-tooltip {

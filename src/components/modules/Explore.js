@@ -254,7 +254,7 @@ class Explore extends Component {
                     <button id={this.state.distribution === "combined" ? "Explore-button-selected" : "Explore-button-unselected"} className="exp-fadeIn" onClick={this.toggleCombined}>Combine</button>
                 </div>
                 <div className="Explore-slider-container exp-fadeIn">
-                    <input type="range"></input>
+                    <input className="Explore-slider" type="range" min="0" max="10" value="0"></input>
                 </div>
                 <div id="explore" ref={el => (this.el = el)}>{this.getTooltip()}</div>
             </div>
