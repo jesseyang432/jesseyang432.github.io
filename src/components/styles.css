@@ -549,65 +549,70 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 12px;
+}
+
+.SocialLinks-links .SocialLinks-single-link {
+  opacity: 0;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.SocialLinks-links .SocialLinks-single-link:nth-child(1) {
+  -webkit-animation: SocialLinks-fadein-anim 1s ease 5.7s forwards;
+          animation: SocialLinks-fadein-anim 1s ease 5.7s forwards;
+}
+
+.SocialLinks-links .SocialLinks-single-link:nth-child(2) {
+  -webkit-animation: SocialLinks-fadein-anim 1s ease 5.85s forwards;
+          animation: SocialLinks-fadein-anim 1s ease 5.85s forwards;
+}
+
+.SocialLinks-links .SocialLinks-single-link:nth-child(3) {
+  -webkit-animation: SocialLinks-fadein-anim 1s ease 6s forwards;
+          animation: SocialLinks-fadein-anim 1s ease 6s forwards;
+}
+
+.SocialLinks-links .SocialLinks-single-link:nth-child(4) {
+  -webkit-animation: SocialLinks-fadein-anim 1s ease 6.15s forwards;
+          animation: SocialLinks-fadein-anim 1s ease 6.15s forwards;
+}
+
+.SocialLinks-links .SocialLinks-single-link:hover {
+  -webkit-transform: translateY(-8px);
+          transform: translateY(-8px);
+}
+
+.SocialLinks-links .SocialLinks-single-link:hover a {
+  color: #f6bdd1;
 }
 
 .SocialLinks-links a {
   text-decoration: none;
   color: #fff;
-  margin: 12px;
+  margin: 0 12px;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
-  opacity: 0;
-}
-
-.SocialLinks-links a:nth-child(1) {
-  -webkit-animation: SocialLinks-fadein-anim 1s ease 5.7s forwards;
-          animation: SocialLinks-fadein-anim 1s ease 5.7s forwards;
-}
-
-.SocialLinks-links a:nth-child(2) {
-  -webkit-animation: SocialLinks-fadein-anim 1s ease 5.85s forwards;
-          animation: SocialLinks-fadein-anim 1s ease 5.85s forwards;
-}
-
-.SocialLinks-links a:nth-child(3) {
-  -webkit-animation: SocialLinks-fadein-anim 1s ease 6s forwards;
-          animation: SocialLinks-fadein-anim 1s ease 6s forwards;
-}
-
-.SocialLinks-links a:nth-child(4) {
-  -webkit-animation: SocialLinks-fadein-anim 1s ease 6.15s forwards;
-          animation: SocialLinks-fadein-anim 1s ease 6.15s forwards;
-}
-
-.SocialLinks-links a:hover {
-  -webkit-transform: translateY(-8px);
-          transform: translateY(-8px);
-  color: #f6bdd1;
 }
 
 @-webkit-keyframes SocialLinks-fadein-anim {
   from {
-    -webkit-transform: translateY(50%);
-            transform: translateY(50%);
+    scale: 0;
     opacity: 0;
   }
   to {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    scale: 1;
     opacity: 1;
   }
 }
 
 @keyframes SocialLinks-fadein-anim {
   from {
-    -webkit-transform: translateY(50%);
-            transform: translateY(50%);
+    scale: 0;
     opacity: 0;
   }
   to {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    scale: 1;
     opacity: 1;
   }
 }

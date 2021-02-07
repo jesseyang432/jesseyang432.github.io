@@ -16,18 +16,26 @@ class SocialLinks extends Component {
     return (
         <>
             <div className="SocialLinks-links">
-                <a href="https://github.com/jesseyang432">
-                    <RiGithubLine size={32}/>
-                </a>
-                <a href="https://www.facebook.com/jesse.yang.1272/">
-                    <RiFacebookFill size={32}/>
-                </a>
-                <Link to="/">
-                    <RiLinkedinFill size={32}/>
-                </Link>
-                <a href="https://www.instagram.com/jesseyang_/">
-                    <RiInstagramLine size={32}/>
-                </a>
+                <div className="SocialLinks-single-link">
+                    <a href="https://github.com/jesseyang432">
+                        <RiGithubLine size={32}/>
+                    </a>
+                </div>
+                <div className="SocialLinks-single-link">
+                    <a href="https://www.facebook.com/jesse.yang.1272/">
+                        <RiFacebookFill size={32}/>
+                    </a>
+                </div>
+                <div className="SocialLinks-single-link">
+                    <Link to="/">
+                        <RiLinkedinFill size={32}/>
+                    </Link>
+                </div>
+                <div className="SocialLinks-single-link">
+                    <a href="https://www.instagram.com/jesseyang_/">
+                        <RiInstagramLine size={32}/>
+                    </a>
+                </div>
             </div>
         </>
     );

@@ -3,13 +3,10 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin-top: 12px;
 	// color: transparent;
 
-	a {
-		text-decoration: none;
-		color: #fff;
-		margin: 12px;
-		transition: 0.5s ease;
+	.SocialLinks-single-link {
 		opacity: 0;
 
 		&:nth-child(1) {
@@ -28,22 +25,34 @@
 			animation: SocialLinks-fadein-anim 1s ease 6.15s forwards;
 		}
 
+		transition: 0.5s ease;
+
 		&:hover {
-			transform: translateY(
-				-8px
-			); // not working right now because of forwards animation
-			color: $pink;
+			transform: translateY(-8px);
+
+			a {
+				color: $pink;
+			}
 		}
+	}
+
+	a {
+		text-decoration: none;
+		color: #fff;
+		margin: 0 12px;
+		transition: 0.5s ease;
 	}
 }
 
 @keyframes SocialLinks-fadein-anim {
 	from {
-		transform: translateY(50%);
+		// transform: translateY(50%);
+		scale: 0;
 		opacity: 0;
 	}
 	to {
-		transform: translateY(0);
+		// transform: translateY(0);
+		scale: 1;
 		opacity: 1;
 	}
 }
