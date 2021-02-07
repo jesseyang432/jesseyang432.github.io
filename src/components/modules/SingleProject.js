@@ -3,6 +3,12 @@ import {useIntersection} from 'react-use';
 
 import gsap from 'gsap';
 
+/**
+ * Proptypes
+ * @param {data} project from projects.js
+ * @param {[String, String]} class types of img/info (Project-right/Project-left)
+*/
+
 function SingleProject(props) {
 
     const projRef = useRef(null);

@@ -23,7 +23,7 @@
 		width: 100%;
 		height: 60%;
 		object-fit: scale;
-		border-radius: 10px;
+		border-radius: 5px;
 		background: $pink;
 		transition: 0.5s;
 		&:hover {
@@ -54,7 +54,7 @@
 
 		.Project-info-description {
 			background-color: $light-blue;
-			padding: 10px;
+			padding: 20px;
 			border-radius: 10px;
 			font-size: 18px;
 		}
