@@ -26,7 +26,9 @@ class Explore extends Component {
     forceXSeparate = d3.forceX((d) => {
         if (d.type === "software") {
             return 200;
-        } else {
+        } else if (d.type === "theoretical cs") {
+            return 500;
+        } else if (d.type === "math") {
             return 800;
         }
     }).strength(0.05);
@@ -74,7 +76,7 @@ class Explore extends Component {
             return this.radiusScale(d.value);
         })
         .attr("fill", (d) => {
-            return (d.type === "software" ? "#92b4f4" : "#f6bdd1")
+            return (d.type === "software" ? "#92b4f4" : (d.type === "theoretical cs" ? "#e39ff6" : "#f6bdd1"))
         })
         .attr("cx", 100)
         .attr("cy", 300)
