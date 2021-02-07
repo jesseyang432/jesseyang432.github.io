@@ -3,7 +3,7 @@ import {useIntersection} from 'react-use';
 
 import gsap from 'gsap';
 
-function SingleProject() {
+function SingleProject(props) {
 
     const projRef = useRef(null);
 

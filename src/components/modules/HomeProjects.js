@@ -47,9 +47,8 @@ function HomeProjects() {
     fadeIn(".proj-fadeIn");
 
     const myProjects = projectList.map((project) => (
-      <SingleProject/>
+      <SingleProject project={project}/>
     ));
-
 
     return (
         <>
