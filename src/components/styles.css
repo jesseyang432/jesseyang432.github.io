@@ -877,7 +877,7 @@
 }
 
 .Explore-button-aisle {
-  max-width: 80%;
+  max-width: 100%;
   margin: 20px auto 5vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -903,12 +903,16 @@
 }
 
 .Explore-button-aisle .Explore-checkboxes {
+  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .Explore-button-aisle .Explore-checkboxes .Explore-checkbox {
@@ -916,9 +920,32 @@
   height: 24px;
   border-radius: 5px;
   cursor: pointer;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.7);
   display: inline-block;
   margin: 10px;
+}
+
+.Explore-button-aisle .Explore-checkboxes #Explore-software::after,
+.Explore-button-aisle .Explore-checkboxes #Explore-theoretical-cs::after,
+.Explore-button-aisle .Explore-checkboxes #Explore-math::after {
+  text-align: center;
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.Explore-button-aisle .Explore-checkboxes #Explore-software::after {
+  content: "Software";
+}
+
+.Explore-button-aisle .Explore-checkboxes #Explore-theoretical-cs::after {
+  content: "Theoretical CS";
+}
+
+.Explore-button-aisle .Explore-checkboxes #Explore-math::after {
+  content: "Math";
 }
 
 .Explore-tooltip {

@@ -165,12 +165,11 @@ class Explore extends Component {
             <div className="Explore-container">
                 <h1 className="exp-fadeIn">Explore What I Do</h1>
                 <div className="Explore-button-aisle">
-                    <button className="exp-fadeIn" id="type" onClick={() => this.toggleStatus("separate")}>Type split</button>
+                    <button className="exp-fadeIn" id="type" onClick={() => this.toggleStatus("separate")}>Separate</button>
                     <div className="Explore-checkboxes">
-                        <div className="Explore-checkbox"></div>
-                        <div className="Explore-checkbox"></div>
-                        <div className="Explore-checkbox"></div>
-                        <input className="exp-fadeIn" type="checkbox"></input>
+                        <div id="Explore-software" className="Explore-checkbox exp-fadeIn"></div>
+                        <div id="Explore-theoretical-cs" className="Explore-checkbox exp-fadeIn"></div>
+                        <div id="Explore-math" className="Explore-checkbox exp-fadeIn"></div>
                     </div>
                     <button className="exp-fadeIn" id="combine" onClick={() => this.toggleStatus("combined")}>Combine</button>
                 </div>

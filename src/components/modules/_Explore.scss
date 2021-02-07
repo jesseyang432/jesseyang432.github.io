@@ -11,7 +11,7 @@
 }
 
 .Explore-button-aisle {
-	max-width: 80%;
+	max-width: 100%;
 	margin: 20px auto 5vh;
 	display: flex;
 	justify-content: space-between;
@@ -30,17 +30,41 @@
 	}
 
 	.Explore-checkboxes {
+		width: 80%;
 		display: flex;
 		align-items: center;
+		justify-content: space-evenly;
 
 		.Explore-checkbox {
 			width: 24px;
 			height: 24px;
 			border-radius: 5px;
 			cursor: pointer;
-			background-color: white;
+			background-color: rgba(255, 255, 255, 0.7);
 			display: inline-block;
 			margin: 10px;
+		}
+
+		#Explore-software::after,
+		#Explore-theoretical-cs::after,
+		#Explore-math::after {
+			text-align: center;
+			position: absolute;
+			top: 120%;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+
+		#Explore-software::after {
+			content: "Software";
+		}
+
+		#Explore-theoretical-cs::after {
+			content: "Theoretical CS";
+		}
+
+		#Explore-math::after {
+			content: "Math";
 		}
 	}
 }
