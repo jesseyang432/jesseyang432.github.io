@@ -15,6 +15,7 @@
 	margin: 20px auto 5vh;
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 
 	button {
 		cursor: pointer;
@@ -26,6 +27,21 @@
 		color: white;
 		border-radius: 10px;
 		border: solid thin white;
+	}
+
+	.Explore-checkboxes {
+		display: flex;
+		align-items: center;
+
+		.Explore-checkbox {
+			width: 24px;
+			height: 24px;
+			border-radius: 5px;
+			cursor: pointer;
+			background-color: white;
+			display: inline-block;
+			margin: 10px;
+		}
 	}
 }
 

@@ -31,7 +31,12 @@ const whatido = [
         type: "theoretical cs",
     },
     {
-        title: "HTML/CSS/JS",
+        title: "HTML/(S)CSS",
+        value: "7",
+        type: "software",
+    },
+    {
+        title: "JavaScript",
         value: "7",
         type: "software",
     },

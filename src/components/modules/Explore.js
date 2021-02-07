@@ -17,7 +17,7 @@ class Explore extends Component {
     width = 1000;
     height = 500;
 
-    radiusScale = d3.scaleSqrt().domain([1, 10]).range([10, 80]);
+    radiusScale = d3.scaleSqrt().domain([1, 10]).range([10, 70]);
 
     forceXCombine = d3.forceX((d) => {
         return this.width/2;
@@ -166,6 +166,12 @@ class Explore extends Component {
                 <h1 className="exp-fadeIn">Explore What I Do</h1>
                 <div className="Explore-button-aisle">
                     <button className="exp-fadeIn" id="type" onClick={() => this.toggleStatus("separate")}>Type split</button>
+                    <div className="Explore-checkboxes">
+                        <div className="Explore-checkbox"></div>
+                        <div className="Explore-checkbox"></div>
+                        <div className="Explore-checkbox"></div>
+                        <input className="exp-fadeIn" type="checkbox"></input>
+                    </div>
                     <button className="exp-fadeIn" id="combine" onClick={() => this.toggleStatus("combined")}>Combine</button>
                 </div>
                 <div id="explore" ref={el => (this.el = el)}>{this.getTooltip()}</div>
