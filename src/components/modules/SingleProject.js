@@ -45,8 +45,10 @@ function SingleProject(props) {
 
     return (
         <>
-            <div ref={projRef} className="Project-container">
-                <h1 className={`proj-fadeIn-${props.project.id}`}>{props.project.title}</h1>
+            <div ref={projRef} className="Project-section">
+                <div className={`Project-container proj-fadeIn-${props.project.id}`}>
+                    <h1>{props.project.title}</h1>
+                </div>
             </div>
         </>
 

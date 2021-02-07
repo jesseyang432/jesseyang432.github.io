@@ -56,7 +56,9 @@ function HomeProjects() {
               <div ref={projRef}>
                 <h1 className="proj-fadeIn-header">Projects</h1>
               </div>
+              <div>
                 {myProjects}
+              </div>
             </div>
         </>
 
