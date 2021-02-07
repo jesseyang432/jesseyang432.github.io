@@ -69,6 +69,30 @@
 	}
 }
 
+#Explore-software {
+	animation: software-unclick 0.5s ease forwards;
+}
+
+#Explore-software-clicked {
+	animation: software-click 0.5s ease forwards;
+}
+
+#Explore-theoretical-cs {
+	animation: theoretical-cs-unclick 0.5s ease forwards;
+}
+
+#Explore-theoretical-cs-clicked {
+	animation: theoretical-cs-click 0.5s ease forwards;
+}
+
+#Explore-math {
+	animation: theoretical-math-unclick 0.5s ease forwards;
+}
+
+#Explore-math-clicked {
+	animation: theoretical-math-click 0.5s ease forwards;
+}
+
 .Explore-tooltip {
 	width: 300px;
 	height: 200px;
@@ -153,6 +177,60 @@
 	}
 	to {
 		opacity: 100%;
+	}
+}
+
+@keyframes software-unclick {
+	from {
+		background-color: rgba(146, 180, 244, 1);
+	}
+	to {
+		background-color: rgba(255, 255, 255, 0.2);
+	}
+}
+
+@keyframes software-click {
+	from {
+		background-color: rgba(255, 255, 255, 0.2);
+	}
+	to {
+		background-color: rgba(146, 180, 244, 1);
+	}
+}
+
+@keyframes theoretical-cs-unclick {
+	from {
+		background-color: rgba(175, 105, 239, 1);
+	}
+	to {
+		background-color: rgba(255, 255, 255, 0.2);
+	}
+}
+
+@keyframes theoretical-cs-click {
+	from {
+		background-color: rgba(255, 255, 255, 0.2);
+	}
+	to {
+		background-color: rgba(175, 105, 239, 1);
+	}
+}
+
+@keyframes math-unclick {
+	from {
+		background-color: rgba(246, 189, 209, 1);
+	}
+	to {
+		background-color: rgba(255, 255, 255, 0.2);
+	}
+}
+
+@keyframes math-click {
+	from {
+		background-color: rgba(255, 255, 255, 0.2);
+	}
+	to {
+		background-color: rgba(246, 189, 209, 1);
 	}
 }
 
