@@ -888,6 +888,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 .Explore-button-aisle button {
@@ -912,16 +913,16 @@
 }
 
 .Explore-button-aisle .Explore-checkboxes {
-  width: 80%;
+  width: 240px;
+  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  top: 17.5vh;
+  right: 24px;
 }
 
 .Explore-button-aisle .Explore-checkboxes .Explore-checkbox {
@@ -933,7 +934,6 @@
   -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.45);
           box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.45);
   display: inline-block;
-  margin: 10px;
   position: relative;
 }
 
@@ -1040,12 +1040,12 @@
 
 .Explore-slider-container .Explore-slider-header {
   position: absolute;
-  top: -28px;
+  top: -32px;
 }
 
 .Explore-slider-container .Explore-slider-slight {
   position: absolute;
-  top: 12px;
+  top: 16px;
   left: 25%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
@@ -1053,7 +1053,7 @@
 
 .Explore-slider-container .Explore-slider-moderate {
   position: absolute;
-  top: 12px;
+  top: 16px;
   left: 50%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
@@ -1061,7 +1061,7 @@
 
 .Explore-slider-container .Explore-slider-comfortable {
   position: absolute;
-  top: 12px;
+  top: 16px;
   left: 75%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
@@ -1438,7 +1438,9 @@
     display: none;
   }
   .Explore-button-aisle .Explore-checkboxes {
-    width: 100%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
   .Explore-slider-container {
     width: 100%;

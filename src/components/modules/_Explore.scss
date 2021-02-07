@@ -16,6 +16,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	position: relative;
 
 	button {
 		cursor: pointer;
@@ -37,10 +38,12 @@
 	}
 
 	.Explore-checkboxes {
-		width: 80%;
+		width: 240px;
+		position: absolute;
 		display: flex;
-		align-items: center;
-		justify-content: space-evenly;
+		justify-content: space-between;
+		top: 17.5vh;
+		right: 24px;
 
 		.Explore-checkbox {
 			width: 24px;
@@ -50,7 +53,6 @@
 			background-color: rgba(255, 255, 255, 0.7);
 			box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.45);
 			display: inline-block;
-			margin: 10px;
 			position: relative;
 
 			.Explore-checkmark {
@@ -148,26 +150,26 @@
 
 	.Explore-slider-header {
 		position: absolute;
-		top: -28px;
+		top: -32px;
 	}
 
 	.Explore-slider-slight {
 		position: absolute;
-		top: 12px;
+		top: 16px;
 		left: 25%;
 		transform: translate(-50%);
 	}
 
 	.Explore-slider-moderate {
 		position: absolute;
-		top: 12px;
+		top: 16px;
 		left: 50%;
 		transform: translate(-50%);
 	}
 
 	.Explore-slider-comfortable {
 		position: absolute;
-		top: 12px;
+		top: 16px;
 		left: 75%;
 		transform: translate(-50%);
 	}
@@ -406,7 +408,8 @@
 		}
 
 		.Explore-checkboxes {
-			width: 100%;
+			left: 50%;
+			transform: translateX(-50%);
 		}
 	}
 
