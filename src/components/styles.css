@@ -1141,6 +1141,7 @@
     width: 100%;
   }
   .Project-container .Project-info-description {
+    color: #92b4f4;
     background-color: transparent !important;
   }
 }
