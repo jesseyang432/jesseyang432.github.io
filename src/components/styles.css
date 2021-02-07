@@ -1055,7 +1055,7 @@
 }
 
 body {
-  background-color: #000350;
+  overscroll-behavior: none;
   font-family: "Alegreya", "serif";
 }
 /*# sourceMappingURL=styles.css.map */
