@@ -14,7 +14,7 @@ function HomeProjects() {
     const projIntersection = useIntersection(projRef, {
         root: null,
         rootMargin: '0px',
-        threshold: 0.3
+        threshold: 0.5
     });
 
     const fadeIn = (element) => {
@@ -42,9 +42,9 @@ function HomeProjects() {
         });
     };
 
-    projIntersection && projIntersection.intersectionRatio < 0.3 ?
-    fadeOut(".proj-fadeIn") :
-    fadeIn(".proj-fadeIn");
+    projIntersection && projIntersection.intersectionRatio < 0.5 ?
+    fadeOut(".proj-fadeIn-header") :
+    fadeIn(".proj-fadeIn-header");
 
     const myProjects = projectList.map((project) => (
       <SingleProject project={project}/>
@@ -52,8 +52,10 @@ function HomeProjects() {
 
     return (
         <>
-            <div ref={projRef} className="HomeProjects-container">
-                <h1 className="proj-fadeIn">Projects</h1>
+            <div className="HomeProjects-container">
+              <div ref={projRef}>
+                <h1 className="proj-fadeIn-header">Projects</h1>
+              </div>
                 {myProjects}
             </div>
         </>
