@@ -661,7 +661,6 @@
 .Home-intro-name::before, .Home-intro-name::after {
   content: "";
   position: absolute;
-  width: 17.5%;
   height: 3px;
   background: #00ffff;
   top: 50%;
