@@ -1404,8 +1404,14 @@
 }
 
 @media only screen and (max-width: 1000px) {
-  .Explore-button-aisle {
-    visibility: hidden;
+  .Explore-button-aisle button {
+    display: none;
+  }
+  .Explore-button-aisle .Explore-checkboxes {
+    width: 100%;
+  }
+  .Explore-slider-container input {
+    width: 100%;
   }
 }
 
