@@ -1,63 +1,65 @@
 const whatido = [
     {
         title: "Algorithms",
-        value: "5",
+        value: "8",
         type: "theoretical cs",
         description: "hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi "
     },
     {
         title: "Algebra",
-        value: "4",
-        type: "math",
-    },
-    {
-        title: "Quick Maths",
         value: "7",
         type: "math",
     },
     {
         title: "Python",
-        value: "6",
-        type: "software",
-    },{
-        title: "Algorithms",
-        value: "5",
+        value: "8",
         type: "software",
     },
     {
-        title: "Algebra",
+        title: "Java",
         value: "4",
-        type: "math",
+        type: "software",
     },
     {
-        title: "Quick Maths",
+        title: "Probability",
         value: "7",
         type: "math",
     },
     {
-        title: "Python",
+        title: "Data Structures",
         value: "6",
-        type: "software",
-    },{
-        title: "Algorithms",
-        value: "5",
+        type: "theoretical cs",
+    },
+    {
+        title: "HTML/CSS/JS",
+        value: "7",
         type: "software",
     },
     {
-        title: "Algebra",
-        value: "4",
+        title: "MERN",
+        value: "6",
+        type: "software",
+    },
+    {
+        title: "Calculus",
+        value: "8",
         type: "math",
     },
     {
-        title: "Quick Maths",
+        title: "Real Analysis",
         value: "7",
         type: "math",
     },
     {
-        title: "Python",
-        value: "6",
+        title: "D3.js",
+        value: "2",
         type: "software",
     },
+    {
+        title: "Socket.IO",
+        value: "4",
+        type: "software",
+    }
 ];
 
 export default whatido;
