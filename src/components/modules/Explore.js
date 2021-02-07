@@ -46,7 +46,7 @@ class Explore extends Component {
     // }).strength(0.05);
 
     forceCollide = d3.forceCollide((d) => {
-        return this.radiusScale(d.value)+2
+        return this.radiusScale(d.value)*1.03
     });
   
     simulation = d3.forceSimulation()
