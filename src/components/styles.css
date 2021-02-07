@@ -993,6 +993,21 @@
           animation: math-click 0.5s ease forwards;
 }
 
+.Explore-slider-container {
+  margin: 5vh;
+  margin-top: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Explore-slider-container input {
+  width: 50%;
+}
+
 .Explore-tooltip {
   width: 300px;
   height: 200px;

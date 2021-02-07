@@ -193,6 +193,9 @@ class Explore extends Component {
                     </div>
                     <button className="exp-fadeIn" id="combine" onClick={() => this.toggleStatus("combined")}>Combine</button>
                 </div>
+                <div className="Explore-slider-container">
+                    <input type="range"></input>
+                </div>
                 <div id="explore" ref={el => (this.el = el)}>{this.getTooltip()}</div>
             </div>
         </>
