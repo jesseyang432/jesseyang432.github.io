@@ -46,8 +46,8 @@ function HomeProjects() {
     fadeOut(".proj-fadeIn-header") :
     fadeIn(".proj-fadeIn-header");
 
-    const myProjects = projectList.map((project) => (
-      <SingleProject key={project.id} project={project}/>
+    const myProjects = projectList.map((project, i) => (
+      <SingleProject key={project.id} project={project} class={i%2 === 0 ? ["Project-left", "Project-right"] : ["Project-right", "Project-left"]}/>
     ));
 
     return (
