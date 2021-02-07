@@ -46,12 +46,12 @@ class Explore extends Component {
     // }).strength(0.05);
 
     forceCollide = d3.forceCollide((d) => {
-        return this.radiusScale(d.value)*1.03
+        return this.radiusScale(d.value)*1.05
     });
   
     simulation = d3.forceSimulation()
         .force("x", this.forceXCombine)
-        .force("y", d3.forceY(this.height / 2).strength(0.05))
+        .force("y", d3.forceY(this.height / 2).strength(0.04))
         .force("collide", this.forceCollide);
 
   createSVG() {

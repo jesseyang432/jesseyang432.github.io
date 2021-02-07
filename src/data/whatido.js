@@ -59,6 +59,11 @@ const whatido = [
         title: "Socket.IO",
         value: "4",
         type: "software",
+    },
+    {
+        title: "C++",
+        value: "3",
+        type: "software",
     }
 ];
 
