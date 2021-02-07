@@ -37,11 +37,43 @@ class Explore extends Component {
 
     forceXSeparate = d3.forceX((d) => {
         if (d.type === "software") {
-            return 200;
+            if (this.state.showSoftware) {
+                if (this.state.showTheoreticalCS && this.state.showMath) {
+                    return 200;
+                } else if (this.state.showTheoreticalCS || this.state.showMath) {
+                    return 300;
+                } else {
+                    return 500;
+                }
+            } else {
+                return d.x;
+            }
         } else if (d.type === "theoretical cs") {
-            return 500;
+            if (this.state.showTheoreticalCS) {
+                if (this.state.showSoftware && this.state.showMath) {
+                    return 500;
+                } else if (this.state.showSoftware) {
+                    return 700;
+                } else if (this.state.showMath) {
+                    return 300;
+                } else {
+                    return 500;
+                }
+            } else {
+                return d.x;
+            }
         } else if (d.type === "math") {
-            return 800;
+            if (this.state.showMath) {
+                if (this.state.showSoftware && this.state.showTheoreticalCS) {
+                    return 800;
+                } else if (this.state.showSoftware || this.state.showTheoreticalCS) {
+                    return 700;
+                } else {
+                    return 500
+                }
+            } else {
+                return d.x;
+            }
         }
     }).strength(0.05);
 
