@@ -48,6 +48,7 @@ function SingleProject(props) {
             <div ref={projRef} className="Project-section">
                 <div className={`Project-container proj-fadeIn-${props.project.id}`}>
                     <h1>{props.project.title}</h1>
+                    <img src={`${props.project.src}`} alt=""/>
                 </div>
             </div>
         </>
