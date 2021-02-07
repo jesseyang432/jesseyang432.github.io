@@ -13,6 +13,7 @@ class Explore extends Component {
             showSoftware: true,
             showTheoreticalCS: true,
             showMath: true,
+            minFamiliarity: 0,
         };
 
         this.data = whatido;
@@ -228,6 +229,12 @@ class Explore extends Component {
     }
   }
 
+  changeMinFamiliarity = (event) => {
+      this.setState({
+          minFamiliarity: event.target.value
+      });
+  }
+
   componentDidMount = () => {
     let svg = this.createSVG();
     this.drawChart(svg);
@@ -254,7 +261,7 @@ class Explore extends Component {
                     <button id={this.state.distribution === "combined" ? "Explore-button-selected" : "Explore-button-unselected"} className="exp-fadeIn" onClick={this.toggleCombined}>Combine</button>
                 </div>
                 <div className="Explore-slider-container exp-fadeIn">
-                    <input className="Explore-slider" type="range" min="0" max="10" step="0.01"></input>
+                    <input className="Explore-slider" type="range" min="0" max="10" step="0.01" value={this.state.minFamiliarity} onChange={this.changeMinFamiliarity}></input>
                 </div>
                 <div id="explore" ref={el => (this.el = el)}>{this.getTooltip()}</div>
             </div>
