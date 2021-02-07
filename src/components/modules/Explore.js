@@ -8,6 +8,9 @@ class Explore extends Component {
         super(props);
         this.state = {
             selected: null,
+            showSoftware: true,
+            showTheoreticalCS: true,
+            showMath: true,
         };
 
         this.data = whatido;
@@ -167,9 +170,9 @@ class Explore extends Component {
                 <div className="Explore-button-aisle">
                     <button className="exp-fadeIn" id="type" onClick={() => this.toggleStatus("separate")}>Separate</button>
                     <div className="Explore-checkboxes">
-                        <div id="Explore-software" className="Explore-checkbox exp-fadeIn"></div>
-                        <div id="Explore-theoretical-cs" className="Explore-checkbox exp-fadeIn"></div>
-                        <div id="Explore-math" className="Explore-checkbox exp-fadeIn"></div>
+                        <div id={this.state.showSoftware ? "Explore-software-clicked" : "Explore-software"} className="Explore-checkbox exp-fadeIn" onClick={() => this.toggleSoftware}></div>
+                        <div id={this.state.showTheoreticalCS ? "Explore-theoretical-cs-clicked" : "Explore-theoretical-cs"} className="Explore-checkbox exp-fadeIn" onClick={() => this.toggleTheoreticalCS}></div>
+                        <div id={this.state.showMath ? "Explore-math-clicked" : "Explore-math"} className="Explore-checkbox exp-fadeIn" onClick={() => this.toggleMath}></div>
                     </div>
                     <button className="exp-fadeIn" id="combine" onClick={() => this.toggleStatus("combined")}>Combine</button>
                 </div>

@@ -969,13 +969,13 @@
 }
 
 #Explore-math {
-  -webkit-animation: theoretical-math-unclick 0.5s ease forwards;
-          animation: theoretical-math-unclick 0.5s ease forwards;
+  -webkit-animation: math-unclick 0.5s ease forwards;
+          animation: math-unclick 0.5s ease forwards;
 }
 
 #Explore-math-clicked {
-  -webkit-animation: theoretical-math-click 0.5s ease forwards;
-          animation: theoretical-math-click 0.5s ease forwards;
+  -webkit-animation: math-click 0.5s ease forwards;
+          animation: math-click 0.5s ease forwards;
 }
 
 .Explore-tooltip {
