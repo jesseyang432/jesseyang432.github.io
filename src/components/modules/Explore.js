@@ -270,6 +270,9 @@ class Explore extends Component {
                 </div>
                 <div className="Explore-slider-container exp-fadeIn">
                     <input className="Explore-slider" type="range" min="0" max="10" step="0.1" value={this.state.minFamiliarity} onChange={this.changeMinFamiliarity}></input>
+                    <p className="Explore-slider-slight">Slight</p>
+                    <p className="Explore-slider-moderate">Moderate</p>
+                    <p className="Explore-slider-comfortable">Comfortable</p>
                 </div>
                 <div id="explore" ref={el => (this.el = el)}>{this.getTooltip()}</div>
             </div>
