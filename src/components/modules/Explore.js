@@ -249,8 +249,14 @@ class Explore extends Component {
   }
 
   render() {
-      let fillWidth = (100-10*this.state.minFamiliarity).toString().concat("%");
-      console.log(fillWidth);
+    //   console.log(this.state.minFamiliarty/5);
+      let fillBreak = (10*this.state.minFamiliarity).toString().concat("%");
+    let fill = "linear-gradient(to right, white 0%, white ".concat(fillBreak);
+    fill = fill.concat(", purple ").concat(fillBreak).concat(", purple 100%)");
+    //   fillWidth = fillWidth.concat((24 - 12*this.state.minFamiliarty/5).toString());
+    //   fillWidth = fillWidth.concat("px)");
+    //   fillWidth = "calc(".concat(fillWidth);
+    //   console.log(fillWidth);
     return (
         <>
             <div className="Explore-container">
@@ -258,14 +264,14 @@ class Explore extends Component {
                 <div className="Explore-button-aisle">
                     <button id={this.state.distribution === "separate" ? "Explore-button-selected" : "Explore-button-unselected"} className="exp-fadeIn" onClick={this.toggleSeparate}>Separate</button>
                     <div className="Explore-slider-container exp-fadeIn">
-                        <p className="Explore-slider-header"><em>Familiarity Level</em></p>
                         <div className="Explore-slider-body">
-                            <input className="Explore-slider" type="range" min="0" max="10" step="0.1" value={this.state.minFamiliarity} onChange={this.changeMinFamiliarity}></input>
-                            <div className="Explore-input-fill" style={{width: fillWidth}}></div>
+                            <p className="Explore-slider-header"><em>Familiarity Level</em></p>
+                            <input className="Explore-slider" type="range" min="0" max="10" step="0.1" value={this.state.minFamiliarity} onChange={this.changeMinFamiliarity} style={{background: fill}}></input>
+                            {/* <div className="Explore-input-fill" style={{width: fillWidth}}></div> */}
+                            <p className="Explore-slider-slight">Slight</p>
+                            <p className="Explore-slider-moderate">Moderate</p>
+                            <p className="Explore-slider-comfortable">Comfortable</p>
                         </div>
-                        <p className="Explore-slider-slight">Slight</p>
-                        <p className="Explore-slider-moderate">Moderate</p>
-                        <p className="Explore-slider-comfortable">Comfortable</p>
                     </div>
                     <button id={this.state.distribution === "combined" ? "Explore-button-selected" : "Explore-button-unselected"} 
                     className="exp-fadeIn" onClick={this.toggleCombined}>Combine</button>
