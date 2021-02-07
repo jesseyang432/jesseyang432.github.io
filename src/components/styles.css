@@ -1045,7 +1045,7 @@
   position: relative;
   width: 100%;
   height: 400px;
-  margin: 5vh 0;
+  margin: 10vh 0;
 }
 
 .Project-container img {
@@ -1084,14 +1084,15 @@
 }
 
 .Project-container .Project-info-container h2 {
-  font-size: 24px;
-  padding: 10px;
+  font-size: 32px;
+  padding: 10px 10px 10px 12%;
 }
 
 .Project-container .Project-info-container .Project-info-description {
   background-color: #92b4f4;
   padding: 10px;
   border-radius: 10px;
+  font-size: 18px;
 }
 
 .Project-container .Project-info-container .Project-info-tech {
@@ -1103,9 +1104,25 @@
 
 .Project-container .Project-info-container .Project-info-tech p {
   font-weight: 700;
+  font-size: 18px;
   color: #f6bdd1;
   display: inline;
   margin: 0 10px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .Project-container img {
+    opacity: 0.1;
+  }
+  .Project-container .Project-img-container {
+    width: 100%;
+  }
+  .Project-container .Project-info-container {
+    width: 100%;
+  }
+  .Project-container .Project-info-description {
+    background-color: transparent !important;
+  }
 }
 
 * {
