@@ -26,56 +26,64 @@ class Explore extends Component {
     radiusScale = d3.scaleSqrt().domain([1, 10]).range([10, 70]);
 
     forceXCombine = d3.forceX((d) => {
-        if (d.type === "software" && this.state.showSoftware) {
-            return this.width/2;
-        } else if (d.type === "theoretical cs" && this.state.showTheoreticalCS) {
-            return this.width/2;
-        } else if (d.type === "math" && this.state.showMath) {
-            return this.width/2;
+        if (d.value >= this.state.minFamiliarity) {
+            if (d.type === "software" && this.state.showSoftware) {
+                return this.width/2;
+            } else if (d.type === "theoretical cs" && this.state.showTheoreticalCS) {
+                return this.width/2;
+            } else if (d.type === "math" && this.state.showMath) {
+                return this.width/2;
+            } else {
+                return d.escape;
+            }
         } else {
             return d.escape;
         }
     }).strength(0.05);
 
     forceXSeparate = d3.forceX((d) => {
-        if (d.type === "software") {
-            if (this.state.showSoftware) {
-                if (this.state.showTheoreticalCS && this.state.showMath) {
-                    return 200;
-                } else if (this.state.showTheoreticalCS || this.state.showMath) {
-                    return 300;
+        if (d.value >= this.state.minFamiliarity) {
+            if (d.type === "software") {
+                if (this.state.showSoftware) {
+                    if (this.state.showTheoreticalCS && this.state.showMath) {
+                        return 200;
+                    } else if (this.state.showTheoreticalCS || this.state.showMath) {
+                        return 300;
+                    } else {
+                        return 500;
+                    }
                 } else {
-                    return 500;
+                    return d.escape;
                 }
-            } else {
-                return d.escape;
-            }
-        } else if (d.type === "theoretical cs") {
-            if (this.state.showTheoreticalCS) {
-                if (this.state.showSoftware && this.state.showMath) {
-                    return 500;
-                } else if (this.state.showSoftware) {
-                    return 700;
-                } else if (this.state.showMath) {
-                    return 300;
+            } else if (d.type === "theoretical cs") {
+                if (this.state.showTheoreticalCS) {
+                    if (this.state.showSoftware && this.state.showMath) {
+                        return 500;
+                    } else if (this.state.showSoftware) {
+                        return 700;
+                    } else if (this.state.showMath) {
+                        return 300;
+                    } else {
+                        return 500;
+                    }
                 } else {
-                    return 500;
+                    return d.escape;
                 }
-            } else {
-                return d.escape;
-            }
-        } else if (d.type === "math") {
-            if (this.state.showMath) {
-                if (this.state.showSoftware && this.state.showTheoreticalCS) {
-                    return 800;
-                } else if (this.state.showSoftware || this.state.showTheoreticalCS) {
-                    return 700;
+            } else if (d.type === "math") {
+                if (this.state.showMath) {
+                    if (this.state.showSoftware && this.state.showTheoreticalCS) {
+                        return 800;
+                    } else if (this.state.showSoftware || this.state.showTheoreticalCS) {
+                        return 700;
+                    } else {
+                        return 500
+                    }
                 } else {
-                    return 500
+                    return d.escape;
                 }
-            } else {
-                return d.escape;
             }
+        } else {
+            return d.escape;
         }
     }).strength(0.05);
 
@@ -232,7 +240,7 @@ class Explore extends Component {
   changeMinFamiliarity = (event) => {
       this.setState({
           minFamiliarity: event.target.value
-      });
+      }, this.runSimulation());
   }
 
   componentDidMount = () => {
