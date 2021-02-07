@@ -162,21 +162,16 @@ class Explore extends Component {
 
   }
 
-  toggleStatus = (value) => {
-      if (value === "separate") {
-        this.simulation
-        .force("x", this.forceXSeparate)
-        .alphaTarget(0.5)
-        .restart();
-      } else if (value === "combined") {
-        this.simulation
-        .force("x", this.forceXCombine)
-        .alphaTarget(0.5)
-        .restart();
-      }
+  toggleSeparate = () => {
       this.setState({
-          distribution: value,
-      });
+          distribution: "separate",
+        }, this.runSimulation())
+  }
+
+  toggleCombined = () => {
+      this.setState({
+          distribution: "combined",
+      }, this.runSimulation())
   }
 
   bubbleClicked = (bubble) => {
@@ -203,19 +198,33 @@ class Explore extends Component {
   toggleSoftware = () => {
       this.setState({
           showSoftware: !this.state.showSoftware,
-      });
+      }, this.runSimulation());
   }
 
   toggleTheoreticalCS = () => {
       this.setState({
           showTheoreticalCS: !this.state.showTheoreticalCS,
-      });
+      }, this.runSimulation());
   }
 
   toggleMath = () => {
       this.setState({
           showMath: !this.state.showMath,
-      });
+      }, this.runSimulation());
+  }
+
+  runSimulation = () => {
+    if (this.state.distribution === "separate") {
+        this.simulation
+        .force("x", this.forceXSeparate)
+        .alphaTarget(0.5)
+        .restart();
+    } else if (this.state.distribution === "combined") {
+        this.simulation
+        .force("x", this.forceXCombine)
+        .alphaTarget(0.5)
+        .restart();
+    }
   }
 
   componentDidMount = () => {
@@ -229,13 +238,13 @@ class Explore extends Component {
             <div className="Explore-container">
                 <h1 className="exp-fadeIn">Explore What I Do</h1>
                 <div className="Explore-button-aisle">
-                    <button className="exp-fadeIn" id="type" onClick={() => this.toggleStatus("separate")}>Separate</button>
+                    <button className="exp-fadeIn" id="type" onClick={this.toggleSeparate}>Separate</button>
                     <div className="Explore-checkboxes">
                         <div id={this.state.showSoftware ? "Explore-software-clicked" : "Explore-software"} className="Explore-checkbox exp-fadeIn" onClick={this.toggleSoftware}></div>
                         <div id={this.state.showTheoreticalCS ? "Explore-theoretical-cs-clicked" : "Explore-theoretical-cs"} className="Explore-checkbox exp-fadeIn" onClick={this.toggleTheoreticalCS}></div>
                         <div id={this.state.showMath ? "Explore-math-clicked" : "Explore-math"} className="Explore-checkbox exp-fadeIn" onClick={this.toggleMath}></div>
                     </div>
-                    <button className="exp-fadeIn" id="combine" onClick={() => this.toggleStatus("combined")}>Combine</button>
+                    <button className="exp-fadeIn" id="combine" onClick={this.toggleCombined}>Combine</button>
                 </div>
                 <div className="Explore-slider-container exp-fadeIn">
                     <input type="range"></input>
