@@ -249,6 +249,8 @@ class Explore extends Component {
   }
 
   render() {
+      let fillWidth = (100-10*this.state.minFamiliarity).toString().concat("%");
+      console.log(fillWidth);
     return (
         <>
             <div className="Explore-container">
@@ -257,7 +259,10 @@ class Explore extends Component {
                     <button id={this.state.distribution === "separate" ? "Explore-button-selected" : "Explore-button-unselected"} className="exp-fadeIn" onClick={this.toggleSeparate}>Separate</button>
                     <div className="Explore-slider-container exp-fadeIn">
                         <p className="Explore-slider-header"><em>Familiarity Level</em></p>
-                        <input className="Explore-slider" type="range" min="0" max="10" step="0.1" value={this.state.minFamiliarity} onChange={this.changeMinFamiliarity}></input>
+                        <div className="Explore-slider-body">
+                            <input className="Explore-slider" type="range" min="0" max="10" step="0.1" value={this.state.minFamiliarity} onChange={this.changeMinFamiliarity}></input>
+                            <div className="Explore-input-fill" style={{width: fillWidth}}></div>
+                        </div>
                         <p className="Explore-slider-slight">Slight</p>
                         <p className="Explore-slider-moderate">Moderate</p>
                         <p className="Explore-slider-comfortable">Comfortable</p>
