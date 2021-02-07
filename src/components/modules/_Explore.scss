@@ -124,6 +124,22 @@
 	animation: math-click 0.5s ease forwards;
 }
 
+#Explore-software,
+#Explore-theoretical-cs,
+#Explore-math {
+	.Explore-checkmark {
+		animation: checkmark-check 0.5s ease forwards;
+	}
+}
+
+#Explore-software-clicked,
+#Explore-theoretical-cs-clicked,
+#Explore-math-clicked {
+	.Explore-checkmark {
+		animation: checkmark-uncheck 0.5s ease forwards;
+	}
+}
+
 .Explore-slider-container {
 	margin: 10vh 0 5vh 0;
 	display: flex;
@@ -294,6 +310,24 @@
 	to {
 		border: solid thin $dark-blue;
 		box-shadow: none;
+	}
+}
+
+@keyframes checkmark-check {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes checkmark-uncheck {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
 	}
 }
 
