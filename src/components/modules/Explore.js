@@ -8,6 +8,7 @@ class Explore extends Component {
         super(props);
         this.state = {
             selected: null,
+            distribution: "combined",
             showSoftware: true,
             showTheoreticalCS: true,
             showMath: true,
@@ -23,7 +24,15 @@ class Explore extends Component {
     radiusScale = d3.scaleSqrt().domain([1, 10]).range([10, 70]);
 
     forceXCombine = d3.forceX((d) => {
-        return this.width/2;
+        if (d.type === "software" && this.state.showSoftware) {
+            return this.width/2;
+        } else if (d.type === "theoretical cs" && this.state.showTheoreticalCS) {
+            return this.width/2;
+        } else if (d.type === "math" && this.state.showMath) {
+            return this.width/2;
+        } else {
+            return d.x;
+        }
     }).strength(0.05);
 
     forceXSeparate = d3.forceX((d) => {
@@ -133,6 +142,9 @@ class Explore extends Component {
         .alphaTarget(0.5)
         .restart();
       }
+      this.setState({
+          distribution: value,
+      });
   }
 
   bubbleClicked = (bubble) => {
