@@ -156,6 +156,23 @@ class Explore extends Component {
       }
   }
 
+  toggleSoftware = () => {
+      this.setState({
+          showSoftware: !this.state.showSoftware,
+      });
+  }
+
+  toggleTheoreticalCS = () => {
+      this.setState({
+          showTheoreticalCS: !this.state.showTheoreticalCS,
+      });
+  }
+
+  toggleMath = () => {
+      this.setState({
+          showMath: !this.state.showMath,
+      });
+  }
 
   componentDidMount = () => {
     let svg = this.createSVG();
@@ -170,9 +187,9 @@ class Explore extends Component {
                 <div className="Explore-button-aisle">
                     <button className="exp-fadeIn" id="type" onClick={() => this.toggleStatus("separate")}>Separate</button>
                     <div className="Explore-checkboxes">
-                        <div id={this.state.showSoftware ? "Explore-software-clicked" : "Explore-software"} className="Explore-checkbox exp-fadeIn" onClick={() => this.toggleSoftware}></div>
-                        <div id={this.state.showTheoreticalCS ? "Explore-theoretical-cs-clicked" : "Explore-theoretical-cs"} className="Explore-checkbox exp-fadeIn" onClick={() => this.toggleTheoreticalCS}></div>
-                        <div id={this.state.showMath ? "Explore-math-clicked" : "Explore-math"} className="Explore-checkbox exp-fadeIn" onClick={() => this.toggleMath}></div>
+                        <div id={this.state.showSoftware ? "Explore-software-clicked" : "Explore-software"} className="Explore-checkbox exp-fadeIn" onClick={this.toggleSoftware}></div>
+                        <div id={this.state.showTheoreticalCS ? "Explore-theoretical-cs-clicked" : "Explore-theoretical-cs"} className="Explore-checkbox exp-fadeIn" onClick={this.toggleTheoreticalCS}></div>
+                        <div id={this.state.showMath ? "Explore-math-clicked" : "Explore-math"} className="Explore-checkbox exp-fadeIn" onClick={this.toggleMath}></div>
                     </div>
                     <button className="exp-fadeIn" id="combine" onClick={() => this.toggleStatus("combined")}>Combine</button>
                 </div>
