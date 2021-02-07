@@ -31,7 +31,7 @@ class Explore extends Component {
         } else if (d.type === "math" && this.state.showMath) {
             return this.width/2;
         } else {
-            return d.x;
+            return d.escape;
         }
     }).strength(0.05);
 
@@ -46,7 +46,7 @@ class Explore extends Component {
                     return 500;
                 }
             } else {
-                return d.x;
+                return d.escape;
             }
         } else if (d.type === "theoretical cs") {
             if (this.state.showTheoreticalCS) {
@@ -60,7 +60,7 @@ class Explore extends Component {
                     return 500;
                 }
             } else {
-                return d.x;
+                return d.escape;
             }
         } else if (d.type === "math") {
             if (this.state.showMath) {
@@ -72,7 +72,7 @@ class Explore extends Component {
                     return 500
                 }
             } else {
-                return d.x;
+                return d.escape;
             }
         }
     }).strength(0.05);
