@@ -3,7 +3,7 @@ const projects = [
         id: "converge",
         title: "Converge",
         description: "A group organization web app featuring live private and group chatting as well as tracking of due date, priority, and completion of individual/group to-dos, payments, and events.",
-        technologies: ["React", "Node.js", "Express", "MongoDB", "Socket.IO"],
+        technologies: ["React", "Node.js", "Express", "MongoDB", "Socket.IO", "Google OAuth"],
         src: "images/converge.png"
     },
     {

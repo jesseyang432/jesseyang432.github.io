@@ -52,14 +52,14 @@ const whatido = [
         title: "JavaScript",
         value: "7",
         type: "software",
-        description: "Programming and scripting language, primarily used for web development.",
+        description: "Programming and scripting language.",
         escape: -500,
     },
     {
         title: "MERN",
         value: "6",
         type: "software",
-        description: "MongoDB (databasing), Express (Node.js web framework), React (JavaScript framework), Node.js (JavaScript web server) architectures allowing full-stack development.",
+        description: "MongoDB (databasing), Express (Node.js web framework), React (JavaScript framework), Node.js (JavaScript web server) architecture allowing full-stack development.",
         escape: -500,
     },
     {

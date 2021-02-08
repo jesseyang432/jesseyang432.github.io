@@ -1028,7 +1028,7 @@
 }
 
 .Explore-slider-container {
-  margin: 10vh auto;
+  margin: 5vh auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1471,6 +1471,9 @@
   .Explore-slider-container .Explore-slider-moderate,
   .Explore-slider-container .Explore-slider-comfortable {
     font-size: 12px;
+  }
+  #explore {
+    margin-top: 15vh;
   }
 }
 
