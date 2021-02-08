@@ -3,6 +3,7 @@
 	display: flex;
 	justify-content: center;
 	flex-flow: row wrap;
+	font-family: "Raleway", sans-serif;
 }
 
 .Home-bio-image {
@@ -66,7 +67,7 @@
 		li .first-word {
 			font-size: 24px;
 			text-transform: uppercase;
-			color: $aqua;
+			color: #a18077;
 		}
 	}
 }

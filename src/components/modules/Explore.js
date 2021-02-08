@@ -130,7 +130,7 @@ class Explore extends Component {
             return this.radiusScale(d.value);
         })
         .attr("fill", (d) => {
-            return (d.type === "software" ? "#92b4f4" : (d.type === "theoretical cs" ? "#af69ef" : "#f6bdd1"))
+            return (d.type === "software" ? "#cc8b86" : (d.type === "theoretical cs" ? "#aa998f" : "#f9eae1"))
         })
         .attr("cx", 100)
         .attr("cy", 300)
@@ -169,6 +169,8 @@ class Explore extends Component {
 
     this.simulation.nodes(this.data)
         .on('tick', ticked);
+
+    this.runSimulation();
 
   }
 

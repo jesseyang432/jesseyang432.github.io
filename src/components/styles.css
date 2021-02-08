@@ -1,11 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&family=Arizonia&family=Great+Vibes&family=Yellowtail&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Raleway:wght@600&display=swap");
 .Home-PageContainer {
   -webkit-animation: Home-height-load 16s ease;
           animation: Home-height-load 16s ease;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  background: repeating-linear-gradient(#9b489b, #000350 100vh, #000350 100vh, #9b489b 200vh);
+  background: #332022;
 }
 
 .Home-title {
@@ -87,7 +89,7 @@
 
 .Notes-PageContainer {
   min-height: 100vh;
-  background: repeating-linear-gradient(#9b489b, #000350 100vh, #000350 100vh, #9b489b 200vh);
+  background: repeating-linear-gradient(#9b489b, #35538e 100vh, #35538e 100vh, #9b489b 200vh);
 }
 
 .Notes-header {
@@ -254,8 +256,8 @@
   left: 0;
   position: fixed;
   z-index: 10;
-  background: -webkit-gradient(linear, left top, left bottom, from(#9b489b), to(#000350));
-  background: linear-gradient(#9b489b, #000350);
+  background: -webkit-gradient(linear, left top, left bottom, from(#9b489b), to(#35538e));
+  background: linear-gradient(#9b489b, #35538e);
   -webkit-animation: LogoLoading-bg-disappear-anim 1s ease 4.5s;
           animation: LogoLoading-bg-disappear-anim 1s ease 4.5s;
   -webkit-animation-fill-mode: forwards;
@@ -492,7 +494,7 @@
 }
 
 .Logo-st0 {
-  fill: #000350;
+  fill: #35538e;
   stroke: #00ffff;
   stroke-width: 2;
   stroke-miterlimit: 10;
@@ -612,7 +614,7 @@
 }
 
 .SocialLinks-links .SocialLinks-single-link:hover a {
-  color: #f6bdd1;
+  color: #f9eae1;
 }
 
 .SocialLinks-links a {
@@ -664,6 +666,7 @@
       -ms-flex-align: center;
           align-items: center;
   color: white;
+  font-family: "Raleway", sans-serif;
 }
 
 .Home-intro p {
@@ -683,7 +686,7 @@
 .Home-intro-name h1 {
   font-size: 96px;
   text-align: center;
-  color: #00ffff;
+  color: #a18077;
   font-weight: 700;
   font-family: "Arizonia", cursive;
   opacity: 0;
@@ -815,6 +818,7 @@
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
+  font-family: "Raleway", sans-serif;
 }
 
 .Home-bio-image {
@@ -882,7 +886,7 @@
 .Home-bio-description ul li .first-word {
   font-size: 24px;
   text-transform: uppercase;
-  color: #00ffff;
+  color: #a18077;
 }
 
 .Explore-container {
@@ -918,7 +922,7 @@
   font-family: "Alegreya", "serif";
   padding: 7.5px 12.5px;
   outline: none;
-  background-color: #000350;
+  background-color: #35538e;
   color: white;
   border-radius: 10px;
 }
@@ -1108,7 +1112,7 @@
   right: 0;
   -webkit-transform: translateY(calc(-50% + 1px));
           transform: translateY(calc(-50% + 1px));
-  background: #000350;
+  background: #35538e;
 }
 
 .Explore-slider-container input {
@@ -1125,7 +1129,7 @@
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  background: #000350;
+  background: #35538e;
   cursor: pointer;
   outline: none;
   -webkit-box-shadow: 0 0 0 0 rgba(0, 3, 80, 0.1);
@@ -1147,12 +1151,12 @@
 .Explore-slider-container input::-moz-range-thumb {
   width: 24px;
   height: 24px;
-  background: #000350;
+  background: #35538e;
   cursor: pointer;
 }
 
 .Explore-slider-container input::-ms-fill-lower {
-  background: #000350;
+  background: #35538e;
 }
 
 .Explore-tooltip {
@@ -1390,7 +1394,7 @@
 
 @-webkit-keyframes Explore-select-button {
   from {
-    border: solid thin #000350;
+    border: solid thin #35538e;
     -webkit-box-shadow: none;
             box-shadow: none;
   }
@@ -1403,7 +1407,7 @@
 
 @keyframes Explore-select-button {
   from {
-    border: solid thin #000350;
+    border: solid thin #35538e;
     -webkit-box-shadow: none;
             box-shadow: none;
   }
@@ -1421,7 +1425,7 @@
             box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.45);
   }
   to {
-    border: solid thin #000350;
+    border: solid thin #35538e;
     -webkit-box-shadow: none;
             box-shadow: none;
   }
@@ -1434,7 +1438,7 @@
             box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.45);
   }
   to {
-    border: solid thin #000350;
+    border: solid thin #35538e;
     -webkit-box-shadow: none;
             box-shadow: none;
   }
@@ -1515,6 +1519,7 @@
   font-size: 72px;
   font-weight: 700;
   font-family: "Arizonia", cursive;
+  color: #a18077;
 }
 
 .Project-container {
@@ -1530,14 +1535,19 @@
   -o-object-fit: scale;
      object-fit: scale;
   border-radius: 5px;
-  background: #f6bdd1;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  position: relative;
 }
 
 .Project-container img:hover {
   -webkit-filter: none;
           filter: none;
+}
+
+.Project-container img:nth-child(1) {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
 }
 
 .Project-container .Project-img-container {
@@ -1554,17 +1564,21 @@
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  font-family: "Raleway", sans-serif;
 }
 
 .Project-container .Project-info-container h2 {
   font-size: 32px;
+  color: #a18077;
 }
 
 .Project-container .Project-info-container .Project-info-description {
-  background-color: #92b4f4;
+  background-color: #f9eae1;
+  color: #332022;
   padding: 20px;
   border-radius: 10px;
   font-size: 18px;
+  font-family: "Open Sans", sans-serif;
 }
 
 .Project-container .Project-info-container .Project-info-tech {
@@ -1575,7 +1589,7 @@
 .Project-container .Project-info-container .Project-info-tech p {
   font-weight: 700;
   font-size: 18px;
-  color: #f6bdd1;
+  color: #f9eae1;
   display: inline;
   margin: 0 10px;
 }
@@ -1617,7 +1631,7 @@
     width: 100%;
   }
   .Project-container .Project-info-description {
-    color: #92b4f4;
+    color: #f9eae1;
     background-color: transparent !important;
   }
 }

@@ -1,12 +1,15 @@
 .Home-PageContainer {
 	animation: Home-height-load 16s ease;
 	animation-fill-mode: forwards;
-	background: repeating-linear-gradient(
-		$purpureus,
-		$dark-blue 100vh,
-		$dark-blue 100vh,
-		$purpureus 200vh
-	);
+	// background: repeating-linear-gradient(
+	// 	$purpureus,
+	// 	$dark-blue 100vh,
+	// 	$dark-blue 100vh,
+	// 	$purpureus 200vh
+	// );
+	// background: #eba06c;
+	// background: #efe5dc;
+	background: #332022;
 }
 
 .Home-title {
