@@ -150,7 +150,7 @@
 
 	.Explore-slider-header {
 		position: absolute;
-		top: -36px;
+		top: -32px;
 		font-size: 20px;
 	}
 
@@ -385,14 +385,14 @@
 	}
 	to {
 		border: solid thin white;
-		box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.45);
+		box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.45);
 	}
 }
 
 @keyframes Explore-unselect-button {
 	from {
 		border: solid thin white;
-		box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.45);
+		box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.45);
 	}
 	to {
 		border: solid thin $dark-blue;

@@ -257,7 +257,7 @@ class Explore extends Component {
         fillBreak = (10*this.state.minFamiliarity).toString().concat("%");
     }
     let fill = "linear-gradient(to right, white 0%, white ".concat(fillBreak);
-    fill = fill.concat(", purple ").concat(fillBreak).concat(", purple 100%)");
+    fill = fill.concat(", #ffccbb ").concat(fillBreak).concat(", #ffccbb 100%)");
     //   fillWidth = fillWidth.concat((24 - 12*this.state.minFamiliarty/5).toString());
     //   fillWidth = fillWidth.concat("px)");
     //   fillWidth = "calc(".concat(fillWidth);
@@ -270,7 +270,7 @@ class Explore extends Component {
                     <button id={this.state.distribution === "separate" ? "Explore-button-selected" : "Explore-button-unselected"} className="exp-fadeIn" onClick={this.toggleSeparate}>Separate</button>
                     <div className="Explore-slider-container exp-fadeIn">
                         <div className="Explore-slider-body">
-                            <p className="Explore-slider-header"><em>Familiarity Level</em></p>
+                            <p className="Explore-slider-header"><em>Familiarity Level (&#8805;)</em></p>
                             <input className="Explore-slider" type="range" min="0" max="10" step="0.1" value={this.state.minFamiliarity} onChange={this.changeMinFamiliarity} style={{background: fill}}></input>
                             {/* <div className="Explore-input-fill" style={{width: fillWidth}}></div> */}
                             <p className="Explore-slider-slight">Slight</p>

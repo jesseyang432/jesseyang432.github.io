@@ -1040,7 +1040,7 @@
 
 .Explore-slider-container .Explore-slider-header {
   position: absolute;
-  top: -36px;
+  top: -32px;
   font-size: 20px;
 }
 
@@ -1371,8 +1371,8 @@
   }
   to {
     border: solid thin white;
-    -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.45);
-            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.45);
+    -webkit-box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.45);
+            box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.45);
   }
 }
 
@@ -1384,16 +1384,16 @@
   }
   to {
     border: solid thin white;
-    -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.45);
-            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.45);
+    -webkit-box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.45);
+            box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.45);
   }
 }
 
 @-webkit-keyframes Explore-unselect-button {
   from {
     border: solid thin white;
-    -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.45);
-            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.45);
+    -webkit-box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.45);
+            box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.45);
   }
   to {
     border: solid thin #000350;
@@ -1405,8 +1405,8 @@
 @keyframes Explore-unselect-button {
   from {
     border: solid thin white;
-    -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.45);
-            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.45);
+    -webkit-box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.45);
+            box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.45);
   }
   to {
     border: solid thin #000350;
