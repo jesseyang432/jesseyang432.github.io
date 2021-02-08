@@ -824,13 +824,6 @@
 
 .Home-bio-image:hover img {
   border: solid #00ffff;
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
-}
-
-.Home-bio-image:hover .Home-bio-image-text {
-  opacity: 1;
-  visibility: visible;
 }
 
 .Home-bio-description {
