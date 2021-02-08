@@ -95,7 +95,7 @@
 }
 
 .Notes-message {
-  width: 50%;
+  width: 45%;
   background-color: rgba(0, 0, 0, 0.5);
   margin: auto;
   border-radius: 10px;
@@ -110,6 +110,7 @@
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  margin-top: 10px;
 }
 
 .Nav-bar {
@@ -1619,6 +1620,14 @@
     color: #92b4f4;
     background-color: transparent !important;
   }
+}
+
+.SingleNotes-container {
+  width: 60%;
+  margin: 10vh auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  padding: 20px;
 }
 
 * {
