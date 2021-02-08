@@ -34,17 +34,10 @@
 		transition: 0.5s;
 	}
 
-	&:hover {
-		img {
-			border: solid $aqua;
-			// filter: grayscale(100%);
-		}
-
-		// .Home-bio-image-text {
-		// 	opacity: 1;
-		// 	visibility: visible;
-		// }
-	}
+	// .Home-bio-image-text {
+	// 	opacity: 1;
+	// 	visibility: visible;
+	// }
 }
 
 .Home-bio-description {

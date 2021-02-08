@@ -854,10 +854,6 @@
   transition: 0.5s;
 }
 
-.Home-bio-image:hover img {
-  border: solid #00ffff;
-}
-
 .Home-bio-description {
   padding: 16px;
   display: -webkit-box;
@@ -914,17 +910,18 @@
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  font-family: "Raleway", sans-serif;
 }
 
 .Explore-button-aisle button {
   cursor: pointer;
   font-size: 20px;
-  font-family: "Alegreya", "serif";
   padding: 7.5px 12.5px;
   outline: none;
   background-color: #f9eae1;
-  color: white;
+  color: #552f28;
   border-radius: 10px;
+  font-family: "Open Sans", sans-serif;
 }
 
 .Explore-button-aisle #Explore-button-unselected {
@@ -968,6 +965,7 @@
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  color: #552f28;
 }
 
 .Explore-button-aisle .Explore-checkboxes #Explore-software,
@@ -1129,7 +1127,7 @@
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  background: #35538e;
+  background: #f9eae1;
   cursor: pointer;
   outline: none;
   -webkit-box-shadow: 0 0 0 0 rgba(0, 3, 80, 0.1);
@@ -1238,7 +1236,7 @@
 
 #explore .label {
   cursor: pointer;
-  font-family: "Raleway", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 @-webkit-keyframes tooltip-appear-anim {
