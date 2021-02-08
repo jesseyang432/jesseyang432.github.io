@@ -250,7 +250,12 @@ class Explore extends Component {
 
   render() {
     //   console.log(this.state.minFamiliarty/5);
-      let fillBreak = (10*this.state.minFamiliarity).toString().concat("%");
+    let fillBreak;
+    if (this.state.minFamiliarity >= 9) {
+        fillBreak = (10*this.state.minFamiliarity-1).toString().concat("%");
+    } else {
+        fillBreak = (10*this.state.minFamiliarity).toString().concat("%");
+    }
     let fill = "linear-gradient(to right, white 0%, white ".concat(fillBreak);
     fill = fill.concat(", purple ").concat(fillBreak).concat(", purple 100%)");
     //   fillWidth = fillWidth.concat((24 - 12*this.state.minFamiliarty/5).toString());
