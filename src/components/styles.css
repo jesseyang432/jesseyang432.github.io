@@ -922,7 +922,7 @@
   font-family: "Alegreya", "serif";
   padding: 7.5px 12.5px;
   outline: none;
-  background-color: #35538e;
+  background-color: #f9eae1;
   color: white;
   border-radius: 10px;
 }
@@ -1238,6 +1238,7 @@
 
 #explore .label {
   cursor: pointer;
+  font-family: "Raleway", sans-serif;
 }
 
 @-webkit-keyframes tooltip-appear-anim {
@@ -1286,7 +1287,7 @@
 
 @-webkit-keyframes software-unclick {
   from {
-    background-color: #92b4f4;
+    background-color: #cc8b86;
   }
   to {
     background-color: rgba(255, 255, 255, 0.2);
@@ -1295,7 +1296,7 @@
 
 @keyframes software-unclick {
   from {
-    background-color: #92b4f4;
+    background-color: #cc8b86;
   }
   to {
     background-color: rgba(255, 255, 255, 0.2);
@@ -1307,7 +1308,7 @@
     background-color: rgba(255, 255, 255, 0.2);
   }
   to {
-    background-color: #92b4f4;
+    background-color: #cc8b86;
   }
 }
 
@@ -1316,13 +1317,13 @@
     background-color: rgba(255, 255, 255, 0.2);
   }
   to {
-    background-color: #92b4f4;
+    background-color: #cc8b86;
   }
 }
 
 @-webkit-keyframes theoretical-cs-unclick {
   from {
-    background-color: #af69ef;
+    background-color: #aa998f;
   }
   to {
     background-color: rgba(255, 255, 255, 0.2);
@@ -1331,7 +1332,7 @@
 
 @keyframes theoretical-cs-unclick {
   from {
-    background-color: #af69ef;
+    background-color: #aa998f;
   }
   to {
     background-color: rgba(255, 255, 255, 0.2);
@@ -1343,7 +1344,7 @@
     background-color: rgba(255, 255, 255, 0.2);
   }
   to {
-    background-color: #af69ef;
+    background-color: #aa998f;
   }
 }
 
@@ -1352,13 +1353,13 @@
     background-color: rgba(255, 255, 255, 0.2);
   }
   to {
-    background-color: #af69ef;
+    background-color: #aa998f;
   }
 }
 
 @-webkit-keyframes math-unclick {
   from {
-    background-color: #f6bdd1;
+    background-color: #f9eae1;
   }
   to {
     background-color: rgba(255, 255, 255, 0.2);
@@ -1367,7 +1368,7 @@
 
 @keyframes math-unclick {
   from {
-    background-color: #f6bdd1;
+    background-color: #f9eae1;
   }
   to {
     background-color: rgba(255, 255, 255, 0.2);
@@ -1379,7 +1380,7 @@
     background-color: rgba(255, 255, 255, 0.2);
   }
   to {
-    background-color: #f6bdd1;
+    background-color: #f9eae1;
   }
 }
 
@@ -1388,7 +1389,7 @@
     background-color: rgba(255, 255, 255, 0.2);
   }
   to {
-    background-color: #f6bdd1;
+    background-color: #f9eae1;
   }
 }
 

@@ -2,6 +2,7 @@
 	max-width: 80%;
 	margin: auto;
 	color: white;
+	// color: #a18077;
 
 	h1 {
 		font-size: 72px;
@@ -24,7 +25,7 @@
 		font-family: "Alegreya", "serif";
 		padding: 7.5px 12.5px;
 		outline: none;
-		background-color: $dark-blue;
+		background-color: #f9eae1;
 		color: white;
 		border-radius: 10px;
 	}
@@ -303,6 +304,7 @@
 
 	.label {
 		cursor: pointer;
+		font-family: "Raleway", sans-serif;
 	}
 }
 
@@ -330,7 +332,8 @@
 
 @keyframes software-unclick {
 	from {
-		background-color: rgba(146, 180, 244, 1);
+		// background-color: rgba(146, 180, 244, 1);
+		background-color: #cc8b86;
 	}
 	to {
 		background-color: rgba(255, 255, 255, 0.2);
@@ -342,13 +345,15 @@
 		background-color: rgba(255, 255, 255, 0.2);
 	}
 	to {
-		background-color: rgba(146, 180, 244, 1);
+		// background-color: rgba(146, 180, 244, 1);
+		background-color: #cc8b86;
 	}
 }
 
 @keyframes theoretical-cs-unclick {
 	from {
-		background-color: rgba(175, 105, 239, 1);
+		// background-color: rgba(175, 105, 239, 1);
+		background-color: #aa998f;
 	}
 	to {
 		background-color: rgba(255, 255, 255, 0.2);
@@ -360,13 +365,15 @@
 		background-color: rgba(255, 255, 255, 0.2);
 	}
 	to {
-		background-color: rgba(175, 105, 239, 1);
+		// background-color: rgba(175, 105, 239, 1);
+		background-color: #aa998f;
 	}
 }
 
 @keyframes math-unclick {
 	from {
-		background-color: rgba(246, 189, 209, 1);
+		// background-color: rgba(246, 189, 209, 1);
+		background-color: #f9eae1;
 	}
 	to {
 		background-color: rgba(255, 255, 255, 0.2);
@@ -378,7 +385,8 @@
 		background-color: rgba(255, 255, 255, 0.2);
 	}
 	to {
-		background-color: rgba(246, 189, 209, 1);
+		// background-color: rgba(246, 189, 209, 1);
+		background-color: #f9eae1;
 	}
 }
 

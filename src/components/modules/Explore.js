@@ -142,8 +142,8 @@ class Explore extends Component {
         .attr("class", "label exp-fadeIn")
         .attr("text-anchor", "middle")
         .attr("alignment-baseline", "central")
-        .attr("fill", "white")
-        .attr("font-size", "16px")
+        .attr("fill", "#552f28")
+        .attr("font-size", "14px")
         .text((d) => {
             return d.title;
         })
