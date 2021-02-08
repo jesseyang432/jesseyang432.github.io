@@ -197,7 +197,7 @@ class Explore extends Component {
                     <p><strong>{this.state.selected.title}</strong> -- <em>{this.state.selected.type.toUpperCase()}</em></p>
                     <p><em>Familiarity: {this.state.selected.value}/10</em></p>
                     <hr/>
-                    <p>{this.state.selected.description}</p>
+                    <p className="Explore-tooltip-content-description">{this.state.selected.description}</p>
                   </div>
                   {/* <div className="Explore-tooltip-tail"></div> */}
               </div>

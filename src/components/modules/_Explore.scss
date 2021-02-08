@@ -274,6 +274,10 @@
 .Explore-tooltip-content {
 	opacity: 0;
 	animation: tooltip-content-appear-anim 0.3s ease 0.3s forwards;
+
+	.Explore-tooltip-content-description {
+		font-size: 12px;
+	}
 }
 
 .Explore-tooltip-tail {

@@ -1180,6 +1180,10 @@
           animation: tooltip-content-appear-anim 0.3s ease 0.3s forwards;
 }
 
+.Explore-tooltip-content .Explore-tooltip-content-description {
+  font-size: 12px;
+}
+
 .Explore-tooltip-tail {
   border-top: 15px solid white;
   border-bottom: 15px solid transparent;
