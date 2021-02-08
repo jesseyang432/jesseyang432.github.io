@@ -1,0 +1,9 @@
+.Notes-PageContainer {
+	min-height: 100vh;
+	background: repeating-linear-gradient(
+		$purpureus,
+		$dark-blue 100vh,
+		$dark-blue 100vh,
+		$purpureus 200vh
+	);
+}

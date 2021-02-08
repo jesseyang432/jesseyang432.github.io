@@ -85,6 +85,11 @@
   }
 }
 
+.Notes-PageContainer {
+  min-height: 100vh;
+  background: repeating-linear-gradient(#9b489b, #000350 100vh, #000350 100vh, #9b489b 200vh);
+}
+
 .Nav-bar {
   height: 80px;
   width: 100%;

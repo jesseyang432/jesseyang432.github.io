@@ -76,7 +76,7 @@ class Nav extends Component {
                     </Link>
                 </li>
                 <li>
-                    <Link to="/">
+                    <Link to="/notes">
                         Notes
                     </Link>
                 </li>

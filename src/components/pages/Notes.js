@@ -60,6 +60,9 @@ function Notes() {
     return (
         <>
             <LogoLoading></LogoLoading>
+            <div className="Notes-PageContainer">
+                Hey
+            </div>
                 
         </>
     );
