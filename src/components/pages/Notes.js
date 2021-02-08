@@ -61,7 +61,15 @@ function Notes() {
         <>
             <LogoLoading></LogoLoading>
             <div className="Notes-PageContainer">
-                Hey
+                <Nav/>
+                <div className="Notes-header">
+                    Hey
+                </div>
+                <div className="Notes-message">
+                    <p>This is a section for my class notes! I'm sure my notes are filled with typos and confusing bits, but I'll be happy if they can help anyone serve as a reference for or a glimpse into a class.</p>
+                    <br></br>
+                    <p className="Notes-message-name">~ Jesse Yang</p>
+                </div>
             </div>
                 
         </>

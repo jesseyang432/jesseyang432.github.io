@@ -7,3 +7,21 @@
 		$purpureus 200vh
 	);
 }
+
+.Notes-header {
+	height: 120px;
+}
+
+.Notes-message {
+	width: 50%;
+	background-color: rgba(0, 0, 0, 0.5);
+	margin: auto;
+	border-radius: 10px;
+	padding: 20px;
+	color: white;
+
+	.Notes-message-name {
+		display: flex;
+		justify-content: flex-end;
+	}
+}

@@ -90,6 +90,28 @@
   background: repeating-linear-gradient(#9b489b, #000350 100vh, #000350 100vh, #9b489b 200vh);
 }
 
+.Notes-header {
+  height: 120px;
+}
+
+.Notes-message {
+  width: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: auto;
+  border-radius: 10px;
+  padding: 20px;
+  color: white;
+}
+
+.Notes-message .Notes-message-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
 .Nav-bar {
   height: 80px;
   width: 100%;
