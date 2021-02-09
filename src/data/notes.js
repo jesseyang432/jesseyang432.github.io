@@ -3,7 +3,8 @@ const notes = [
         id: "6.006",
         title: "6.006: Introduction to Algorithms",
         term: "Fall 2020",
-        description: "A group organization web app featuring live private and group chatting as well as tracking of due date, priority, and completion of individual/group to-dos, payments, and events.",
+        description: "'Introduction to mathematical modeling of computational problems, as well as common algorithms, algorithmic paradigms, and data structures used to solve these problems. Emphasizes the relationship between algorithms and programming, and introduces basic performance measures and analysis techniques for these problems.'",
+        source: "catalog.mit.edu",
         href: "notes/6_006__Introduction_to_Algorithms.pdf",
     },
     {

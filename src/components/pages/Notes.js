@@ -10,19 +10,13 @@ import gsap from 'gsap';
 
 function Notes() {
 
-    const bioRef = useRef(null);
-    const bioIntersection = useIntersection(bioRef, {
+    const sectionRef = useRef(null);
+    const intersection = useIntersection(sectionRef, {
         root: null,
         rootMargin: '0px',
-        threshold: 0.2
+        threshold: 0.5
     });
 
-    const expRef = useRef(null);
-    const expIntersection = useIntersection(expRef, {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.3
-    });
 
     const fadeIn = (element) => {
         gsap.to(element, {
@@ -48,17 +42,9 @@ function Notes() {
         });
     };
 
-    bioIntersection && bioIntersection.intersectionRatio < 0.2 ?
-    fadeOut(".bio-fadeIn") :
-    fadeIn(".bio-fadeIn");
-
-    // expIntersection && expIntersection.intersectionRatio < 0.25 ?
-    // fadeOut(".exp-fadeIn-header") :
-    // fadeIn(".exp-fadeIn-header");
-
-    expIntersection && expIntersection.intersectionRatio < 0.3 ?
-    fadeOut(".exp-fadeIn") :
-    fadeIn(".exp-fadeIn");
+    intersection && intersection.intersectionRatio < 0.5 ?
+    fadeOut(".notes-header-fadeIn") :
+    fadeIn(".notes-header-fadeIn");
 
     const myNotes = notes.map((note, i) => (
         <SingleNotes key ={i} note={note}></SingleNotes>
@@ -67,9 +53,9 @@ function Notes() {
     return (
         <>
             <LogoLoading></LogoLoading>
-            <div className="Notes-PageContainer">
+            <div ref={sectionRef} className="Notes-PageContainer">
                 <Nav/>
-                <div className="Notes-header"></div>
+                <div className="Notes-header notes-header-fadeIn"></div>
                 <div className="Notes-message">
                     <p>This is a section for my class notes! I'm sure my notes are filled with typos and confusing bits, but I'll be happy if they can help anyone serve as a reference for or a glimpse into a class.</p>
                     <p className="Notes-message-name">~ Jesse Yang</p>

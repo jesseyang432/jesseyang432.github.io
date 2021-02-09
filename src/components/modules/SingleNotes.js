@@ -57,12 +57,21 @@ function SingleNotes(props) {
     // fadeOut(".bio-fadeIn") :
     // fadeIn(".bio-fadeIn");
 
+    let source;
+
+    if (props.note.source) {
+        source = <p className="SingleNotes-source">~ {props.note.source}</p>
+    } else {
+        source = <p></p>
+    }
+
     return (
         <>
         <div className="SingleNotes-container">
             <h2>{props.note.title}</h2>
             <p>{props.note.description}</p>
-            <a href={props.note.href} className="SingleNotes-download" target="_blank"><FiDownload size={24}/></a>
+            {source}
+            <span className="SingleNotes-footer"><em>{props.note.term}</em><a href={props.note.href} className="SingleNotes-download" target="_blank"><FiDownload size={24}/></a></span>
         </div>
         </>
     );
