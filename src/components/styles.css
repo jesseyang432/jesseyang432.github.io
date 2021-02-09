@@ -1243,6 +1243,7 @@
 
 #explore .label {
   cursor: pointer;
+  font-family: "Alegreya Sans SC", sans-serif;
 }
 
 @-webkit-keyframes tooltip-appear-anim {
