@@ -1631,14 +1631,23 @@
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 10px;
   padding: 20px;
+  opacity: 0.7;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.SingleNotes-container:hover {
+  opacity: 1;
 }
 
 .SingleNotes-container h2 {
   font-family: "Alegreya Sans SC", sans-serif;
+  color: #000350;
 }
 
 .SingleNotes-container p {
   font-family: "Source Sans Pro", sans-serif;
+  color: #af69ef;
 }
 
 * {
