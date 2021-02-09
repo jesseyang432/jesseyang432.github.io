@@ -118,6 +118,12 @@
   margin-top: 10px;
 }
 
+@media only screen and (max-width: 1000px) {
+  .Notes-message {
+    width: 60%;
+  }
+}
+
 .Nav-bar {
   height: 80px;
   width: 100%;
@@ -1658,6 +1664,12 @@
 
 .SingleNotes-container .SingleNotes-download {
   cursor: pointer;
+}
+
+@media only screen and (max-width: 1000px) {
+  .SingleNotes-container {
+    width: 80%;
+  }
 }
 
 * {
