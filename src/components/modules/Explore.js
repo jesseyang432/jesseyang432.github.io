@@ -143,7 +143,7 @@ class Explore extends Component {
         .attr("text-anchor", "middle")
         .attr("alignment-baseline", "central")
         .attr("fill", "white")
-        .attr("font-size", "16px")
+        .attr("font-size", "14px")
         .text((d) => {
             return d.title;
         })
@@ -169,6 +169,8 @@ class Explore extends Component {
 
     this.simulation.nodes(this.data)
         .on('tick', ticked);
+
+    this.runSimulation();
 
   }
 

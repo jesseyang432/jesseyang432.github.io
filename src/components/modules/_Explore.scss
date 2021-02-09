@@ -2,6 +2,7 @@
 	max-width: 80%;
 	margin: auto;
 	color: white;
+	// color: #a18077;
 
 	h1 {
 		font-size: 72px;
@@ -17,16 +18,17 @@
 	justify-content: space-between;
 	align-items: center;
 	position: relative;
+	font-family: "Raleway", sans-serif;
 
 	button {
 		cursor: pointer;
 		font-size: 20px;
-		font-family: "Alegreya", "serif";
 		padding: 7.5px 12.5px;
 		outline: none;
 		background-color: $dark-blue;
 		color: white;
 		border-radius: 10px;
+		font-family: "Open Sans", sans-serif;
 	}
 
 	#Explore-button-unselected {
@@ -60,6 +62,7 @@
 				top: 60%;
 				left: 50%;
 				transform: translate(-50%, -50%);
+				color: white;
 			}
 		}
 
@@ -303,6 +306,7 @@
 
 	.label {
 		cursor: pointer;
+		font-family: "Open Sans", sans-serif;
 	}
 }
 
