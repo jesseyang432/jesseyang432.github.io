@@ -316,21 +316,21 @@
 	from {
 		height: 0;
 		width: 0;
-		opacity: 0%;
+		opacity: 0;
 	}
 	to {
 		height: 200px;
 		width: 300px;
-		opacity: 100%;
+		opacity: 1;
 	}
 }
 
 @keyframes tooltip-content-appear-anim {
 	from {
-		opacity: 0%;
+		opacity: 0;
 	}
 	to {
-		opacity: 100%;
+		opacity: 1;
 	}
 }
 
