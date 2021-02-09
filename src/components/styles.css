@@ -2,6 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&family=Arizonia&family=Great+Vibes&family=Yellowtail&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Raleway:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&display=swap");
 .Home-PageContainer {
   -webkit-animation: Home-height-load 16s ease;
           animation: Home-height-load 16s ease;
@@ -666,7 +668,6 @@
       -ms-flex-align: center;
           align-items: center;
   color: white;
-  font-family: "Raleway", sans-serif;
 }
 
 .Home-intro p {
@@ -818,7 +819,6 @@
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  font-family: "Raleway", sans-serif;
 }
 
 .Home-bio-image {
@@ -881,7 +881,7 @@
 
 .Home-bio-description ul li .first-word {
   font-size: 24px;
-  text-transform: uppercase;
+  font-family: "Alegreya Sans SC", sans-serif;
   color: #92b4f4;
 }
 
@@ -910,7 +910,6 @@
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  font-family: "Raleway", sans-serif;
 }
 
 .Explore-button-aisle button {
@@ -921,7 +920,7 @@
   background-color: #000350;
   color: white;
   border-radius: 10px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Alegreya", "serif";
 }
 
 .Explore-button-aisle #Explore-button-unselected {
@@ -1205,6 +1204,7 @@
 
 .Explore-tooltip-content .Explore-tooltip-content-description {
   font-size: 12px;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 .Explore-tooltip-tail {
@@ -1236,7 +1236,6 @@
 
 #explore .label {
   cursor: pointer;
-  font-family: "Open Sans", sans-serif;
 }
 
 @-webkit-keyframes tooltip-appear-anim {
@@ -1518,7 +1517,6 @@
   font-size: 72px;
   font-weight: 700;
   font-family: "Arizonia", cursive;
-  color: #a18077;
 }
 
 .Project-container {
@@ -1544,11 +1542,6 @@
           filter: none;
 }
 
-.Project-container img:nth-child(1) {
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
-}
-
 .Project-container .Project-img-container {
   width: 60%;
   position: absolute;
@@ -1563,21 +1556,18 @@
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  font-family: "Raleway", sans-serif;
 }
 
 .Project-container .Project-info-container h2 {
   font-size: 32px;
-  color: #a18077;
 }
 
 .Project-container .Project-info-container .Project-info-description {
   background-color: #92b4f4;
-  color: #332022;
   padding: 20px;
   border-radius: 10px;
   font-size: 18px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 .Project-container .Project-info-container .Project-info-tech {

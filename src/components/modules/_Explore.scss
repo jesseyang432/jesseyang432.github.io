@@ -18,7 +18,7 @@
 	justify-content: space-between;
 	align-items: center;
 	position: relative;
-	font-family: "Raleway", sans-serif;
+	// font-family: "Raleway", sans-serif;
 
 	button {
 		cursor: pointer;
@@ -28,7 +28,7 @@
 		background-color: $dark-blue;
 		color: white;
 		border-radius: 10px;
-		font-family: "Open Sans", sans-serif;
+		font-family: "Alegreya", "serif";
 	}
 
 	#Explore-button-unselected {
@@ -280,6 +280,7 @@
 
 	.Explore-tooltip-content-description {
 		font-size: 12px;
+		font-family: "Source Sans Pro", sans-serif;
 	}
 }
 
@@ -306,7 +307,6 @@
 
 	.label {
 		cursor: pointer;
-		font-family: "Open Sans", sans-serif;
 	}
 }
 

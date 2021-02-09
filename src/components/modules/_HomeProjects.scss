@@ -10,7 +10,6 @@
 		font-size: 72px;
 		font-weight: 700;
 		font-family: "Arizonia", cursive;
-		color: #a18077;
 	}
 }
 
@@ -32,10 +31,6 @@
 		position: relative;
 		// filter: grayscale(100%);
 		// background-color: rgba(246, 189, 209, 0.5);
-
-		&:nth-child(1) {
-			filter: grayscale(100%);
-		}
 	}
 
 	.Project-img-container {
@@ -53,21 +48,18 @@
 		// right: 0;
 		transform: translateY(-50%);
 		// text-align: right;
-		font-family: "Raleway", sans-serif;
 
 		h2 {
 			font-size: 32px;
-			color: #a18077;
 			// padding: 10px 10px 10px 12%;
 		}
 
 		.Project-info-description {
 			background-color: $light-blue;
-			color: #332022;
 			padding: 20px;
 			border-radius: 10px;
 			font-size: 18px;
-			font-family: "Open Sans", sans-serif;
+			font-family: "Source Sans Pro", sans-serif;
 		}
 
 		.Project-info-tech {
