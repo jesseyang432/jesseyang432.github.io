@@ -62,7 +62,7 @@ function SingleNotes(props) {
         <div className="SingleNotes-container">
             <h2>{props.note.title}</h2>
             <p>{props.note.description}</p>
-            <a className="SingleNotes-download"><FiDownload size={24}/></a>
+            <a href={props.note.href} className="SingleNotes-download" target="_blank"><FiDownload size={24}/></a>
         </div>
         </>
     );

@@ -1651,6 +1651,11 @@
   margin: 10px auto;
 }
 
+.SingleNotes-container a {
+  color: inherit;
+  text-decoration: none;
+}
+
 .SingleNotes-container .SingleNotes-download {
   cursor: pointer;
 }
