@@ -18,5 +18,10 @@
 	p {
 		font-family: "Source Sans Pro", sans-serif;
 		color: $light-purple;
+		margin: 10px auto;
+	}
+
+	.SingleNotes-download {
+		cursor: pointer;
 	}
 }

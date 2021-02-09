@@ -1648,6 +1648,11 @@
 .SingleNotes-container p {
   font-family: "Source Sans Pro", sans-serif;
   color: #af69ef;
+  margin: 10px auto;
+}
+
+.SingleNotes-container .SingleNotes-download {
+  cursor: pointer;
 }
 
 * {

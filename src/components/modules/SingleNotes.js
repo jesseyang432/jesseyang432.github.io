@@ -1,6 +1,8 @@
 import React, {useRef, useState, useEffect} from 'react';
 import {useIntersection} from 'react-use';
 
+import {FiDownload} from 'react-icons/fi';
+
 import gsap from 'gsap';
 
 function SingleNotes(props) {
@@ -60,7 +62,7 @@ function SingleNotes(props) {
         <div className="SingleNotes-container">
             <h2>{props.note.title}</h2>
             <p>{props.note.description}</p>
-            <p>|</p>
+            <a className="SingleNotes-download"><FiDownload size={24}/></a>
         </div>
         </>
     );
