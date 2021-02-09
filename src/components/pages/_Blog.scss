@@ -1,0 +1,24 @@
+.Blog-PageContainer {
+	min-height: 85vh;
+	background: repeating-linear-gradient(
+		$purpureus,
+		$dark-blue 100vh,
+		$dark-blue 100vh,
+		$purpureus 200vh
+	);
+	padding: 0 0 15vh 0;
+}
+
+.Blog-header {
+	height: 120px;
+}
+
+.Blog-message {
+	width: 40%;
+	background-color: rgba(0, 0, 0, 0.45);
+	padding: 20px;
+	border-radius: 10px;
+	color: white;
+	margin: auto;
+	text-align: center;
+}

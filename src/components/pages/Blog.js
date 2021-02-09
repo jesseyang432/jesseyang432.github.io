@@ -48,6 +48,8 @@ function Blog() {
             <LogoLoading></LogoLoading>
             <div className="Blog-PageContainer">
                 <Nav/>
+                <div className="Blog-header"></div>
+                <div className="Blog-message">I haven't been writing much lately, but I'm planning on starting up again soon!</div>
             </div>
                 
         </>
