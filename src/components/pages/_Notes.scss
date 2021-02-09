@@ -1,11 +1,12 @@
 .Notes-PageContainer {
-	min-height: 100vh;
+	min-height: auto;
 	background: repeating-linear-gradient(
 		$purpureus,
 		$dark-blue 100vh,
 		$dark-blue 100vh,
 		$purpureus 200vh
 	);
+	padding: 0 0 15vh 0;
 }
 
 .Notes-header {

@@ -3,7 +3,7 @@ import {useIntersection} from 'react-use';
 
 import gsap from 'gsap';
 
-function SingleNotes() {
+function SingleNotes(props) {
 
     const imageRef = useRef(null);
     const descriptionRef = useRef(null);
@@ -58,7 +58,9 @@ function SingleNotes() {
     return (
         <>
         <div className="SingleNotes-container">
-            Hi
+            <h2>{props.note.title}</h2>
+            <p>{props.note.description}</p>
+            <p>|</p>
         </div>
         </>
     );

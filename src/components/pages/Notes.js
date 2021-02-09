@@ -4,6 +4,8 @@ import LogoLoading from '../modules/LogoLoading';
 import Nav from '../modules/Nav';
 import SingleNotes from '../modules/SingleNotes';
 
+import notes from '../../data/notes';
+
 import gsap from 'gsap';
 
 function Notes() {
@@ -58,6 +60,10 @@ function Notes() {
     fadeOut(".exp-fadeIn") :
     fadeIn(".exp-fadeIn");
 
+    const myNotes = notes.map((note, i) => (
+        <SingleNotes key ={i} note={note}></SingleNotes>
+    ));
+
     return (
         <>
             <LogoLoading></LogoLoading>
@@ -67,9 +73,8 @@ function Notes() {
                 <div className="Notes-message">
                     <p>This is a section for my class notes! I'm sure my notes are filled with typos and confusing bits, but I'll be happy if they can help anyone serve as a reference for or a glimpse into a class.</p>
                     <p className="Notes-message-name">~ Jesse Yang</p>
-                    <a href="hi.html"> HELLO</a>
                 </div>
-                <SingleNotes/>
+                {myNotes}
             </div>
                 
         </>

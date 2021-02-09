@@ -90,8 +90,9 @@
 }
 
 .Notes-PageContainer {
-  min-height: 100vh;
+  min-height: auto;
   background: repeating-linear-gradient(#9b489b, #000350 100vh, #000350 100vh, #9b489b 200vh);
+  padding: 0 0 15vh 0;
 }
 
 .Notes-header {
@@ -1626,10 +1627,18 @@
 
 .SingleNotes-container {
   width: 60%;
-  margin: 10vh auto;
+  margin: 10vh auto 0;
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 10px;
   padding: 20px;
+}
+
+.SingleNotes-container h2 {
+  font-family: "Alegreya Sans SC", sans-serif;
+}
+
+.SingleNotes-container p {
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 * {
