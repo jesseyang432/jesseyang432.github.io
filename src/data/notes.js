@@ -11,14 +11,16 @@ const notes = [
         id: "18.100B",
         title: "18.100B: Real Analysis",
         term: "Fall 2020",
-        description: "A new, responsive website with accessible and meaningful frontend design for the Chinese Culture Connection, a non-profit organization in Malden, MA focused on promoting cross cultural understanding.",
+        description: "'Covers fundamentals of mathematical analysis: convergence of sequences and series, continuity, differentiability, Riemann integral, sequences and series of functions, uniformity, interchange of limit operations. Shows the utility of abstract concepts and teaches understanding and construction of proofs. Places more emphasis on point-set topology and n-space.'",
+        source: "catalog.mit.edu",
         href: "notes/18_100B__Real_Analysis.pdf",
     },
     {
         id: "18.701",
         title: "18.701: Algebra I",
         term: "Fall 2020",
-        description: "A new, responsive website with accessible and meaningful frontend design for the Chinese Culture Connection, a non-profit organization in Malden, MA focused on promoting cross cultural understanding.",
+        description: "'This undergraduate level Algebra I course covers groups, vector spaces, linear transformations, symmetry groups, bilinear forms, and linear groups.'",
+        source: "MIT OCW",
         href: "notes/18_701__Algebra_I.pdf",
     }
 ];

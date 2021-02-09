@@ -1664,6 +1664,7 @@
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  color: #000350;
 }
 
 .SingleNotes-container .SingleNotes-footer {
@@ -1673,6 +1674,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: #000350;
 }
 
 .SingleNotes-container a {

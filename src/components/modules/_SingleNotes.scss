@@ -24,11 +24,13 @@
 	.SingleNotes-source {
 		display: flex;
 		justify-content: flex-end;
+		color: $dark-blue;
 	}
 
 	.SingleNotes-footer {
 		display: flex;
 		align-items: center;
+		color: $dark-blue;
 	}
 
 	a {
