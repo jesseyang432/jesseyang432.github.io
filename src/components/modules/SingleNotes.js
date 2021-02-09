@@ -7,55 +7,41 @@ import gsap from 'gsap';
 
 function SingleNotes(props) {
 
-    const imageRef = useRef(null);
-    const descriptionRef = useRef(null);
+    const noteRef = useRef(null);
 
-    const imageIntersection = useIntersection(imageRef, {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.5
-    });
-    const descriptionIntersection = useIntersection(descriptionRef, {
+    const intersection = useIntersection(noteRef, {
         root: null,
         rootMargin: '0px',
         threshold: 0.5
     });
 
-    const imageIntersected = false;
-    const descriptionIntersected = false;
-
-    // const fadeIn = (element) => {
-    //     gsap.to(element, {
-    //         duration: 1,
-    //         opacity: 1,
-    //         y: -40,
-    //         ease: 'power4.out',
-    //         stagger: {
-    //             amount: .3
-    //         }
-    //     });
-
-    // };
-
-    const fadeOut = (element) => {
-        // gsap.to(element, {
-        //     duration: 1,
-        //     opacity: 0,
-        //     y: -20,
-        //     ease: 'power4.out',
-        //     stagger: {
-        //         amount: .3
-        //     }
-        // });
+    const fadeIn = (element) => {
+        gsap.to(element, {
+            duration: 1,
+            opacity: 1,
+            y: -40,
+            ease: 'power4.out',
+            stagger: {
+                amount: .3
+            }
+        });
     };
 
-    // imageIntersection && imageIntersection.intersectionRatio < 0.5  ?
-    // fadeOut(".bio-fadeIn") :
-    // fadeIn(".bio-fadeIn");
+    const fadeOut = (element) => {
+        gsap.to(element, {
+            duration: 1,
+            opacity: 0,
+            y: -20,
+            ease: 'power4.out',
+            stagger: {
+                amount: .3
+            }
+        });
+    };
 
-    // descriptionIntersection && descriptionIntersection.intersectionRatio < 0.5 ?
-    // fadeOut(".bio-fadeIn") :
-    // fadeIn(".bio-fadeIn");
+    intersection && intersection.intersectionRatio < 0.5 ?
+    fadeOut(`.SingleNotes-fadeIn-${props.note.id}`) :
+    fadeIn(`.SingleNotes-fadeIn-${props.note.id}`)
 
     let source;
 
@@ -67,11 +53,13 @@ function SingleNotes(props) {
 
     return (
         <>
-        <div className="SingleNotes-container">
-            <h2>{props.note.title}</h2>
-            <p>{props.note.description}</p>
-            {source}
-            <span className="SingleNotes-footer"><em>{props.note.term}</em><a href={props.note.href} className="SingleNotes-download" target="_blank"><FiDownload size={24}/></a></span>
+        <div ref={noteRef} >
+            <div className={`SingleNotes-container SingleNotes-fadeIn-${props.note.id}`}>
+                <h2>{props.note.title}</h2>
+                <p>{props.note.description}</p>
+                {source}
+                <span className="SingleNotes-footer"><em>{props.note.term}</em><a href={props.note.href} className="SingleNotes-download" target="_blank"><FiDownload size={24}/></a></span>
+            </div>
         </div>
         </>
     );
