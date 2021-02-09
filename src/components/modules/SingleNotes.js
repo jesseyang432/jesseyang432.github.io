@@ -12,7 +12,7 @@ function SingleNotes(props) {
     const intersection = useIntersection(noteRef, {
         root: null,
         rootMargin: '0px',
-        threshold: 0.5
+        threshold: 0.3
     });
 
     const fadeIn = (element) => {
@@ -39,7 +39,7 @@ function SingleNotes(props) {
         });
     };
 
-    intersection && intersection.intersectionRatio < 0.5 ?
+    intersection && intersection.intersectionRatio < 0.3 ?
     fadeOut(`.SingleNotes-fadeIn-${props.note.id}`) :
     fadeIn(`.SingleNotes-fadeIn-${props.note.id}`)
 

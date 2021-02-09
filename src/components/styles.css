@@ -102,7 +102,7 @@
 .Notes-message {
   width: 45%;
   background-color: rgba(0, 0, 0, 0.5);
-  margin: auto;
+  margin: 0 auto 15vh auto;
   border-radius: 10px;
   padding: 20px;
   color: white;
